@@ -1,0 +1,134 @@
+[gd_scene load_steps=25 format=3 uid="uid://bnr6iqrwngd5a"]
+
+[ext_resource type="Texture2D" uid="uid://6igokbd3pk4d" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_1.png" id="1_ql5u7"]
+[ext_resource type="Texture2D" uid="uid://ccp4g8jmaeyw3" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_2.png" id="2_wi8x7"]
+[ext_resource type="Texture2D" uid="uid://c6bng6gkrnxw7" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_3.png" id="3_0rrql"]
+[ext_resource type="Texture2D" uid="uid://cruus8n2ebcar" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_4.png" id="4_mf2u0"]
+[ext_resource type="Texture2D" uid="uid://chbnorauyw167" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_5.png" id="5_iwjgo"]
+[ext_resource type="Texture2D" uid="uid://b7iyh8s8uxuxp" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_6.png" id="6_jeltq"]
+[ext_resource type="Texture2D" uid="uid://caldm0epp2fw" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_7.png" id="7_81ldq"]
+[ext_resource type="Texture2D" uid="uid://b1tbib4skh7iq" path="res://Survivor Arcade Game/Effects/Electrical_Explosion_8.png" id="8_4h8yu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nq6pu"]
+atlas = ExtResource("1_ql5u7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dqke"]
+atlas = ExtResource("2_wi8x7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rb2g2"]
+atlas = ExtResource("3_0rrql")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2oydl"]
+atlas = ExtResource("4_mf2u0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8dlm"]
+atlas = ExtResource("5_iwjgo")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dal3j"]
+atlas = ExtResource("6_jeltq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wx8lk"]
+atlas = ExtResource("7_81ldq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bu7s8"]
+atlas = ExtResource("8_4h8yu")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x06wh"]
+atlas = ExtResource("7_81ldq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2wno"]
+atlas = ExtResource("6_jeltq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfawn"]
+atlas = ExtResource("5_iwjgo")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3fvjp"]
+atlas = ExtResource("4_mf2u0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5k0u"]
+atlas = ExtResource("3_0rrql")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqm1q"]
+atlas = ExtResource("2_wi8x7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8iyc"]
+atlas = ExtResource("1_ql5u7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j68cn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nq6pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dqke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rb2g2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2oydl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8dlm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dal3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wx8lk")
+}, {
+"duration": 3.5,
+"texture": SubResource("AtlasTexture_bu7s8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x06wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f2wno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfawn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3fvjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5k0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqm1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8iyc")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"zapexplosion",
+"speed": 8.0
+}]
+
+[node name="ZapExplosion" type="AnimatedSprite2D"]
+scale = Vector2(1.25, 2.491)
+sprite_frames = SubResource("SpriteFrames_j68cn")
+animation = &"zapexplosion"
+autoplay = "zapexplosion"
+frame = 15
+frame_progress = 1.0

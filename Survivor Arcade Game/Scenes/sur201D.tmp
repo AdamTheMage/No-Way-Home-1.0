@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=3 uid="uid://bcrm1akfytujj"]
+
+[ext_resource type="Script" path="res://Scripts/survivorsexamplegame.gd" id="1_jgqb0"]
+[ext_resource type="PackedScene" uid="uid://cswdupvttg62o" path="res://Survivor Arcade Game/Scenes/player.tscn" id="1_kqy26"]
+[ext_resource type="Texture2D" uid="uid://c0f61ck2kt3x" path="res://Survivor Arcade Game/Background/Space_Background_64x64.png" id="2_bff31"]
+[ext_resource type="PackedScene" uid="uid://cypol4rm8d4oj" path="res://Survivor Arcade Game/Scenes/asteroid_1.tscn" id="4_auw7q"]
+[ext_resource type="FontFile" uid="uid://brlfb8a8ps882" path="res://LDF Comic Sans/Ldfcomicsans-jj7l.ttf" id="4_o3l1n"]
+
+[sub_resource type="Curve2D" id="Curve2D_frorv"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -453, -311, 0, 0, 0, 0, 2042, -323, 0, 0, 0, 0, 2067, 1208, 0, 0, 0, 0, -443, 1207, 0, 0, 0, 0, -453, -322)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+position = Vector2(-4, 0)
+script = ExtResource("1_jgqb0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = -4.0
+offset_right = 1587.0
+offset_bottom = 953.0
+texture = ExtResource("2_bff31")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("1_kqy26")]
+position = Vector2(368, 248)
+
+[node name="Path2D" type="Path2D" parent="PlayerCharacter"]
+position = Vector2(-368, -248)
+curve = SubResource("Curve2D_frorv")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="PlayerCharacter/Path2D"]
+unique_name_in_owner = true
+position = Vector2(226.649, 1207.27)
+rotation = -3.14119
+progress = 5866.6
+
+[node name="Asteroids" type="Node" parent="."]
+
+[node name="Asteroid 1" parent="Asteroids" instance=ExtResource("4_auw7q")]
+position = Vector2(222, 333)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.7
+autostart = true
+
+[node name="GameOverScreen" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1079.0
+offset_bottom = -588.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(21.8, 16)
+color = Color(0.580392, 0, 0.580392, 0.243137)
+
+[node name="Label" type="Label" parent="GameOverScreen/ColorRect"]
+top_level = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -124.0
+offset_right = 561.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.654117, 0.742786)
+theme_override_colors/font_color = Color(0.682353, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_o3l1n")
+theme_override_font_sizes/font_size = 244
+text = "Deaded"
+
+[connection signal="playerhealth_depleted" from="PlayerCharacter" to="." method="_on_player_character_playerhealth_depleted"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

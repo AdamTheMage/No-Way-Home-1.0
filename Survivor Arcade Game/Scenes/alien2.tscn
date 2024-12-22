@@ -1,0 +1,103 @@
+[gd_scene load_steps=13 format=3 uid="uid://03wulaectrrg"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien2.gd" id="1_y8ddf"]
+[ext_resource type="Texture2D" uid="uid://diypp2fwi2iyc" path="res://Survivor Arcade Game/Aliens/Alien3_P2.png" id="2_hm4k6"]
+[ext_resource type="Texture2D" uid="uid://dtl3kbrtw148p" path="res://Survivor Arcade Game/Aliens/Alien3_P2_Blue.png" id="3_burah"]
+[ext_resource type="Texture2D" uid="uid://dqqijkiugmxtc" path="res://Survivor Arcade Game/Aliens/Alien3_P1.png" id="3_wrt3t"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien_box_2.gd" id="4_8acpi"]
+[ext_resource type="Texture2D" uid="uid://dshri411i7qno" path="res://Survivor Arcade Game/Aliens/Alien3_P1_Blue.png" id="5_grvwm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_251f5"]
+atlas = ExtResource("2_hm4k6")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mme3"]
+atlas = ExtResource("3_burah")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvww6"]
+atlas = ExtResource("3_wrt3t")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc01r"]
+atlas = ExtResource("5_grvwm")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hr668"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_251f5")
+}],
+"loop": true,
+"name": &"Attacking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mme3")
+}],
+"loop": true,
+"name": &"AttackingBlue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvww6")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc01r")
+}],
+"loop": true,
+"name": &"DefaultBlue",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4neyy"]
+radius = 7.19913
+
+[node name="Alien2" type="CharacterBody2D"]
+collision_layer = 1073743878
+collision_mask = 1073743873
+script = ExtResource("1_y8ddf")
+
+[node name="alien2" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(9.69749, 4.88416)
+sprite_frames = SubResource("SpriteFrames_hr668")
+animation = &"DefaultBlue"
+autoplay = "Default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.00457764, 0.0626163)
+shape = SubResource("CircleShape2D_4neyy")
+
+[node name="AlienBox2" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-13.8025, 15.2175)
+scale = Vector2(1.49794, 1.49794)
+collision_layer = 2164260864
+collision_mask = 2164260864
+script = ExtResource("4_8acpi")
+
+[node name="hitboxcollision" type="CollisionShape2D" parent="AlienBox2"]
+position = Vector2(9.35385, -10.226)
+scale = Vector2(-0.72768, 0.772818)
+shape = SubResource("CircleShape2D_4neyy")
+
+[node name="StatusHolder" type="Node" parent="."]
+
+[node name="appearancechecker" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[connection signal="area_entered" from="AlienBox2" to="." method="_on_alien_box_2_area_entered"]
+[connection signal="area_entered" from="AlienBox2" to="AlienBox2" method="_on_area_entered"]
+[connection signal="body_entered" from="AlienBox2" to="." method="_on_alien_box_body_entered"]
+[connection signal="timeout" from="appearancechecker" to="." method="_on_appearancechecker_timeout"]

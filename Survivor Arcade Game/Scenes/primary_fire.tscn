@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1c303xb3t5gx"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/primary_fire.gd" id="1_wnwsc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bx1v3"]
+size = Vector2(14.6118, 47.4892)
+
+[node name="PrimaryFire" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_wnwsc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.216448, -23.7643)
+shape = SubResource("RectangleShape2D_bx1v3")
+
+[node name="PrimaryFirePoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+rotation = 4.71239
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.8
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

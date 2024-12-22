@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgle0jww6nb03"]
+
+[ext_resource type="Texture2D" uid="uid://cus7tonlesbwr" path="res://Survivor Arcade Game/Asteroids/Asteroid_4x4_Tile.png" id="1_tqccd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_puxaf"]
+size = Vector2(13.4459, 60.827)
+
+[node name="Asteroid 1" type="StaticBody2D"]
+collision_layer = 65
+collision_mask = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.74105, -2.26877)
+rotation = 2.33759
+shape = SubResource("RectangleShape2D_puxaf")
+debug_color = Color(0.711777, 0.485033, 0, 0.42)
+
+[node name="Asteroid21x1" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_tqccd")

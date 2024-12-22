@@ -1,0 +1,163 @@
+[gd_scene load_steps=23 format=3 uid="uid://ke8c8xo8dexy"]
+
+[ext_resource type="Texture2D" uid="uid://qspwlan5q5qb" path="res://Survivor Arcade Game/Aliens/Draugral.png" id="1_4oyo5"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien4.gd" id="1_ni6my"]
+[ext_resource type="Texture2D" uid="uid://bow0yqs4eu433" path="res://Survivor Arcade Game/Aliens/Draugral_Firing_1.png" id="2_kugwo"]
+[ext_resource type="Texture2D" uid="uid://cpkjf325yqyh4" path="res://Survivor Arcade Game/Aliens/Draugral_Firing_2.png" id="3_8h7gj"]
+[ext_resource type="Texture2D" uid="uid://dnr0my4cdhkk7" path="res://Survivor Arcade Game/Aliens/Draugral_Firing_3.png" id="4_cfdl2"]
+[ext_resource type="Texture2D" uid="uid://b66b24t17dl21" path="res://Survivor Arcade Game/Aliens/Draugal_Weak.png" id="5_d0f7h"]
+[ext_resource type="Texture2D" uid="uid://bunlmkjir0ydn" path="res://Survivor Arcade Game/Aliens/Draugal_Weak_Firing_1.png" id="6_ogl5c"]
+[ext_resource type="Texture2D" uid="uid://dwdpw34nmnph1" path="res://Survivor Arcade Game/Aliens/Draugal_Weak_Firing_2.png" id="7_ulxla"]
+[ext_resource type="Texture2D" uid="uid://c0scenvfui7ha" path="res://Survivor Arcade Game/Aliens/Draugal_Weak_Firing_3.png" id="8_pmtxo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5hxr"]
+atlas = ExtResource("1_4oyo5")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01v52"]
+atlas = ExtResource("1_4oyo5")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vtb5"]
+atlas = ExtResource("2_kugwo")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0ne6"]
+atlas = ExtResource("3_8h7gj")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k62il"]
+atlas = ExtResource("4_cfdl2")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aixnj"]
+atlas = ExtResource("5_d0f7h")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfa6x"]
+atlas = ExtResource("5_d0f7h")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc4th"]
+atlas = ExtResource("6_ogl5c")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo7ti"]
+atlas = ExtResource("7_ulxla")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8van7"]
+atlas = ExtResource("8_pmtxo")
+region = Rect2(0, 0, 40, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qc0wq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5hxr")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01v52")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_6vtb5")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_u0ne6")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_k62il")
+}],
+"loop": false,
+"name": &"defaultfiring",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aixnj")
+}],
+"loop": false,
+"name": &"weak",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfa6x")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_fc4th")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_xo7ti")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_8van7")
+}],
+"loop": false,
+"name": &"weakfiring",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qp6fc"]
+radius = 7.0
+height = 18.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfg26"]
+radius = 15.0
+height = 34.0
+
+[node name="Alien4" type="CharacterBody2D"]
+collision_layer = 1073743878
+collision_mask = 1073743873
+script = ExtResource("1_ni6my")
+
+[node name="alien4" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(2, -20)
+sprite_frames = SubResource("SpriteFrames_qc0wq")
+autoplay = "default"
+
+[node name="HighFirePoint" type="Marker2D" parent="alien4"]
+unique_name_in_owner = true
+position = Vector2(0, -9)
+
+[node name="LowFirePoint" type="Marker2D" parent="alien4"]
+unique_name_in_owner = true
+position = Vector2(-15, 3)
+rotation = 3.14159
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -9)
+shape = SubResource("CapsuleShape2D_qp6fc")
+
+[node name="AlienBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 1073741825
+collision_mask = 1073741825
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AlienBox"]
+visible = false
+position = Vector2(0, -16)
+shape = SubResource("CapsuleShape2D_bfg26")
+
+[node name="StatusHolder" type="Node" parent="."]
+
+[node name="MissileTimerLow" type="Timer" parent="."]
+wait_time = 4.5
+autostart = true
+
+[node name="MissileTimerAnimation" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="MissileTimerLow" to="." method="_on_missile_timer_timeout"]
+[connection signal="timeout" from="MissileTimerLow" to="." method="_on_missile_timer_low_timeout"]
+[connection signal="timeout" from="MissileTimerAnimation" to="." method="_on_missile_timer_animation_timeout"]
+[connection signal="timeout" from="MissileTimerAnimation" to="." method="_on_missile_timer_low_animation_timeout"]

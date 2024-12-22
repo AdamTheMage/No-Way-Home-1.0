@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://2hf7qxgisgh6"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/drone.gd" id="1_t22vb"]
+[ext_resource type="Texture2D" uid="uid://dai1f0nsua20h" path="res://Survivor Arcade Game/Weapons/Drone.png" id="2_pechu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m7f6t"]
+radius = 79.3645
+
+[node name="Drone45" type="Area2D"]
+position = Vector2(23, 14.969)
+rotation = 4.71239
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_t22vb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.0744019, -0.0909615)
+rotation = 4.71239
+scale = Vector2(0.662, 0.326)
+shape = SubResource("CircleShape2D_m7f6t")
+
+[node name="WeaponPivot" type="Marker2D" parent="."]
+position = Vector2(-0.0481262, -0.0834694)
+rotation = 4.71239
+
+[node name="DroneSprite" type="Sprite2D" parent="WeaponPivot"]
+z_index = 1
+texture_filter = 1
+position = Vector2(0.0320288, 0.0481759)
+rotation = 3.14159
+scale = Vector2(0.543703, 0.543703)
+texture = ExtResource("2_pechu")
+
+[node name="ShootingPoint" type="Marker2D" parent="WeaponPivot"]
+unique_name_in_owner = true
+position = Vector2(-0.656556, 2.8476)
+rotation = 1.5708
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.36
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

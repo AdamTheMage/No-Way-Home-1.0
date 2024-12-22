@@ -1,0 +1,168 @@
+[gd_scene load_steps=14 format=3 uid="uid://cawxpmtehra72"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/rootedmain.gd" id="1_hsku7"]
+[ext_resource type="FontFile" uid="uid://bdepemwpxaq05" path="res://Survivor Arcade Game/Fonts/Racquetball Regular.ttf" id="1_xn7dd"]
+[ext_resource type="Texture2D" uid="uid://c4ggyobw0vtn4" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_1.png" id="3_h6pkl"]
+[ext_resource type="Texture2D" uid="uid://bc40rj3pmvfc1" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_2.png" id="4_rrjfw"]
+[ext_resource type="Texture2D" uid="uid://c4wlkt82qytif" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_3.png" id="5_lw7dg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0cx4a"]
+radius = 7.83132
+
+[sub_resource type="Animation" id="Animation_vhome"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rooted/RootedPlayer/Rooted:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Rooted/RootedPlayer/Rooted:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_53fgi"]
+resource_name = "Rooted"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rooted/RootedPlayer/Rooted:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.122173]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Rooted/RootedPlayer/Rooted:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.533333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1.25, 1.25), Vector2(0.75, 0.75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Rooted/RootedPlayer/Rooted:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.733333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8y0l7"]
+_data = {
+"RESET": SubResource("Animation_vhome"),
+"Rooted": SubResource("Animation_53fgi")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7tl1"]
+atlas = ExtResource("3_h6pkl")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awf1c"]
+atlas = ExtResource("4_rrjfw")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydgmv"]
+atlas = ExtResource("5_lw7dg")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eakur"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.25,
+"texture": SubResource("AtlasTexture_g7tl1")
+}, {
+"duration": 1.25,
+"texture": SubResource("AtlasTexture_awf1c")
+}, {
+"duration": 8.0,
+"texture": SubResource("AtlasTexture_ydgmv")
+}],
+"loop": false,
+"name": &"Rooted",
+"speed": 5.0
+}]
+
+[node name="Rooted" type="Area2D"]
+collision_layer = 2147483648
+collision_mask = 2147483648
+script = ExtResource("1_hsku7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.353157, -1.5892)
+shape = SubResource("CircleShape2D_0cx4a")
+
+[node name="RootedPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8y0l7")
+}
+
+[node name="Rooted" type="Label" parent="RootedPlayer"]
+unique_name_in_owner = true
+z_index = 7
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.257
+anchor_right = 0.25
+anchor_bottom = 0.257
+offset_left = 3.08978
+offset_top = -39.8406
+offset_right = 63.0898
+offset_bottom = -16.8406
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.122173
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_xn7dd")
+theme_override_font_sizes/font_size = 10
+text = "Rooted!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RootedAnimation" type="AnimatedSprite2D" parent="RootedPlayer"]
+unique_name_in_owner = true
+position = Vector2(0.0114307, 0.0696076)
+rotation = 0.000104347
+scale = Vector2(1.29079, 1.29079)
+sprite_frames = SubResource("SpriteFrames_eakur")
+animation = &"Rooted"
+frame = 3
+frame_progress = 1.0
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="ready" from="RootedPlayer/Rooted" to="RootedPlayer/Rooted" method="_on_ready"]

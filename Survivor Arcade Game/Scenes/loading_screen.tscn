@@ -1,0 +1,290 @@
+[gd_scene load_steps=52 format=3 uid="uid://dgebjabcdvoxk"]
+
+[ext_resource type="FontFile" uid="uid://bdepemwpxaq05" path="res://Survivor Arcade Game/Fonts/Racquetball Regular.ttf" id="2_s78s3"]
+[ext_resource type="Texture2D" uid="uid://c42s5jhmufnon" path="res://Survivor Arcade Game/Spaceship/Spaceship_Still.png" id="3_3gkgt"]
+[ext_resource type="Texture2D" uid="uid://bjoad6dajfpl0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_1.png" id="4_3cilr"]
+[ext_resource type="Texture2D" uid="uid://bphcmpfe5t3t4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_2.png" id="5_gatwh"]
+[ext_resource type="Texture2D" uid="uid://dwxe0ifdh8ogi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_3.png" id="6_qmtun"]
+[ext_resource type="Texture2D" uid="uid://bx7bdhou8bui4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_4(Constant).png" id="7_jolcy"]
+[ext_resource type="Texture2D" uid="uid://cqvgou3ylpv4x" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_5.png" id="8_jkrv5"]
+[ext_resource type="Texture2D" uid="uid://cj4qnhei3o83e" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_6.png" id="9_dwuwy"]
+[ext_resource type="Texture2D" uid="uid://drda3gbtoc2un" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_7.png" id="10_3m4xu"]
+[ext_resource type="Texture2D" uid="uid://b6jkhhimndwv3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_1.png" id="11_6026o"]
+[ext_resource type="Texture2D" uid="uid://ce0u7ha2lg71i" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_2.png" id="12_5sw8v"]
+[ext_resource type="Texture2D" uid="uid://cddne6urgcwfi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3.png" id="13_bv1x8"]
+[ext_resource type="Texture2D" uid="uid://iansptqq80vg" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_4.png" id="14_cjfko"]
+[ext_resource type="Texture2D" uid="uid://blcimf7im3st0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5.png" id="15_0ntf7"]
+[ext_resource type="Texture2D" uid="uid://b6ih3l2fmf704" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_6.png" id="16_qm4ej"]
+[ext_resource type="Texture2D" uid="uid://cm37km68b1hhq" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_7.png" id="17_8lqkm"]
+[ext_resource type="Texture2D" uid="uid://rowc27yceuie" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_8.png" id="18_8t7if"]
+[ext_resource type="Texture2D" uid="uid://djngs1la43hs8" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_9.png" id="19_e8id4"]
+[ext_resource type="Texture2D" uid="uid://bd115g0gsrv0p" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_(Constant).png" id="20_gycam"]
+[ext_resource type="Texture2D" uid="uid://jc5n6aslueqi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_1_Slow.png" id="21_jgs70"]
+[ext_resource type="Texture2D" uid="uid://df54l85y80pwb" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_2_Slow.png" id="22_01k2x"]
+[ext_resource type="Texture2D" uid="uid://bf77saf5lxtm3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3_Slow.png" id="23_ls0yh"]
+[ext_resource type="Texture2D" uid="uid://ce7mcdhqcpid6" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_4_Slow.png" id="24_bhkp7"]
+[ext_resource type="Texture2D" uid="uid://cibfllljghskp" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5_Slow.png" id="25_b52nm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2ney"]
+atlas = ExtResource("3_3gkgt")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpv14"]
+atlas = ExtResource("4_3cilr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyiit"]
+atlas = ExtResource("5_gatwh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51rsj"]
+atlas = ExtResource("6_qmtun")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5kdw"]
+atlas = ExtResource("7_jolcy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y51kd"]
+atlas = ExtResource("8_jkrv5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgdgt"]
+atlas = ExtResource("9_dwuwy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sf11"]
+atlas = ExtResource("10_3m4xu")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjgc1"]
+atlas = ExtResource("3_3gkgt")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0vca"]
+atlas = ExtResource("11_6026o")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fyis4"]
+atlas = ExtResource("12_5sw8v")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uyrmc"]
+atlas = ExtResource("13_bv1x8")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4c5"]
+atlas = ExtResource("14_cjfko")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcy5v"]
+atlas = ExtResource("15_0ntf7")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dobe2"]
+atlas = ExtResource("16_qm4ej")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x40gu"]
+atlas = ExtResource("17_8lqkm")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28c46"]
+atlas = ExtResource("18_8t7if")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjfgq"]
+atlas = ExtResource("19_e8id4")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi75k"]
+atlas = ExtResource("20_gycam")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3aai"]
+atlas = ExtResource("21_jgs70")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4yy6"]
+atlas = ExtResource("22_01k2x")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8ssc"]
+atlas = ExtResource("23_ls0yh")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fhbn"]
+atlas = ExtResource("24_bhkp7")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fad1c"]
+atlas = ExtResource("25_b52nm")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0iul0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2ney")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kpv14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyiit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51rsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5kdw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y51kd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bgdgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sf11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjgc1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0vca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fyis4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uyrmc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4c5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcy5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dobe2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x40gu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28c46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjfgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi75k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3aai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4yy6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8ssc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fhbn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fad1c")
+}],
+"loop": true,
+"name": &"funanimation",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50mgo"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ygaod"]
+bg_color = Color(0, 0.482353, 0.298039, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.462745)
+border_blend = true
+anti_aliasing = false
+
+[node name="Loading Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1919.5
+offset_top = -1083.0
+offset_right = 1919.5
+offset_bottom = 1083.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 4
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -758.923
+offset_right = -635.923
+offset_bottom = 21.0
+grow_horizontal = 2
+rotation = 3.14159
+scale = Vector2(-12.518, -12.518)
+theme_override_fonts/normal_font = ExtResource("2_s78s3")
+theme_override_font_sizes/normal_font_size = 20
+text = "NO WAY HOME"
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="LoadingSpaceship" type="AnimatedSprite2D" parent="Container"]
+unique_name_in_owner = true
+position = Vector2(-153.92, -194.506)
+scale = Vector2(21.354, 21.354)
+sprite_frames = SubResource("SpriteFrames_0iul0")
+animation = &"funanimation"
+autoplay = "funanimation"
+frame_progress = 0.207693
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 0.368652
+offset_top = -0.446045
+offset_right = 514.369
+offset_bottom = 144.554
+grow_vertical = 0
+rotation = 4.71239
+theme_override_styles/background = SubResource("StyleBoxFlat_50mgo")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ygaod")
+show_percentage = false

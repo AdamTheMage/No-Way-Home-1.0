@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dtfysgwe6n42h"]
+
+[node name="Pickups" type="Node2D"]

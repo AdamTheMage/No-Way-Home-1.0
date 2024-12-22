@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=3 uid="uid://b00tb6a3dl5uh"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien1.gd" id="1_eq1by"]
+[ext_resource type="Texture2D" uid="uid://xslim5enb576" path="res://Survivor Arcade Game/Aliens/Alien_1_Hurt_Overhaul.png" id="2_oqghq"]
+[ext_resource type="Texture2D" uid="uid://crbfm363t82ri" path="res://Survivor Arcade Game/Aliens/Alien1_Base_Overhaul.png" id="3_6urs7"]
+[ext_resource type="Texture2D" uid="uid://b8nprp7e0rajx" path="res://Survivor Arcade Game/Aliens/Alien_1_Hurt_Overhaul_Blue.png" id="3_c2w4v"]
+[ext_resource type="Texture2D" uid="uid://cnjsjvsmosh6e" path="res://Survivor Arcade Game/Aliens/Alien1_Base_Overhaul_Blue.png" id="5_vthhd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_en6gc"]
+atlas = ExtResource("2_oqghq")
+region = Rect2(0, 0, 30, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73j82"]
+atlas = ExtResource("3_c2w4v")
+region = Rect2(0, 0, 30, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsmba"]
+atlas = ExtResource("3_6urs7")
+region = Rect2(0, 0, 28, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utqkr"]
+atlas = ExtResource("5_vthhd")
+region = Rect2(0, 0, 28, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hr668"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_en6gc")
+}],
+"loop": true,
+"name": &"Attacking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73j82")
+}],
+"loop": true,
+"name": &"AttackingBlue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsmba")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utqkr")
+}],
+"loop": true,
+"name": &"DefaultBlue",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4neyy"]
+
+[node name="Mob" type="CharacterBody2D"]
+collision_layer = 1073743878
+collision_mask = 1073743873
+script = ExtResource("1_eq1by")
+
+[node name="alien1" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+scale = Vector2(0.531599, 0.530703)
+sprite_frames = SubResource("SpriteFrames_hr668")
+animation = &"Default"
+autoplay = "Default"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(0.646578, 0.655621)
+shape = SubResource("CircleShape2D_4neyy")
+
+[node name="AlienBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+scale = Vector2(0.806731, 1.11307)
+collision_layer = 1073741825
+collision_mask = 1073741825
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AlienBox"]
+shape = SubResource("CircleShape2D_4neyy")
+
+[node name="StatusHolder" type="Node" parent="."]
+
+[node name="appearancechecker" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="area_entered" from="AlienBox" to="." method="_on_alien_box_area_entered"]
+[connection signal="body_entered" from="AlienBox" to="." method="_on_alien_box_body_entered"]
+[connection signal="timeout" from="appearancechecker" to="." method="_on_appearancechecker_timeout"]

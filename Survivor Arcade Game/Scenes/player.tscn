@@ -1,0 +1,839 @@
+[gd_scene load_steps=88 format=3 uid="uid://cswdupvttg62o"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/player.gd" id="1_ittgt"]
+[ext_resource type="Texture2D" uid="uid://jc5n6aslueqi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_1_Slow.png" id="2_oqqi6"]
+[ext_resource type="Texture2D" uid="uid://df54l85y80pwb" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_2_Slow.png" id="3_ts86v"]
+[ext_resource type="Texture2D" uid="uid://bx7bdhou8bui4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_4(Constant).png" id="4_1kdks"]
+[ext_resource type="Texture2D" uid="uid://bf77saf5lxtm3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3_Slow.png" id="4_e82kw"]
+[ext_resource type="Texture2D" uid="uid://ce7mcdhqcpid6" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_4_Slow.png" id="5_aeucu"]
+[ext_resource type="Texture2D" uid="uid://cqvgou3ylpv4x" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_5.png" id="5_xc01x"]
+[ext_resource type="Texture2D" uid="uid://cibfllljghskp" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5_Slow.png" id="6_b4asr"]
+[ext_resource type="Texture2D" uid="uid://cj4qnhei3o83e" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_6.png" id="6_fv2jh"]
+[ext_resource type="Texture2D" uid="uid://b6jkhhimndwv3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_1.png" id="7_igvph"]
+[ext_resource type="Texture2D" uid="uid://drda3gbtoc2un" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_7.png" id="7_vt3d6"]
+[ext_resource type="Texture2D" uid="uid://c42s5jhmufnon" path="res://Survivor Arcade Game/Spaceship/Spaceship_Still.png" id="8_8ff24"]
+[ext_resource type="Texture2D" uid="uid://ce0u7ha2lg71i" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_2.png" id="8_ahocn"]
+[ext_resource type="Texture2D" uid="uid://cddne6urgcwfi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3.png" id="9_dfbfm"]
+[ext_resource type="Texture2D" uid="uid://bjoad6dajfpl0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_1.png" id="9_hsbxs"]
+[ext_resource type="Texture2D" uid="uid://bphcmpfe5t3t4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_2.png" id="10_6mbw4"]
+[ext_resource type="Texture2D" uid="uid://blcimf7im3st0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5.png" id="10_j1wsb"]
+[ext_resource type="Texture2D" uid="uid://b6ih3l2fmf704" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_6.png" id="11_ptlv8"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/stats.gd" id="11_wsp7i"]
+[ext_resource type="Texture2D" uid="uid://dwxe0ifdh8ogi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_3.png" id="11_x52nq"]
+[ext_resource type="Texture2D" uid="uid://cm37km68b1hhq" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_7.png" id="12_6dfyw"]
+[ext_resource type="PackedScene" uid="uid://c1c303xb3t5gx" path="res://Survivor Arcade Game/Scenes/primary_fire.tscn" id="12_f6hhs"]
+[ext_resource type="FontFile" uid="uid://6phwuvbfmw4m" path="res://Survivor Arcade Game/Fonts/PixelatedEleganceRegular-ovyAA.ttf" id="12_wht5p"]
+[ext_resource type="Texture2D" uid="uid://bw8nuk3lvg35p" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_1.png" id="13_47yw0"]
+[ext_resource type="Texture2D" uid="uid://rowc27yceuie" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_8.png" id="13_mtaby"]
+[ext_resource type="Texture2D" uid="uid://da6qg06x0kjbb" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_2.png" id="14_76vhc"]
+[ext_resource type="Texture2D" uid="uid://djngs1la43hs8" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_9.png" id="14_xwo0c"]
+[ext_resource type="Texture2D" uid="uid://bd115g0gsrv0p" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_(Constant).png" id="15_663gc"]
+[ext_resource type="Texture2D" uid="uid://dt014vm2exkkx" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_3.png" id="15_sr2ou"]
+[ext_resource type="Texture2D" uid="uid://nccjg57jsxa3" path="res://Survivor Arcade Game/Stats UI/Fuel_Phase_1.png" id="16_1rys4"]
+[ext_resource type="Texture2D" uid="uid://kx22j0q7cmae" path="res://Survivor Arcade Game/Stats UI/Fuel_Phase_2.png" id="17_dmqka"]
+[ext_resource type="Texture2D" uid="uid://bqh4yk2mo0iml" path="res://Survivor Arcade Game/Stats UI/Fuel_Phase_3.png" id="18_0qt1g"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/player_hurt_box.gd" id="25_4wb8b"]
+[ext_resource type="Texture2D" uid="uid://dgrae8f6yug50" path="res://Survivor Arcade Game/Stats UI/HealthBarOverlay.png" id="27_wj2kg"]
+[ext_resource type="Texture2D" uid="uid://85j77ik1lmwt" path="res://Survivor Arcade Game/Stats UI/HealthBarPrimary.png" id="28_yefw5"]
+[ext_resource type="Texture2D" uid="uid://bh0cbh1jo75h1" path="res://Survivor Arcade Game/Stats UI/BoostBarOverlay.png" id="29_4jeg1"]
+[ext_resource type="Texture2D" uid="uid://tbluqq1wva8o" path="res://Survivor Arcade Game/Stats UI/BoostBarPrimary.png" id="30_0v0fr"]
+[ext_resource type="FontFile" uid="uid://bdepemwpxaq05" path="res://Survivor Arcade Game/Fonts/Racquetball Regular.ttf" id="33_u13d6"]
+[ext_resource type="Texture2D" uid="uid://c4ggyobw0vtn4" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_1.png" id="34_snxy1"]
+[ext_resource type="Texture2D" uid="uid://bc40rj3pmvfc1" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_2.png" id="35_ne64s"]
+[ext_resource type="Texture2D" uid="uid://c4wlkt82qytif" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_3.png" id="36_2042f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mmi0y"]
+radius = 3.7
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtq5x"]
+atlas = ExtResource("2_oqqi6")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilnve"]
+atlas = ExtResource("3_ts86v")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1exv1"]
+atlas = ExtResource("4_e82kw")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ckdm"]
+atlas = ExtResource("5_aeucu")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ejli"]
+atlas = ExtResource("6_b4asr")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67o46"]
+atlas = ExtResource("7_igvph")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1r5cl"]
+atlas = ExtResource("8_ahocn")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ct3x"]
+atlas = ExtResource("9_dfbfm")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7yev"]
+atlas = ExtResource("10_j1wsb")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jslv8"]
+atlas = ExtResource("11_ptlv8")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb20k"]
+atlas = ExtResource("12_6dfyw")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4aha"]
+atlas = ExtResource("13_mtaby")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18tud"]
+atlas = ExtResource("13_mtaby")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bd1rl"]
+atlas = ExtResource("14_xwo0c")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3ilw"]
+atlas = ExtResource("15_663gc")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rshbh"]
+atlas = ExtResource("4_1kdks")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7r74"]
+atlas = ExtResource("8_8ff24")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ml6j4"]
+atlas = ExtResource("4_1kdks")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ic4t"]
+atlas = ExtResource("8_8ff24")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5fc4"]
+atlas = ExtResource("9_hsbxs")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbmp3"]
+atlas = ExtResource("10_6mbw4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_enqhw"]
+atlas = ExtResource("11_x52nq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdmam"]
+atlas = ExtResource("4_1kdks")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1urb"]
+atlas = ExtResource("6_fv2jh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r77oq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtq5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilnve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1exv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ckdm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ejli")
+}],
+"loop": true,
+"name": &"BoostSlowdown",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67o46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1r5cl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ct3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7yev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jslv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yb20k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4aha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18tud")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bd1rl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3ilw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtq5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilnve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1exv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ckdm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ejli")
+}],
+"loop": false,
+"name": &"BoostSpeedup",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rshbh")
+}],
+"loop": true,
+"name": &"Constant",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7r74")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ml6j4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xc01x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fv2jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vt3d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8ff24")
+}],
+"loop": false,
+"name": &"Slowdown",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ic4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i5fc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbmp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_enqhw")
+}, {
+"duration": 6.2,
+"texture": SubResource("AtlasTexture_cdmam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xc01x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1urb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vt3d6")
+}],
+"loop": true,
+"name": &"Speedup",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uayac"]
+radius = 5.4
+
+[sub_resource type="Curve2D" id="Curve2D_om8rc"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 268, 104, 0, 0, 0, 0, 492.056, 103.749, 0, 0, 0, 0, 491.376, 174.758, 0, 0, 0, 0, 492.381, 356.732, 0, 0, 0, 0, 389.13, 356.732, 0, 0, 0, 0, 303.265, 355.334, 0, 0, 0, 0, 267.429, 356.732, 0, 0, 0, 0, 267.429, 100.946, 0, 0, 0, 0, 358, 105)
+}
+point_count = 9
+
+[sub_resource type="FontVariation" id="FontVariation_ii5kr"]
+base_font = ExtResource("33_u13d6")
+spacing_space = -4
+
+[sub_resource type="Animation" id="Animation_8hon3"]
+length = 0.001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_47yw0"), ExtResource("13_47yw0")]
+}
+
+[sub_resource type="Animation" id="Animation_fw754"]
+resource_name = "level2"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("14_76vhc")]
+}
+
+[sub_resource type="Animation" id="Animation_ibu4t"]
+resource_name = "level3"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("15_sr2ou")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v168g"]
+_data = {
+"RESET": SubResource("Animation_8hon3"),
+"level2": SubResource("Animation_fw754"),
+"level3": SubResource("Animation_ibu4t")
+}
+
+[sub_resource type="Animation" id="Animation_qfa52"]
+length = 0.001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("16_1rys4"), ExtResource("16_1rys4")]
+}
+
+[sub_resource type="Animation" id="Animation_o65n5"]
+resource_name = "level2"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("17_dmqka")]
+}
+
+[sub_resource type="Animation" id="Animation_xy8hd"]
+resource_name = "level3"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.733333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("18_0qt1g")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dic0b"]
+_data = {
+"RESET": SubResource("Animation_qfa52"),
+"level2": SubResource("Animation_o65n5"),
+"level3": SubResource("Animation_xy8hd")
+}
+
+[sub_resource type="FontVariation" id="FontVariation_lhe1w"]
+base_font = ExtResource("33_u13d6")
+spacing_space = -7
+
+[sub_resource type="Animation" id="Animation_vhome"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rooted/RootedPlayer/Rooted:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Rooted/RootedPlayer/Rooted:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_53fgi"]
+resource_name = "Rooted"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rooted/RootedPlayer/Rooted:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.122173]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Rooted/RootedPlayer/Rooted:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.533333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1.25, 1.25), Vector2(0.75, 0.75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Rooted/RootedPlayer/Rooted:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.733333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8y0l7"]
+_data = {
+"RESET": SubResource("Animation_vhome"),
+"Rooted": SubResource("Animation_53fgi")
+}
+
+[sub_resource type="GDScript" id="GDScript_cfgcw"]
+script/source = "extends Label
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7tl1"]
+atlas = ExtResource("34_snxy1")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awf1c"]
+atlas = ExtResource("35_ne64s")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydgmv"]
+atlas = ExtResource("36_2042f")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wepva"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.25,
+"texture": SubResource("AtlasTexture_g7tl1")
+}, {
+"duration": 1.25,
+"texture": SubResource("AtlasTexture_awf1c")
+}, {
+"duration": 8.0,
+"texture": SubResource("AtlasTexture_ydgmv")
+}],
+"loop": false,
+"name": &"Rooted",
+"speed": 5.0
+}]
+
+[node name="PlayerCharacter" type="CharacterBody2D"]
+position = Vector2(1000.98, 574.757)
+collision_layer = 1074528261
+collision_mask = 1074528271
+script = ExtResource("1_ittgt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.896606, 0.240016)
+shape = SubResource("CircleShape2D_mmi0y")
+
+[node name="Spaceship" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(-0.861267, 0.252136)
+sprite_frames = SubResource("SpriteFrames_r77oq")
+animation = &"BoostSpeedup"
+
+[node name="PrimaryFireLeft" parent="Spaceship" instance=ExtResource("12_f6hhs")]
+position = Vector2(-3.33299, -6.19042)
+collision_mask = 11
+
+[node name="PrimaryFireRight" parent="Spaceship" instance=ExtResource("12_f6hhs")]
+position = Vector2(4, -6.31631)
+
+[node name="HurtBox" type="Area2D" parent="Spaceship"]
+unique_name_in_owner = true
+position = Vector2(0, -3)
+collision_layer = 2432696335
+collision_mask = 2432696322
+script = ExtResource("25_4wb8b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+position = Vector2(-0.0233822, 3)
+shape = SubResource("CircleShape2D_uayac")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
+
+[node name="AlienPath2D" type="Path2D" parent="."]
+position = Vector2(-1078.85, -326.411)
+scale = Vector2(2.84504, 1.43088)
+curve = SubResource("Curve2D_om8rc")
+
+[node name="AlienPathFollow2D" type="PathFollow2D" parent="AlienPath2D"]
+unique_name_in_owner = true
+position = Vector2(362.023, 356.291)
+rotation = -3.12531
+progress = 607.408
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1005.2
+offset_top = -578.766
+offset_right = -851.197
+offset_bottom = -492.766
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(25, 25)
+
+[node name="stats" type="Container" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.382
+anchor_top = 0.375
+anchor_right = 0.382
+anchor_bottom = 0.375
+offset_left = 0.0119972
+offset_top = -0.090004
+offset_right = 0.0119972
+offset_bottom = -0.090004
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("11_wsp7i")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="UI/stats"]
+layer = 20
+
+[node name="KillCount" type="Label" parent="UI/stats/CanvasLayer"]
+unique_name_in_owner = true
+top_level = true
+z_index = 26
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -115.823
+offset_top = 152.879
+offset_right = -17.8232
+offset_bottom = 171.879
+grow_horizontal = 2
+scale = Vector2(2.4, 2.5)
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.928611, 0.00027603, 0.00014728, 0.819608)
+theme_override_colors/font_shadow_color = Color(0.129412, 0.0470588, 0.0235294, 0.92549)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_ii5kr")
+theme_override_font_sizes/font_size = 18
+text = "Kills: 0 / 20"
+horizontal_alignment = 1
+
+[node name="bosscount" type="Label" parent="UI/stats/CanvasLayer"]
+unique_name_in_owner = true
+visible = false
+top_level = true
+z_index = 12
+texture_filter = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 3.17126
+offset_top = -294.041
+offset_right = 83.1713
+offset_bottom = -278.041
+grow_vertical = 0
+scale = Vector2(2.635, 2.635)
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0.792157, 0.447059, 0.352941, 0.129412)
+theme_override_fonts/font = ExtResource("12_wht5p")
+theme_override_font_sizes/font_size = 18
+text = "Kills: 0"
+
+[node name="HealthBar" type="TextureProgressBar" parent="UI/stats/CanvasLayer"]
+unique_name_in_owner = true
+top_level = true
+z_index = 12
+texture_filter = 1
+offset_left = 19.8202
+offset_top = 23.7841
+offset_right = 41.8202
+offset_bottom = 67.7841
+scale = Vector2(22.265, 22.265)
+step = 0.0
+value = 100.0
+fill_mode = 3
+texture_over = ExtResource("27_wj2kg")
+texture_progress = ExtResource("28_yefw5")
+
+[node name="BoostBar" type="TextureProgressBar" parent="UI/stats/CanvasLayer"]
+unique_name_in_owner = true
+top_level = true
+z_index = 12
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -214.804
+offset_top = 14.8157
+offset_right = -192.804
+offset_bottom = 58.8157
+grow_horizontal = 0
+scale = Vector2(19.4109, 19.4501)
+step = 0.0
+value = 100.0
+fill_mode = 3
+texture_over = ExtResource("29_4jeg1")
+texture_progress = ExtResource("30_0v0fr")
+
+[node name="BoostRechargeSlow" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+unique_name_in_owner = true
+autostart = true
+
+[node name="BoostRechargeFast" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+unique_name_in_owner = true
+wait_time = 0.1
+
+[node name="SteadyDecrease" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+unique_name_in_owner = true
+wait_time = 0.1
+
+[node name="SteadyIncrease" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+unique_name_in_owner = true
+wait_time = 0.08
+
+[node name="LevelBorder" type="TextureRect" parent="UI/stats/CanvasLayer"]
+z_index = 24
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -219.462
+offset_right = -155.462
+offset_bottom = 64.0
+grow_horizontal = 2
+scale = Vector2(10, 10)
+size_flags_horizontal = 0
+texture = ExtResource("13_47yw0")
+
+[node name="levelborderanimations" type="AnimationPlayer" parent="UI/stats/CanvasLayer/LevelBorder"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_v168g")
+}
+autoplay = "RESET"
+
+[node name="CurrentLevel" type="Label" parent="UI/stats/CanvasLayer/LevelBorder"]
+unique_name_in_owner = true
+top_level = true
+z_index = 12
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -174.777
+offset_top = 44.0272
+offset_right = -131.777
+offset_bottom = 52.0272
+grow_horizontal = 2
+scale = Vector2(8.261, 8.261)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_wht5p")
+theme_override_font_sizes/font_size = 9
+text = "Level: 1"
+
+[node name="StardustBorder" type="TextureRect" parent="UI/stats/CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.022
+anchor_top = 1.0
+anchor_right = 0.022
+anchor_bottom = 1.0
+offset_left = -307.674
+offset_top = -425.63
+offset_right = -243.674
+offset_bottom = -361.63
+grow_vertical = 0
+scale = Vector2(7.38323, 7.38323)
+texture = ExtResource("16_1rys4")
+
+[node name="stardustborderanimations" type="AnimationPlayer" parent="UI/stats/CanvasLayer/StardustBorder"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_dic0b")
+}
+autoplay = "RESET"
+
+[node name="StardustAcquired" type="Label" parent="UI/stats/CanvasLayer/StardustBorder"]
+unique_name_in_owner = true
+top_level = true
+z_index = 13
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.071
+anchor_top = 1.0
+anchor_right = 0.071
+anchor_bottom = 1.0
+offset_left = -90.8862
+offset_top = -190.646
+offset_right = -34.8862
+offset_bottom = -170.646
+grow_vertical = 0
+scale = Vector2(7.77654, 7.77654)
+theme_override_colors/font_shadow_color = Color(0.792157, 0.447059, 0.352941, 0.129412)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = SubResource("FontVariation_lhe1w")
+theme_override_font_sizes/font_size = 19
+text = "0"
+
+[node name="StatusHolder" type="Node" parent="."]
+
+[node name="Rooted" type="Node" parent="StatusHolder"]
+
+[node name="RootedPlayer" type="AnimationPlayer" parent="StatusHolder/Rooted"]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8y0l7")
+}
+
+[node name="Rooted" type="Label" parent="StatusHolder/Rooted/RootedPlayer"]
+unique_name_in_owner = true
+visible = false
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.257
+anchor_right = 0.25
+anchor_bottom = 0.257
+offset_left = 3.08978
+offset_top = -39.8406
+offset_right = 63.0898
+offset_bottom = -16.8406
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.122173
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("33_u13d6")
+theme_override_font_sizes/font_size = 10
+text = "Rooted!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+script = SubResource("GDScript_cfgcw")
+metadata/_edit_use_anchors_ = true
+
+[node name="RootedAnimation" type="AnimatedSprite2D" parent="StatusHolder/Rooted"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(960.287, 552.858)
+rotation = 0.000104347
+scale = Vector2(1.29079, 1.29079)
+sprite_frames = SubResource("SpriteFrames_wepva")
+animation = &"Rooted"
+frame_progress = 0.911903
+
+[node name="Zapped" type="Node" parent="StatusHolder"]
+
+[connection signal="playerhealth_depleted" from="." to="." method="_on_playerhealth_depleted"]
+[connection signal="area_entered" from="Spaceship/HurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="body_entered" from="Spaceship/HurtBox" to="." method="_on_hurt_box_body_entered"]
+[connection signal="player_rooted" from="Spaceship/HurtBox" to="." method="_on_hurt_box_player_rooted"]
+[connection signal="healthpack" from="UI/stats" to="." method="_on_stats_healthpack"]
+[connection signal="level2" from="UI/stats" to="." method="_on_stats_level_2"]
+[connection signal="level3" from="UI/stats" to="." method="_on_stats_level_3"]
+[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/BoostRechargeSlow" to="." method="_on_boost_recharge_timeout"]
+[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/BoostRechargeSlow" to="." method="_on_boost_recharge_slow_timeout"]
+[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/BoostRechargeFast" to="." method="_on_boost_recharge_fast_timeout"]
+[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/SteadyDecrease" to="." method="_on_steady_decrease_timeout"]
+[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/SteadyIncrease" to="." method="_on_steady_increase_timeout"]
+[connection signal="ready" from="StatusHolder/Rooted/RootedPlayer/Rooted" to="StatusHolder/Rooted/RootedPlayer/Rooted" method="_on_ready"]

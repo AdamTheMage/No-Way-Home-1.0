@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyqgifqliawtp"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/stardust.gd" id="1_7ckd4"]
+[ext_resource type="Texture2D" uid="uid://cotjcki1hi10u" path="res://Survivor Arcade Game/Stats UI/Starfuel.png" id="1_88mam"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xyqua"]
+radius = 6.0
+
+[node name="Stardust" type="Area2D"]
+collision_layer = 524288
+collision_mask = 524288
+script = ExtResource("1_7ckd4")
+
+[node name="Starfuel Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_88mam")
+
+[node name="Starfuel Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_xyqua")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

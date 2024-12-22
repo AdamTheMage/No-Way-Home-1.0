@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw0p5xuuj2cam"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/heavy_projectile.gd" id="1_36th0"]
+[ext_resource type="Texture2D" uid="uid://cfw1qfa7583e0" path="res://Survivor Arcade Game/Weapons/Heavy_Projectile.png" id="2_4qgms"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eotw4"]
+size = Vector2(1.00752, 1)
+
+[node name="HeavyProjectile" type="Area2D"]
+top_level = true
+texture_filter = 1
+rotation = -3.14159
+collision_layer = 0
+collision_mask = 66
+script = ExtResource("1_36th0")
+
+[node name="Projectile" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2, -0.457727)
+rotation = 1.5708
+scale = Vector2(0.484425, 0.484425)
+texture = ExtResource("2_4qgms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.50376, -0.5)
+shape = SubResource("RectangleShape2D_eotw4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
