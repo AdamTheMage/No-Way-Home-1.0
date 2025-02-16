@@ -6,6 +6,9 @@ var scene_to_load_path
 var loading_screen_scene_instance
 var loading = false
 
+#func _ready() :
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED_HIDDEN) #####################
+
 func load_scene(path) :
 	var current_scene = get_tree().current_scene
 	

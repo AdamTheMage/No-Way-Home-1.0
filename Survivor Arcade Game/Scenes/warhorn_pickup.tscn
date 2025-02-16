@@ -1,0 +1,233 @@
+[gd_scene load_steps=11 format=3 uid="uid://y88e0x0g08or"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/warhorn_pickup.gd" id="1_qx8vy"]
+[ext_resource type="Texture2D" uid="uid://cvjrtctw2kpbo" path="res://Survivor Arcade Game/Weapons/Warhorn_Spaceship.png" id="2_nekff"]
+
+[sub_resource type="Animation" id="Animation_78yif"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("warhornpickupsprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-10, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("warhornpickupsprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-10, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-10, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_w1165"]
+resource_name = "drop_left"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("warhornpickupsprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(5, -13), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("warhornpickupsprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -3.14159, -6.28319, -9.42478, -12.5664]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jjkpb"]
+resource_name = "drop_right"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("warhornpickupsprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(-5, -13), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("warhornpickupsprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 3.14159, 6.28319, 9.42478, 12.5664]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i8vgo"]
+_data = {
+"RESET": SubResource("Animation_78yif"),
+"drop_left": SubResource("Animation_w1165"),
+"drop_right": SubResource("Animation_jjkpb")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_23b1v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgqfe"]
+atlas = ExtResource("2_nekff")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hu6xm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgqfe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tuuso"]
+radius = 38.4708
+
+[node name="Warhorn Pickup" type="Area2D"]
+scale = Vector2(0.865904, 0.865904)
+collision_layer = 262144
+collision_mask = 262144
+script = ExtResource("1_qx8vy")
+
+[node name="warhornspin" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_i8vgo")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 0)
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CircleShape2D_23b1v")
+
+[node name="warhornpickupsprite" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-10, 0)
+sprite_frames = SubResource("SpriteFrames_hu6xm")
+
+[node name="magnetarea" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-10, 0)
+scale = Vector2(1.31287, 1.31287)
+
+[node name="magnetcollision" type="CollisionShape2D" parent="magnetarea"]
+scale = Vector2(0.591381, 0.591381)
+shape = SubResource("CircleShape2D_tuuso")
+
+[node name="directionupdater" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="DespawnTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="animation_finished" from="warhornspin" to="." method="_on_warhornspin_animation_finished"]
+[connection signal="body_entered" from="magnetarea" to="." method="_on_magnetarea_body_entered"]
+[connection signal="body_exited" from="magnetarea" to="." method="_on_magnetarea_body_exited"]
+[connection signal="timeout" from="directionupdater" to="." method="_on_directionupdater_timeout"]
+[connection signal="timeout" from="DespawnTimer" to="." method="_on_despawn_timer_timeout"]

@@ -1,0 +1,484 @@
+[gd_scene load_steps=69 format=3 uid="uid://5frrth7ld0xn"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/lightning_hellfire.gd" id="1_tg1mr"]
+[ext_resource type="Texture2D" uid="uid://dra1m40ecjeww" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_17.png" id="1_ydtl4"]
+[ext_resource type="Texture2D" uid="uid://bncdnklxgwrxa" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_16.png" id="2_bkl66"]
+[ext_resource type="Texture2D" uid="uid://cq33s3rtw2v6l" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_15.png" id="3_pqk6t"]
+[ext_resource type="Texture2D" uid="uid://dkvivov7c04r2" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_14.png" id="4_guw52"]
+[ext_resource type="Texture2D" uid="uid://cisn1473b0syr" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_13.png" id="5_0etmw"]
+[ext_resource type="Texture2D" uid="uid://0pqlophjuutx" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_12.png" id="6_j7hc5"]
+[ext_resource type="Texture2D" uid="uid://b6fyrvi0bk235" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_11.png" id="7_1u4u1"]
+[ext_resource type="Texture2D" uid="uid://ct4xhy50q3f7m" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_10.png" id="8_g4nkk"]
+[ext_resource type="Texture2D" uid="uid://b6bi1aviw4nrr" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_9.png" id="9_4nvvr"]
+[ext_resource type="Texture2D" uid="uid://bkm5h35wtjooo" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_8.png" id="10_5tg75"]
+[ext_resource type="Texture2D" uid="uid://cvvigw4etnyuv" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_7.png" id="11_k4ys5"]
+[ext_resource type="Texture2D" uid="uid://xyv72swmtc6q" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_6.png" id="12_o6hr4"]
+[ext_resource type="Texture2D" uid="uid://d245g6di66uo1" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_5.png" id="13_4oqtf"]
+[ext_resource type="Texture2D" uid="uid://ce2rqnj72t0lq" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_4.png" id="14_6qdq0"]
+[ext_resource type="Texture2D" uid="uid://c0fbave5besby" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_3.png" id="15_dil7v"]
+[ext_resource type="Texture2D" uid="uid://ccbx7hkybkcbh" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_2.png" id="16_cvn1g"]
+[ext_resource type="Texture2D" uid="uid://d0twoubxooaha" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_1.png" id="17_xjelo"]
+[ext_resource type="Texture2D" uid="uid://de70qip6jr4jt" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_0.png" id="18_31i2n"]
+[ext_resource type="Texture2D" uid="uid://crsk86ftw1c4l" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_1.png" id="20_8wheh"]
+[ext_resource type="Texture2D" uid="uid://iqbuldk6msk8" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_2.png" id="21_o64r3"]
+[ext_resource type="Texture2D" uid="uid://japhw16dyxge" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_3.png" id="22_rlplu"]
+[ext_resource type="Texture2D" uid="uid://smpsrggf226k" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_4.png" id="23_0v76b"]
+[ext_resource type="Texture2D" uid="uid://c08cck7kagwcx" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_5.png" id="24_eglpi"]
+[ext_resource type="Texture2D" uid="uid://beyo0ev0bjupu" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_6.png" id="25_5o55x"]
+[ext_resource type="Texture2D" uid="uid://cjjm6npsya4xt" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_7.png" id="26_tbcic"]
+[ext_resource type="Texture2D" uid="uid://r1p6o858erqs" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_8.png" id="27_lrpkt"]
+[ext_resource type="Texture2D" uid="uid://c8r1ulw503inh" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Going_9.png" id="28_igl5q"]
+[ext_resource type="FontFile" uid="uid://bdepemwpxaq05" path="res://Survivor Arcade Game/Fonts/Racquetball Regular.ttf" id="32_hro57"]
+[ext_resource type="Texture2D" uid="uid://d0fvq0188th8u" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Warning_2.png" id="32_ijscx"]
+[ext_resource type="Texture2D" uid="uid://c87snyhnrhywh" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Warning_1.png" id="33_kowuv"]
+[ext_resource type="Texture2D" uid="uid://duu6eus7k4ddm" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Warning_0.png" id="34_41cdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s02xe"]
+size = Vector2(14, 41.3439)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lclbd"]
+atlas = ExtResource("32_ijscx")
+region = Rect2(0, 0, 34, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evlh5"]
+atlas = ExtResource("33_kowuv")
+region = Rect2(0, 0, 34, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emd01"]
+atlas = ExtResource("34_41cdr")
+region = Rect2(0, 0, 34, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_binln"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_lclbd")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_evlh5")
+}, {
+"duration": 20.0,
+"texture": SubResource("AtlasTexture_emd01")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_evlh5")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_lclbd")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"warning",
+"speed": 16.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_peboa"]
+atlas = ExtResource("1_ydtl4")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07s62"]
+atlas = ExtResource("2_bkl66")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mortc"]
+atlas = ExtResource("3_pqk6t")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gthma"]
+atlas = ExtResource("4_guw52")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h5ex"]
+atlas = ExtResource("5_0etmw")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvjq3"]
+atlas = ExtResource("6_j7hc5")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qu1u1"]
+atlas = ExtResource("7_1u4u1")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boobf"]
+atlas = ExtResource("8_g4nkk")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_558oi"]
+atlas = ExtResource("9_4nvvr")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nta3f"]
+atlas = ExtResource("10_5tg75")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8n1i8"]
+atlas = ExtResource("11_k4ys5")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lqy8"]
+atlas = ExtResource("12_o6hr4")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fa7ay"]
+atlas = ExtResource("13_4oqtf")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65ltl"]
+atlas = ExtResource("14_6qdq0")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4q7i"]
+atlas = ExtResource("15_dil7v")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h632a"]
+atlas = ExtResource("16_cvn1g")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7mxe"]
+atlas = ExtResource("17_xjelo")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qkvt3"]
+atlas = ExtResource("18_31i2n")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ng3k"]
+atlas = ExtResource("20_8wheh")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52mdx"]
+atlas = ExtResource("21_o64r3")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_854kb"]
+atlas = ExtResource("22_rlplu")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3bbd"]
+atlas = ExtResource("23_0v76b")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhrtk"]
+atlas = ExtResource("24_eglpi")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te2h1"]
+atlas = ExtResource("25_5o55x")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo4nh"]
+atlas = ExtResource("26_tbcic")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rh4yn"]
+atlas = ExtResource("27_lrpkt")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjhbx"]
+atlas = ExtResource("28_igl5q")
+region = Rect2(0, 0, 21, 83)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l13b3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_peboa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07s62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mortc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gthma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h5ex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gvjq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qu1u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boobf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_558oi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nta3f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8n1i8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2lqy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fa7ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65ltl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4q7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h632a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7mxe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qkvt3")
+}, {
+"duration": 24.0,
+"texture": SubResource("AtlasTexture_qkvt3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ng3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52mdx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_854kb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c3bbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhrtk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te2h1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo4nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rh4yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjhbx")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"lightning",
+"speed": 30.0
+}]
+
+[sub_resource type="Animation" id="Animation_xr0vq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fried:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Fried!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fried:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fried:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.556251, 0.912191, 0.999071, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fried:theme_override_colors/font_shadow_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.541176, 0.690196, 1, 0.0901961)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Fried:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5habg"]
+resource_name = "fried"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fried:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["Fried!", "Fried!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fried:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1.5, 1.5), Vector2(0.75, 0.75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fried:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.556251, 0.912191, 0.999071, 1), Color(0.556251, 0.912191, 0.999071, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fried:theme_override_colors/font_shadow_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.541176, 0.690196, 1, 0.0901961), Color(0.541176, 0.690196, 1, 0.0901961)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Fried:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.733333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5tto4"]
+_data = {
+"RESET": SubResource("Animation_xr0vq"),
+"fried": SubResource("Animation_5habg")
+}
+
+[node name="LightningHellfire" type="Area2D"]
+scale = Vector2(0.653059, 0.653059)
+collision_layer = 0
+script = ExtResource("1_tg1mr")
+
+[node name="lightningcollision" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(2, -20.6719)
+shape = SubResource("RectangleShape2D_s02xe")
+disabled = true
+
+[node name="warninganimation" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+z_index = 10
+position = Vector2(1.53126, -13.7813)
+scale = Vector2(0.709236, 0.709236)
+sprite_frames = SubResource("SpriteFrames_binln")
+animation = &"warning"
+autoplay = "warning"
+frame = 2
+frame_progress = 0.186138
+
+[node name="lightninganimation" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 8
+position = Vector2(1, -41)
+scale = Vector2(1.25, 1)
+sprite_frames = SubResource("SpriteFrames_l13b3")
+animation = &"lightning"
+frame = 18
+frame_progress = 0.241394
+
+[node name="lightninghellfireended" type="Timer" parent="."]
+wait_time = 3.65
+autostart = true
+
+[node name="lightningburrowbegin" type="Timer" parent="."]
+wait_time = 2.4
+one_shot = true
+autostart = true
+
+[node name="lightningbegin" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="FriedPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_5tto4")
+}
+
+[node name="Fried" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 8
+offset_left = 27.5626
+offset_top = -47.4689
+offset_right = 87.5626
+offset_bottom = -24.4689
+rotation = 0.12188
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0.556251, 0.912191, 0.999071, 1)
+theme_override_colors/font_shadow_color = Color(0.541176, 0.690196, 1, 0.0901961)
+theme_override_fonts/font = ExtResource("32_hro57")
+theme_override_font_sizes/font_size = 10
+text = "Fried!"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="lightninghellfireended" to="." method="_on_lightninghellfireended_timeout"]
+[connection signal="timeout" from="lightningburrowbegin" to="." method="_on_lightningburrowbegin_timeout"]
+[connection signal="timeout" from="lightningbegin" to="." method="_on_lightningbegin_timeout"]

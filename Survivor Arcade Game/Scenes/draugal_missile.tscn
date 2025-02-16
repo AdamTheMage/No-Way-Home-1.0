@@ -4,18 +4,30 @@
 [ext_resource type="Texture2D" uid="uid://ub3af22lpqqy" path="res://Survivor Arcade Game/Aliens/Draugal_Missile.png" id="1_rojm1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ohxi"]
-size = Vector2(8, 5)
+size = Vector2(10, 7)
 
 [node name="MissileArea" type="Area2D"]
-collision_layer = 1073741824
-collision_mask = 1073741824
+collision_layer = 16
+collision_mask = 17
 script = ExtResource("1_cwy4l")
 
 [node name="Missile" type="Sprite2D" parent="."]
 texture = ExtResource("1_rojm1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(-1, -0.5)
 shape = SubResource("RectangleShape2D_7ohxi")
 
+[node name="particlerelease" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="3hittimer" type="Timer" parent="."]
+wait_time = 1.25
+one_shot = true
+autostart = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="particlerelease" to="." method="_on_particlerelease_timeout"]
+[connection signal="timeout" from="3hittimer" to="." method="_on_hittimer_timeout"]

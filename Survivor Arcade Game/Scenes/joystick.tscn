@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgcla2ne60fnj"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/joystick.gd" id="1_cq3xj"]
+[ext_resource type="Texture2D" uid="uid://b4braduggtgib" path="res://Survivor Arcade Game/Pocket Edition/Menu_Joystick_Outer.png" id="1_sat17"]
+[ext_resource type="Texture2D" uid="uid://pixvkc526eeq" path="res://Survivor Arcade Game/Pocket Edition/Menu_Joystick.png" id="2_3m1ho"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/knob.gd" id="4_cw4fg"]
+
+[node name="Joystick" type="Node2D"]
+script = ExtResource("1_cq3xj")
+
+[node name="MenuJoystickOuter" type="Sprite2D" parent="."]
+texture = ExtResource("1_sat17")
+
+[node name="MenuJoystickKnob" type="Sprite2D" parent="."]
+texture = ExtResource("2_3m1ho")
+script = ExtResource("4_cw4fg")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -10.0
+offset_top = -9.0
+offset_right = 11.0
+offset_bottom = 13.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="Button" to="MenuJoystickKnob" method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="MenuJoystickKnob" method="_on_button_button_up"]

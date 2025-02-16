@@ -1,221 +1,259 @@
-[gd_scene load_steps=88 format=3 uid="uid://cswdupvttg62o"]
+[gd_scene load_steps=144 format=3 uid="uid://cswdupvttg62o"]
 
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/player.gd" id="1_ittgt"]
-[ext_resource type="Texture2D" uid="uid://jc5n6aslueqi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_1_Slow.png" id="2_oqqi6"]
-[ext_resource type="Texture2D" uid="uid://df54l85y80pwb" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_2_Slow.png" id="3_ts86v"]
-[ext_resource type="Texture2D" uid="uid://bx7bdhou8bui4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_4(Constant).png" id="4_1kdks"]
-[ext_resource type="Texture2D" uid="uid://bf77saf5lxtm3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3_Slow.png" id="4_e82kw"]
-[ext_resource type="Texture2D" uid="uid://ce7mcdhqcpid6" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_4_Slow.png" id="5_aeucu"]
-[ext_resource type="Texture2D" uid="uid://cqvgou3ylpv4x" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_5.png" id="5_xc01x"]
-[ext_resource type="Texture2D" uid="uid://cibfllljghskp" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5_Slow.png" id="6_b4asr"]
-[ext_resource type="Texture2D" uid="uid://cj4qnhei3o83e" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_6.png" id="6_fv2jh"]
-[ext_resource type="Texture2D" uid="uid://b6jkhhimndwv3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_1.png" id="7_igvph"]
-[ext_resource type="Texture2D" uid="uid://drda3gbtoc2un" path="res://Survivor Arcade Game/Spaceship/Spaceship_Slowing_7.png" id="7_vt3d6"]
-[ext_resource type="Texture2D" uid="uid://c42s5jhmufnon" path="res://Survivor Arcade Game/Spaceship/Spaceship_Still.png" id="8_8ff24"]
-[ext_resource type="Texture2D" uid="uid://ce0u7ha2lg71i" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_2.png" id="8_ahocn"]
-[ext_resource type="Texture2D" uid="uid://cddne6urgcwfi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3.png" id="9_dfbfm"]
-[ext_resource type="Texture2D" uid="uid://bjoad6dajfpl0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_1.png" id="9_hsbxs"]
-[ext_resource type="Texture2D" uid="uid://bphcmpfe5t3t4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_2.png" id="10_6mbw4"]
-[ext_resource type="Texture2D" uid="uid://blcimf7im3st0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5.png" id="10_j1wsb"]
-[ext_resource type="Texture2D" uid="uid://b6ih3l2fmf704" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_6.png" id="11_ptlv8"]
+[ext_resource type="Texture2D" uid="uid://bu3vkfngmffua" path="res://Survivor Arcade Game/Spaceship/Spaceship_Corrupted_32x32.png" id="2_tppkp"]
+[ext_resource type="Texture2D" uid="uid://4kh7siguioym" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boost_Slowing_32x32_1.png" id="2_ugmvx"]
+[ext_resource type="Texture2D" uid="uid://di1ao7ggyns21" path="res://Survivor Arcade Game/Spaceship/Spaceship_Crushed_32x32.png" id="3_3j1p7"]
+[ext_resource type="Texture2D" uid="uid://bifpk0u70xs04" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boost_Slowing_32x32_2.png" id="3_drdvg"]
+[ext_resource type="Texture2D" uid="uid://dd0oudv57tcp1" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boost_Slowing_32x32_3.png" id="4_sqj6y"]
+[ext_resource type="Texture2D" uid="uid://c66q2c4pp47af" path="res://Survivor Arcade Game/Spaceship/Spaceship_Being_Damaged_32x32.png" id="5_fdko0"]
+[ext_resource type="Texture2D" uid="uid://bm0jkqq4f1e6n" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boost_Slowing_32x32_4.png" id="5_hmupw"]
+[ext_resource type="Texture2D" uid="uid://4tu0k2eqse88" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boost_Slowing_32x32_5.png" id="6_invgm"]
+[ext_resource type="Texture2D" uid="uid://cicrl3en6pitd" path="res://Survivor Arcade Game/Spaceship/Spaceship_Shocked_32x32.png" id="6_iwi37"]
+[ext_resource type="Texture2D" uid="uid://dwks81m7i4xsx" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boost_Slowing_32x32_6.png" id="7_3ulm0"]
+[ext_resource type="Texture2D" uid="uid://cu1kj4bhsm8me" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32_6.png" id="8_tf6mu"]
+[ext_resource type="Texture2D" uid="uid://3uc0fa7g8oim" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32_5.png" id="9_iclu1"]
+[ext_resource type="Texture2D" uid="uid://cuwckf3wdlsb0" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32_4.png" id="10_dmsnf"]
+[ext_resource type="Texture2D" uid="uid://c4e6ncw1h8tua" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32_3.png" id="11_vfb8w"]
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/stats.gd" id="11_wsp7i"]
-[ext_resource type="Texture2D" uid="uid://dwxe0ifdh8ogi" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_3.png" id="11_x52nq"]
-[ext_resource type="Texture2D" uid="uid://cm37km68b1hhq" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_7.png" id="12_6dfyw"]
 [ext_resource type="PackedScene" uid="uid://c1c303xb3t5gx" path="res://Survivor Arcade Game/Scenes/primary_fire.tscn" id="12_f6hhs"]
+[ext_resource type="Texture2D" uid="uid://dxvvnepptvfjt" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32_2.png" id="12_llki6"]
 [ext_resource type="FontFile" uid="uid://6phwuvbfmw4m" path="res://Survivor Arcade Game/Fonts/PixelatedEleganceRegular-ovyAA.ttf" id="12_wht5p"]
 [ext_resource type="Texture2D" uid="uid://bw8nuk3lvg35p" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_1.png" id="13_47yw0"]
-[ext_resource type="Texture2D" uid="uid://rowc27yceuie" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_8.png" id="13_mtaby"]
+[ext_resource type="Texture2D" uid="uid://b3n4c08g0b3m" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32_1.png" id="13_nimcm"]
 [ext_resource type="Texture2D" uid="uid://da6qg06x0kjbb" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_2.png" id="14_76vhc"]
-[ext_resource type="Texture2D" uid="uid://djngs1la43hs8" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_9.png" id="14_xwo0c"]
-[ext_resource type="Texture2D" uid="uid://bd115g0gsrv0p" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_(Constant).png" id="15_663gc"]
+[ext_resource type="Texture2D" uid="uid://mjxu0ran3frl" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Boosting_32x32.png" id="14_87kuo"]
 [ext_resource type="Texture2D" uid="uid://dt014vm2exkkx" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_3.png" id="15_sr2ou"]
-[ext_resource type="Texture2D" uid="uid://nccjg57jsxa3" path="res://Survivor Arcade Game/Stats UI/Fuel_Phase_1.png" id="16_1rys4"]
-[ext_resource type="Texture2D" uid="uid://kx22j0q7cmae" path="res://Survivor Arcade Game/Stats UI/Fuel_Phase_2.png" id="17_dmqka"]
-[ext_resource type="Texture2D" uid="uid://bqh4yk2mo0iml" path="res://Survivor Arcade Game/Stats UI/Fuel_Phase_3.png" id="18_0qt1g"]
+[ext_resource type="Texture2D" uid="uid://dro5oa77nywg4" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_0.png" id="16_1s3kj"]
+[ext_resource type="Texture2D" uid="uid://drwg3yo4wh8y5" path="res://Survivor Arcade Game/Spaceship/Spaceship_Still_32x32.png" id="17_aww2y"]
+[ext_resource type="Texture2D" uid="uid://cld5kvqn3ucqr" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Stopping_32x32_1.png" id="17_of8hj"]
+[ext_resource type="Texture2D" uid="uid://cmpngbgrwdey8" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Stopping_32x32_2.png" id="18_76jv2"]
+[ext_resource type="Texture2D" uid="uid://117vtrnj5eri" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Stopping_32x32_3.png" id="19_i0er1"]
+[ext_resource type="Texture2D" uid="uid://ceyy7tuca0uo4" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Stopping_32x32_4.png" id="20_xdjw1"]
+[ext_resource type="Texture2D" uid="uid://dfho6du2f6wn4" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Stopping_32x32_5.png" id="21_ch7sn"]
+[ext_resource type="Texture2D" uid="uid://d6llw0p4powx" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_6.png" id="22_c65l2"]
+[ext_resource type="Texture2D" uid="uid://endpitrgc0nq" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_5.png" id="23_w00y2"]
+[ext_resource type="Texture2D" uid="uid://dlm4p7lp8mk5s" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_4.png" id="24_25fk6"]
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/player_hurt_box.gd" id="25_4wb8b"]
-[ext_resource type="Texture2D" uid="uid://dgrae8f6yug50" path="res://Survivor Arcade Game/Stats UI/HealthBarOverlay.png" id="27_wj2kg"]
-[ext_resource type="Texture2D" uid="uid://85j77ik1lmwt" path="res://Survivor Arcade Game/Stats UI/HealthBarPrimary.png" id="28_yefw5"]
+[ext_resource type="Texture2D" uid="uid://y5a2bas8mbej" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_3.png" id="25_5bv24"]
+[ext_resource type="Texture2D" uid="uid://3rhea8e1f4sv" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_2.png" id="26_cna3r"]
+[ext_resource type="Texture2D" uid="uid://ml7p1axv0b4y" path="res://Survivor Arcade Game/Pocket Edition/Spaceship_Moving_32x32_1.png" id="27_k780e"]
 [ext_resource type="Texture2D" uid="uid://bh0cbh1jo75h1" path="res://Survivor Arcade Game/Stats UI/BoostBarOverlay.png" id="29_4jeg1"]
 [ext_resource type="Texture2D" uid="uid://tbluqq1wva8o" path="res://Survivor Arcade Game/Stats UI/BoostBarPrimary.png" id="30_0v0fr"]
+[ext_resource type="Texture2D" uid="uid://uvfdfodns16f" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_32x32_1.png" id="32_y2nww"]
+[ext_resource type="Texture2D" uid="uid://ce3tnffbnbr47" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lenurcher_Background.png" id="33_0yoqo"]
+[ext_resource type="Texture2D" uid="uid://f5f51igd572q" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_32x32_2.png" id="33_n14sm"]
+[ext_resource type="Texture2D" uid="uid://b3crbsypmsiu7" path="res://Survivor Arcade Game/Stats UI/HealthBar_Background.png" id="33_ojyok"]
 [ext_resource type="FontFile" uid="uid://bdepemwpxaq05" path="res://Survivor Arcade Game/Fonts/Racquetball Regular.ttf" id="33_u13d6"]
-[ext_resource type="Texture2D" uid="uid://c4ggyobw0vtn4" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_1.png" id="34_snxy1"]
-[ext_resource type="Texture2D" uid="uid://bc40rj3pmvfc1" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_2.png" id="35_ne64s"]
-[ext_resource type="Texture2D" uid="uid://c4wlkt82qytif" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_3.png" id="36_2042f"]
+[ext_resource type="Texture2D" uid="uid://dq0ywkpepd51p" path="res://Survivor Arcade Game/Stats UI/HealthBar_Just_Overlay.png" id="34_jbpej"]
+[ext_resource type="Texture2D" uid="uid://bbofyi2jybceu" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lenurcher_Overlay.png" id="34_jf4be"]
+[ext_resource type="Texture2D" uid="uid://emhepkw6qea8" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_32x32_3.png" id="34_uya8x"]
+[ext_resource type="Texture2D" uid="uid://ommg80ibl17s" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lenurcher_Health_Only.png" id="35_6yj6e"]
+[ext_resource type="Texture2D" uid="uid://bpk24t0bfhdxi" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_32x32_4.png" id="35_t0a82"]
+[ext_resource type="Texture2D" uid="uid://dqi4gtghkysqx" path="res://Survivor Arcade Game/Stats UI/HealthBar.png" id="35_x5pxe"]
+[ext_resource type="Texture2D" uid="uid://yxnqoqf6ir4f" path="res://Survivor Arcade Game/Effects/Spaceship_Captured_32x32_5_.png.png" id="36_2pgbh"]
+[ext_resource type="Texture2D" uid="uid://bop0fiyg6row2" path="res://Survivor Arcade Game/Stats UI/Stats_Phase_4.png" id="36_rlr6m"]
+[ext_resource type="Texture2D" uid="uid://cowj7iq3aohw1" path="res://Survivor Arcade Game/Stats UI/Bar_Background_Lv1&2.png" id="39_4pd1u"]
+[ext_resource type="Texture2D" uid="uid://dduhrflnilp5s" path="res://Survivor Arcade Game/Stats UI/Soul_Overlay_Lv1&2.png" id="40_gw1ao"]
+[ext_resource type="Texture2D" uid="uid://81bdeqiivm2h" path="res://Survivor Arcade Game/Stats UI/Bar_Lv1&2.png" id="41_0iodp"]
+[ext_resource type="PackedScene" uid="uid://dgcla2ne60fnj" path="res://Survivor Arcade Game/Scenes/joystick.tscn" id="57_afqhq"]
+[ext_resource type="Texture2D" uid="uid://d4bvr35ggcmrj" path="res://Survivor Arcade Game/Pocket Edition/Fire_L 2.png" id="58_4bjgd"]
+[ext_resource type="Texture2D" uid="uid://b1jv6jhhrxcvv" path="res://Survivor Arcade Game/Pocket Edition/Boost_Button_Pressed.png" id="59_ovmn8"]
+[ext_resource type="Texture2D" uid="uid://dxgjbnvhmoidk" path="res://Survivor Arcade Game/Pocket Edition/Fire_L.png" id="60_h8adv"]
+[ext_resource type="Texture2D" uid="uid://p2qqyhfpa2g4" path="res://Survivor Arcade Game/Pocket Edition/Fire_L_Button_Pressed.png" id="61_x27k6"]
+[ext_resource type="Texture2D" uid="uid://ev0ccdb3b187" path="res://Survivor Arcade Game/Pocket Edition/_Fire_R_Button.png" id="62_0gt48"]
+[ext_resource type="Texture2D" uid="uid://bl7em8yco2nar" path="res://Survivor Arcade Game/Pocket Edition/_Fire_R_Button_Pressed.png" id="63_f5chk"]
+[ext_resource type="Texture2D" uid="uid://bfavwk2pokdec" path="res://Survivor Arcade Game/Pocket Edition/Menu_Pause.png" id="64_bcnjj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mmi0y"]
-radius = 3.7
+[sub_resource type="CircleShape2D" id="CircleShape2D_nx7kt"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xtq5x"]
-atlas = ExtResource("2_oqqi6")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qg61"]
+size = Vector2(265.857, 692.804)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ilnve"]
-atlas = ExtResource("3_ts86v")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fp7ni"]
+size = Vector2(1344.6, 131.44)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1exv1"]
-atlas = ExtResource("4_e82kw")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j1ejb"]
+size = Vector2(644.359, 8.60547)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ckdm"]
-atlas = ExtResource("5_aeucu")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ehuux"]
+size = Vector2(636.868, 11.0787)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3ejli"]
-atlas = ExtResource("6_b4asr")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cs77t"]
+size = Vector2(372.281, 20)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_67o46"]
-atlas = ExtResource("7_igvph")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubj02"]
+size = Vector2(376.858, 20)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1r5cl"]
-atlas = ExtResource("8_ahocn")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_3et57"]
+atlas = ExtResource("2_ugmvx")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ct3x"]
-atlas = ExtResource("9_dfbfm")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_laxbb"]
+atlas = ExtResource("3_drdvg")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_c7yev"]
-atlas = ExtResource("10_j1wsb")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_0a4kk"]
+atlas = ExtResource("4_sqj6y")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jslv8"]
-atlas = ExtResource("11_ptlv8")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpvaj"]
+atlas = ExtResource("5_hmupw")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yb20k"]
-atlas = ExtResource("12_6dfyw")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w72iu"]
+atlas = ExtResource("6_invgm")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u4aha"]
-atlas = ExtResource("13_mtaby")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykafp"]
+atlas = ExtResource("7_3ulm0")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_18tud"]
-atlas = ExtResource("13_mtaby")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5cwb"]
+atlas = ExtResource("17_aww2y")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bd1rl"]
-atlas = ExtResource("14_xwo0c")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_x50ow"]
+atlas = ExtResource("8_tf6mu")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x3ilw"]
-atlas = ExtResource("15_663gc")
-region = Rect2(0, 0, 16, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_egsnh"]
+atlas = ExtResource("9_iclu1")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rshbh"]
-atlas = ExtResource("4_1kdks")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovlvq"]
+atlas = ExtResource("10_dmsnf")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a7r74"]
-atlas = ExtResource("8_8ff24")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_xy3b8"]
+atlas = ExtResource("11_vfb8w")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ml6j4"]
-atlas = ExtResource("4_1kdks")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxjba"]
+atlas = ExtResource("12_llki6")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2ic4t"]
-atlas = ExtResource("8_8ff24")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vxs3"]
+atlas = ExtResource("13_nimcm")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i5fc4"]
-atlas = ExtResource("9_hsbxs")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_m13oi"]
+atlas = ExtResource("14_87kuo")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jbmp3"]
-atlas = ExtResource("10_6mbw4")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2wav"]
+atlas = ExtResource("17_aww2y")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_enqhw"]
-atlas = ExtResource("11_x52nq")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcnta"]
+atlas = ExtResource("16_1s3kj")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cdmam"]
-atlas = ExtResource("4_1kdks")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_80gvp"]
+atlas = ExtResource("17_of8hj")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_e1urb"]
-atlas = ExtResource("6_fv2jh")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_oh50t"]
+atlas = ExtResource("18_76jv2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4qt7"]
+atlas = ExtResource("19_i0er1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_scvv5"]
+atlas = ExtResource("20_xdjw1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kr3k"]
+atlas = ExtResource("21_ch7sn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qws8q"]
+atlas = ExtResource("22_c65l2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jf7fn"]
+atlas = ExtResource("23_w00y2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tubs4"]
+atlas = ExtResource("24_25fk6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4enx"]
+atlas = ExtResource("25_5bv24")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqi3s"]
+atlas = ExtResource("26_cna3r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35aet"]
+atlas = ExtResource("27_k780e")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv0ca"]
+atlas = ExtResource("16_1s3kj")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r77oq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xtq5x")
+"texture": SubResource("AtlasTexture_3et57")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ilnve")
+"texture": SubResource("AtlasTexture_laxbb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1exv1")
+"texture": SubResource("AtlasTexture_0a4kk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6ckdm")
+"texture": SubResource("AtlasTexture_hpvaj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3ejli")
-}],
-"loop": true,
-"name": &"BoostSlowdown",
-"speed": 6.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_67o46")
+"texture": SubResource("AtlasTexture_w72iu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1r5cl")
+"texture": SubResource("AtlasTexture_ykafp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6ct3x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c7yev")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jslv8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yb20k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u4aha")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_18tud")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bd1rl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x3ilw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xtq5x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ilnve")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1exv1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6ckdm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3ejli")
+"texture": SubResource("AtlasTexture_d5cwb")
 }],
 "loop": false,
-"name": &"BoostSpeedup",
-"speed": 8.0
+"name": &"BoostSlowdown",
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rshbh")
+"texture": SubResource("AtlasTexture_x50ow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egsnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovlvq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xy3b8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxjba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6vxs3")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_m13oi")
+}],
+"loop": true,
+"name": &"BoostSpeedup",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5cwb")
 }],
 "loop": true,
 "name": &"Constant",
@@ -223,7 +261,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a7r74")
+"texture": SubResource("AtlasTexture_b2wav")
 }],
 "loop": true,
 "name": &"Idle",
@@ -231,62 +269,269 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ml6j4")
+"texture": SubResource("AtlasTexture_xcnta")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xc01x")
+"texture": SubResource("AtlasTexture_80gvp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_fv2jh")
+"texture": SubResource("AtlasTexture_oh50t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_vt3d6")
+"texture": SubResource("AtlasTexture_r4qt7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_8ff24")
+"texture": SubResource("AtlasTexture_scvv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kr3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5cwb")
 }],
 "loop": false,
 "name": &"Slowdown",
-"speed": 6.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2ic4t")
+"texture": SubResource("AtlasTexture_qws8q")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i5fc4")
+"texture": SubResource("AtlasTexture_jf7fn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jbmp3")
+"texture": SubResource("AtlasTexture_tubs4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_enqhw")
-}, {
-"duration": 6.2,
-"texture": SubResource("AtlasTexture_cdmam")
+"texture": SubResource("AtlasTexture_m4enx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xc01x")
+"texture": SubResource("AtlasTexture_rqi3s")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_e1urb")
+"texture": SubResource("AtlasTexture_35aet")
 }, {
-"duration": 1.0,
-"texture": ExtResource("7_vt3d6")
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_xv0ca")
 }],
 "loop": true,
 "name": &"Speedup",
-"speed": 6.0
+"speed": 24.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_uayac"]
-radius = 5.4
-
-[sub_resource type="Curve2D" id="Curve2D_om8rc"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 268, 104, 0, 0, 0, 0, 492.056, 103.749, 0, 0, 0, 0, 491.376, 174.758, 0, 0, 0, 0, 492.381, 356.732, 0, 0, 0, 0, 389.13, 356.732, 0, 0, 0, 0, 303.265, 355.334, 0, 0, 0, 0, 267.429, 356.732, 0, 0, 0, 0, 267.429, 100.946, 0, 0, 0, 0, 358, 105)
+[sub_resource type="Animation" id="Animation_sw0lh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-0.861267, 0.252136)]
 }
-point_count = 9
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_xlj6w"]
+resource_name = "spaceshipturntoregroup"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-0.861267, 0.252136), Vector2(-300, 0.252)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.5708, -1.5708]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_10i4g"]
+_data = {
+"RESET": SubResource("Animation_sw0lh"),
+"spaceshipturntoregroup": SubResource("Animation_xlj6w")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fm6te"]
+atlas = ExtResource("2_tppkp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8bbd"]
+atlas = ExtResource("3_3j1p7")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on20f"]
+atlas = ExtResource("17_aww2y")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01ln4"]
+atlas = ExtResource("5_fdko0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujxx3"]
+atlas = ExtResource("6_iwi37")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vo40s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fm6te")
+}],
+"loop": true,
+"name": &"Corrupted",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8bbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on20f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8bbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on20f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8bbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on20f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8bbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on20f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8bbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on20f")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"Crushed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01ln4")
+}],
+"loop": true,
+"name": &"Physicaldamage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujxx3")
+}],
+"loop": false,
+"name": &"Shocked",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_jlnqf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%statuseffects:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%statuseffects:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_tss30"]
+resource_name = "fader"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%statuseffects:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aj6p0"]
+_data = {
+"RESET": SubResource("Animation_jlnqf"),
+"physicaldamagefader": SubResource("Animation_tss30")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d75tt"]
+size = Vector2(161.383, 27.9678)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1c7sk"]
+size = Vector2(178.125, 21.0933)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivfpx"]
+size = Vector2(118.281, 11.6375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n2qw4"]
+size = Vector2(118.281, 41.8748)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tky44"]
+size = Vector2(78.4375, 31.0692)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4bjj"]
+size = Vector2(38.4375, 9.81931)
 
 [sub_resource type="FontVariation" id="FontVariation_ii5kr"]
 base_font = ExtResource("33_u13d6")
@@ -340,32 +585,8 @@ tracks/0/keys = {
 "values": [ExtResource("15_sr2ou")]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_v168g"]
-_data = {
-"RESET": SubResource("Animation_8hon3"),
-"level2": SubResource("Animation_fw754"),
-"level3": SubResource("Animation_ibu4t")
-}
-
-[sub_resource type="Animation" id="Animation_qfa52"]
-length = 0.001
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("16_1rys4"), ExtResource("16_1rys4")]
-}
-
-[sub_resource type="Animation" id="Animation_o65n5"]
-resource_name = "level2"
-loop_mode = 1
+[sub_resource type="Animation" id="Animation_x545l"]
+resource_name = "level4"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -376,35 +597,50 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("17_dmqka")]
+"values": [ExtResource("36_rlr6m")]
 }
 
-[sub_resource type="Animation" id="Animation_xy8hd"]
-resource_name = "level3"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.733333),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("18_0qt1g")]
-}
+[sub_resource type="Animation" id="Animation_3pcj5"]
+resource_name = "none"
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_dic0b"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v168g"]
 _data = {
-"RESET": SubResource("Animation_qfa52"),
-"level2": SubResource("Animation_o65n5"),
-"level3": SubResource("Animation_xy8hd")
+"RESET": SubResource("Animation_8hon3"),
+"level2": SubResource("Animation_fw754"),
+"level3": SubResource("Animation_ibu4t"),
+"level4": SubResource("Animation_x545l"),
+"none": SubResource("Animation_3pcj5")
 }
 
-[sub_resource type="FontVariation" id="FontVariation_lhe1w"]
-base_font = ExtResource("33_u13d6")
-spacing_space = -7
+[sub_resource type="Curve2D" id="Curve2D_om8rc"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 301.527, 104.56, 0, 0, 0, 0, 767.67, 104.076, 0, 0, 0, 0, 769.788, 697.687, 0, 0, 0, 0, 296.075, 699.252, 0, 0, 0, 0, 300.311, 102.512, 0, 0, 0, 0, 310.033, 120.651, 0, 0, 0, 0, 751.929, 118.998, 0, 0, 0, 0, 752.864, 671.262, 0, 0, 0, 0, 309.324, 672.919, 0, 0, 0, 0, 309.698, 119.413)
+}
+point_count = 10
+
+[sub_resource type="Curve2D" id="Curve2D_cjyxv"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -81.9829, 14.1318, 0, 0, 0, 0, -83.4276, -10.9792, 0, 0, 0, 0, -83.2329, -73.3684, 0, 0, 0, 0, -83.3679, -77.555, 0, 0, 0, 0, 80.4219, -76.7151, 0, 0, 0, 0, 80.0018, 12.9493, 0, 0, 0, 0, 79.7688, 13.1375, 0, 0, 0, 0, -3.23242, -74.2017, 0, 0, 0, 0, 101.78, -76.2222, 0, 0, 0, 0, 99.4802, -94.2911, 0, 0, 0, 0, -95.0081, -96.5908, 0, 0, 0, 0, -97.3994, -10.0352, 0, 0, 0, 0, -6.14941, -76.7017, 0, 0, 0, 0, -2.81592, -30.4517, 0, 0, 0, 0, -112.42, -107.432, 0, 0, 0, 0, 107.694, -108.746, 0, 0, 0, 0, -4.48242, -75.0349, 0, 0, 0, 0, 78.8506, -16.2849, 0, 0, 0, 0, 119.849, -117.945, 0, 0, 0, 0, -118.333, -118.602, 0, 0, 0, 0, -68.2329, -166.702, 0, 0, 0, 0, -26.1494, -166.702, 0, 0, 0, 0, -24.4829, -135.452, 0, 0, 0, 0, 20.1006, -135.452, 0, 0, 0, 0, 19.6836, -167.535, 0, 0, 0, 0, 62.6006, -167.535, 0, 0, 0, 0, 119.684, -117.535, 0, 0, 0, 0, -9.06641, -194.618, 0, 0, 0, 0, -118.65, -116.702, 0, 0, 0, 0, -5.31641, -194.202, 0, 0, 0, 0, -4.89941, -192.118, 0, 0, 0, 0, -2.39941, -30.0349)
+}
+point_count = 32
+
+[sub_resource type="Curve2D" id="Curve2D_u5gvf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 929.203, 514.132, 0, 0, 0, 0, 1068.85, 514.058, 0, 0, 0, 0, 1068.93, 492.263, 0, 0, 0, 0, 929.17, 492.881, 0, 0, 0, 0, 929.082, 514.158, 0, 0, 0, 0, 929.203, 514.132, 0, 0, 0, 0, 975.389, 513.638, 0, 0, 0, 0, 975.591, 545.102, 0, 0, 0, 0, 1019.42, 543.104, 0, 0, 0, 0, 1019.36, 512.888, 0, 0, 0, 0, 929.203, 514.132)
+}
+point_count = 11
+
+[sub_resource type="Curve2D" id="Curve2D_ev2dw"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -91.7076, -69.5782, 0, 0, 0, 0, 92.9771, -71.1513, 0, 0, 0, 0, 90.1455, 54.6985, 0, 0, 0, 0, -83.2128, 55.3278, 0, 0, 0, 0, -83.5273, -72.7244)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_waq8g"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -100.538, -73.0934, 0, 0, 0, 0, 611.774, -73.7812, 0, 0, 0, 0, 612.481, 333.693, 0, 0, 0, 0, -102.304, 341.602, 0, 0, 0, 0, -99.1254, -73.7812, 0, 0, 0, 0, -173.709, -73.8511, 0, 0, 0, 0, -166.375, 411.042, 0, 0, 0, 0, 680.958, 401.305, 0, 0, 0, 0, 684.958, -137.465, 0, 0, 0, 0, -169.709, -143.307, 0, 0, 0, 0, -171.709, -32.9565, 0, 0, 0, 0, 102.291, -161.482, 0, 0, 0, 0, 345.625, -162.781, 0, 0, 0, 0, 704.958, -61.5178, 0, 0, 0, 0, 705.625, 344.183, 0, 0, 0, 0, 472.958, 426.621, 0, 0, 0, 0, -58.3752, 433.112, 0, 0, 0, 0, -186.375, 326.656, 0, 0, 0, 0, -189.709, -95.9212, 0, 0, 0, 0, 100.291, -163.43, 0, 0, 0, 0, -172.375, -100.465, 0, 0, 0, 0, 651.625, -108.904, 0, 0, 0, 0, 650.291, 368.2, 0, 0, 0, 0, -137.709, 378.586, 0, 0, 0, 0, -128.375, -110.202)
+}
+point_count = 25
 
 [sub_resource type="Animation" id="Animation_vhome"]
 length = 0.001
@@ -431,6 +667,30 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%Rooted:theme_override_colors/font_shadow_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.345098, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%Rooted:theme_override_colors/font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.682353, 0, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_53fgi"]
@@ -471,6 +731,30 @@ tracks/2/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%Rooted:theme_override_colors/font_shadow_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0.345098, 0, 1), Color(0, 0.345098, 0, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%Rooted:theme_override_colors/font_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0.682353, 0, 1), Color(0, 0.682353, 0, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8y0l7"]
 _data = {
@@ -482,17 +766,25 @@ _data = {
 script/source = "extends Label
 "
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g7tl1"]
-atlas = ExtResource("34_snxy1")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ylqw"]
+atlas = ExtResource("32_y2nww")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_awf1c"]
-atlas = ExtResource("35_ne64s")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_1nngb"]
+atlas = ExtResource("33_n14sm")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ydgmv"]
-atlas = ExtResource("36_2042f")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_sp8yu"]
+atlas = ExtResource("34_uya8x")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37yrw"]
+atlas = ExtResource("35_t0a82")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uev4m"]
+atlas = ExtResource("36_2pgbh")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wepva"]
 animations = [{
@@ -500,66 +792,388 @@ animations = [{
 "duration": 1.0,
 "texture": null
 }, {
-"duration": 1.25,
-"texture": SubResource("AtlasTexture_g7tl1")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ylqw")
 }, {
-"duration": 1.25,
-"texture": SubResource("AtlasTexture_awf1c")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1nngb")
 }, {
-"duration": 8.0,
-"texture": SubResource("AtlasTexture_ydgmv")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sp8yu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37yrw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uev4m")
 }],
 "loop": false,
 "name": &"Rooted",
-"speed": 5.0
+"speed": 12.0
 }]
+
+[sub_resource type="Animation" id="Animation_vtq7q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StatusHolder/Crushed/Crushed:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["CRUSHED!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StatusHolder/Crushed/Crushed:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StatusHolder/Crushed/Crushed:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StatusHolder/Crushed/Crushed:theme_override_colors/font_shadow_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.197089, 0.728022, 0.854819, 0.0980392)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StatusHolder/Crushed/Crushed:theme_override_colors/font_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.87186, 0.87186, 0.87186, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Spaceship:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+
+[sub_resource type="Animation" id="Animation_5yaon"]
+resource_name = "crushed"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StatusHolder/Crushed/Crushed:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["CRUSHED!", "CRUSHED!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StatusHolder/Crushed/Crushed:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(1, 1), Vector2(0.5, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StatusHolder/Crushed/Crushed:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.733333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StatusHolder/Crushed/Crushed:theme_override_colors/font_shadow_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.197089, 0.728022, 0.854819, 0.0980392), Color(0.197089, 0.728022, 0.854819, 0.0980392)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StatusHolder/Crushed/Crushed:theme_override_colors/font_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.87186, 0.87186, 0.87186, 1), Color(0.87186, 0.87186, 0.87186, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Spaceship:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pyn7f"]
+_data = {
+"RESET": SubResource("Animation_vtq7q"),
+"crushed": SubResource("Animation_5yaon")
+}
 
 [node name="PlayerCharacter" type="CharacterBody2D"]
 position = Vector2(1000.98, 574.757)
-collision_layer = 1074528261
+collision_layer = 1074528277
 collision_mask = 1074528271
+motion_mode = 1
+wall_min_slide_angle = 0.0174533
+safe_margin = 0.2
 script = ExtResource("1_ittgt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.896606, 0.240016)
-shape = SubResource("CircleShape2D_mmi0y")
+unique_name_in_owner = true
+position = Vector2(-0.846069, -1.36511)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_nx7kt")
+
+[node name="LevelUpAreaKill" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 2
+collision_mask = 2
+
+[node name="levelkill1" type="CollisionShape2D" parent="LevelUpAreaKill"]
+position = Vector2(530.862, -11.5175)
+shape = SubResource("RectangleShape2D_0qg61")
+
+[node name="levelkill2" type="CollisionShape2D" parent="LevelUpAreaKill"]
+position = Vector2(-530.42, -8.612)
+shape = SubResource("RectangleShape2D_0qg61")
+
+[node name="levelkill3" type="CollisionShape2D" parent="LevelUpAreaKill"]
+position = Vector2(-7.97339, -308.224)
+shape = SubResource("RectangleShape2D_fp7ni")
+
+[node name="levelkill4" type="CollisionShape2D" parent="LevelUpAreaKill"]
+position = Vector2(-17.9954, 298.338)
+shape = SubResource("RectangleShape2D_fp7ni")
+
+[node name="GeneralBorderCollision" type="StaticBody2D" parent="."]
+scale = Vector2(-1.94926, -1.94926)
+collision_layer = 16779271
+collision_mask = 16777216
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="GeneralBorderCollision"]
+position = Vector2(1.48999, -176.75)
+rotation = 3.14159
+shape = SubResource("RectangleShape2D_j1ejb")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="GeneralBorderCollision"]
+position = Vector2(-1.143, 189.333)
+rotation = 6.28319
+shape = SubResource("RectangleShape2D_ehuux")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="GeneralBorderCollision"]
+position = Vector2(329.895, 7.383)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_cs77t")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="GeneralBorderCollision"]
+position = Vector2(-324.667, 5.339)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_ubj02")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="BossCollision" type="StaticBody2D" parent="."]
+position = Vector2(3.77124, 2.35706)
+scale = Vector2(-0.866354, -0.866354)
+collision_layer = 16785408
+collision_mask = 16777216
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BossCollision"]
+position = Vector2(1.48999, -176.75)
+rotation = 3.14159
+shape = SubResource("RectangleShape2D_j1ejb")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="BossCollision"]
+position = Vector2(-1.143, 189.333)
+rotation = 6.28319
+shape = SubResource("RectangleShape2D_ehuux")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="BossCollision"]
+position = Vector2(329.895, 7.383)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_cs77t")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="BossCollision"]
+position = Vector2(-324.667, 5.339)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_ubj02")
+one_way_collision = true
+one_way_collision_margin = 128.0
 
 [node name="Spaceship" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
+y_sort_enabled = true
 texture_filter = 1
 position = Vector2(-0.861267, 0.252136)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_r77oq")
 animation = &"BoostSpeedup"
+autoplay = "Idle"
+
+[node name="SquadRegroup" type="AnimationPlayer" parent="Spaceship"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_10i4g")
+}
+
+[node name="statuseffects" type="AnimatedSprite2D" parent="Spaceship"]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_vo40s")
+animation = &"Shocked"
+
+[node name="statuseffectfader" type="AnimationPlayer" parent="Spaceship/statuseffects"]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_aj6p0")
+}
 
 [node name="PrimaryFireLeft" parent="Spaceship" instance=ExtResource("12_f6hhs")]
-position = Vector2(-3.33299, -6.19042)
+position = Vector2(-6.50144, -19.1004)
+scale = Vector2(2, 2)
 collision_mask = 11
 
 [node name="PrimaryFireRight" parent="Spaceship" instance=ExtResource("12_f6hhs")]
-position = Vector2(4, -6.31631)
+position = Vector2(8.50647, -19.1004)
+scale = Vector2(2, 2)
 
 [node name="HurtBox" type="Area2D" parent="Spaceship"]
 unique_name_in_owner = true
-position = Vector2(0, -3)
+position = Vector2(0, -8.04932)
+scale = Vector2(2, 2)
 collision_layer = 2432696335
 collision_mask = 2432696322
 script = ExtResource("25_4wb8b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spaceship/HurtBox"]
-position = Vector2(-0.0233822, 3)
-shape = SubResource("CircleShape2D_uayac")
+z_index = 1
+position = Vector2(0.00109863, 3.00256)
+scale = Vector2(0.0673216, 0.0673216)
+shape = SubResource("RectangleShape2D_d75tt")
 debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
 
-[node name="AlienPath2D" type="Path2D" parent="."]
-position = Vector2(-1078.85, -326.411)
-scale = Vector2(2.84504, 1.43088)
-curve = SubResource("Curve2D_om8rc")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+z_index = 1
+position = Vector2(-0.00152588, 1.60413)
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_1c7sk")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
 
-[node name="AlienPathFollow2D" type="PathFollow2D" parent="AlienPath2D"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+z_index = 1
+position = Vector2(-0.0197144, 4.43225)
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_1c7sk")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+z_index = 1
+position = Vector2(-0.0132446, 5.20367)
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_ivfpx")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+z_index = 1
+position = Vector2(-0.0132446, 0.0924072)
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_n2qw4")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+z_index = 1
+position = Vector2(0.00628662, -1.64526)
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_tky44")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Spaceship/HurtBox"]
+z_index = 1
+position = Vector2(-0.00152588, -3.18433)
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_p4bjj")
+debug_color = Color(0.894748, 0.217024, 0.590279, 0.42)
+
+[node name="engineL" type="Marker2D" parent="Spaceship"]
 unique_name_in_owner = true
-position = Vector2(362.023, 356.291)
-rotation = -3.12531
-progress = 607.408
+position = Vector2(-2.99329, 3.58374)
+
+[node name="engineR" type="Marker2D" parent="Spaceship"]
+unique_name_in_owner = true
+position = Vector2(2.97766, 3.60693)
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -577,6 +1191,7 @@ grow_vertical = 0
 scale = Vector2(25, 25)
 
 [node name="stats" type="Container" parent="UI"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.382
@@ -591,11 +1206,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("11_wsp7i")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="UI/stats"]
+[node name="statslayer" type="CanvasLayer" parent="UI/stats"]
+unique_name_in_owner = true
 layer = 20
 
-[node name="KillCount" type="Label" parent="UI/stats/CanvasLayer"]
+[node name="KillCount" type="Label" parent="UI/stats/statslayer"]
 unique_name_in_owner = true
+visible = false
 top_level = true
 z_index = 26
 texture_filter = 1
@@ -618,7 +1235,7 @@ theme_override_font_sizes/font_size = 18
 text = "Kills: 0 / 20"
 horizontal_alignment = 1
 
-[node name="bosscount" type="Label" parent="UI/stats/CanvasLayer"]
+[node name="bosscount" type="Label" parent="UI/stats/statslayer"]
 unique_name_in_owner = true
 visible = false
 top_level = true
@@ -639,23 +1256,64 @@ theme_override_fonts/font = ExtResource("12_wht5p")
 theme_override_font_sizes/font_size = 18
 text = "Kills: 0"
 
-[node name="HealthBar" type="TextureProgressBar" parent="UI/stats/CanvasLayer"]
+[node name="LenurcherBar" type="TextureProgressBar" parent="UI/stats/statslayer"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = -1
+anchor_left = 0.30147
+anchor_right = 0.688326
+anchor_bottom = 0.25472
+offset_left = -1.99646
+offset_right = 110.003
+offset_bottom = 40.0
+grow_horizontal = 2
+scale = Vector2(13.7549, 13.7549)
+size_flags_horizontal = 4
+min_value = -20.0
+max_value = 120.0
+value = 120.0
+texture_under = ExtResource("33_0yoqo")
+texture_over = ExtResource("34_jf4be")
+texture_progress = ExtResource("35_6yj6e")
+texture_progress_offset = Vector2(1, 17)
+
+[node name="HealthBar" type="TextureProgressBar" parent="UI/stats/statslayer"]
 unique_name_in_owner = true
 top_level = true
 z_index = 12
 texture_filter = 1
-offset_left = 19.8202
-offset_top = 23.7841
-offset_right = 41.8202
-offset_bottom = 67.7841
+offset_left = 47.7482
+offset_top = 28.7568
+offset_right = 56.7482
+offset_bottom = 63.7568
 scale = Vector2(22.265, 22.265)
 step = 0.0
 value = 100.0
 fill_mode = 3
-texture_over = ExtResource("27_wj2kg")
-texture_progress = ExtResource("28_yefw5")
+texture_under = ExtResource("33_ojyok")
+texture_over = ExtResource("34_jbpej")
+texture_progress = ExtResource("35_x5pxe")
+texture_progress_offset = Vector2(0, 1)
 
-[node name="BoostBar" type="TextureProgressBar" parent="UI/stats/CanvasLayer"]
+[node name="SoulBar" type="TextureProgressBar" parent="UI/stats/statslayer"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.556351
+anchor_top = 0.00850189
+anchor_right = 0.7292
+anchor_bottom = 0.116956
+offset_right = -595.74
+offset_bottom = -210.261
+grow_horizontal = 2
+scale = Vector2(9.76089, 9.76089)
+max_value = 20.0
+texture_under = ExtResource("39_4pd1u")
+texture_over = ExtResource("40_gw1ao")
+texture_progress = ExtResource("41_0iodp")
+texture_progress_offset = Vector2(12, 12)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoostBar" type="TextureProgressBar" parent="UI/stats/statslayer"]
 unique_name_in_owner = true
 top_level = true
 z_index = 12
@@ -675,23 +1333,24 @@ fill_mode = 3
 texture_over = ExtResource("29_4jeg1")
 texture_progress = ExtResource("30_0v0fr")
 
-[node name="BoostRechargeSlow" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+[node name="BoostRechargeSlow" type="Timer" parent="UI/stats/statslayer/BoostBar"]
 unique_name_in_owner = true
 autostart = true
 
-[node name="BoostRechargeFast" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+[node name="BoostRechargeFast" type="Timer" parent="UI/stats/statslayer/BoostBar"]
 unique_name_in_owner = true
 wait_time = 0.1
 
-[node name="SteadyDecrease" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+[node name="SteadyDecrease" type="Timer" parent="UI/stats/statslayer/BoostBar"]
 unique_name_in_owner = true
 wait_time = 0.1
 
-[node name="SteadyIncrease" type="Timer" parent="UI/stats/CanvasLayer/BoostBar"]
+[node name="SteadyIncrease" type="Timer" parent="UI/stats/statslayer/BoostBar"]
 unique_name_in_owner = true
 wait_time = 0.08
 
-[node name="LevelBorder" type="TextureRect" parent="UI/stats/CanvasLayer"]
+[node name="LevelBorder" type="TextureRect" parent="UI/stats/statslayer"]
+unique_name_in_owner = true
 z_index = 24
 anchors_preset = 5
 anchor_left = 0.5
@@ -704,80 +1363,156 @@ scale = Vector2(10, 10)
 size_flags_horizontal = 0
 texture = ExtResource("13_47yw0")
 
-[node name="levelborderanimations" type="AnimationPlayer" parent="UI/stats/CanvasLayer/LevelBorder"]
+[node name="levelborderanimations" type="AnimationPlayer" parent="UI/stats/statslayer/LevelBorder"]
 unique_name_in_owner = true
 libraries = {
 "": SubResource("AnimationLibrary_v168g")
 }
 autoplay = "RESET"
 
-[node name="CurrentLevel" type="Label" parent="UI/stats/CanvasLayer/LevelBorder"]
-unique_name_in_owner = true
-top_level = true
-z_index = 12
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -174.777
-offset_top = 44.0272
-offset_right = -131.777
-offset_bottom = 52.0272
-grow_horizontal = 2
-scale = Vector2(8.261, 8.261)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_wht5p")
-theme_override_font_sizes/font_size = 9
-text = "Level: 1"
-
-[node name="StardustBorder" type="TextureRect" parent="UI/stats/CanvasLayer"]
-anchors_preset = -1
-anchor_left = 0.022
-anchor_top = 1.0
-anchor_right = 0.022
-anchor_bottom = 1.0
-offset_left = -307.674
-offset_top = -425.63
-offset_right = -243.674
-offset_bottom = -361.63
-grow_vertical = 0
-scale = Vector2(7.38323, 7.38323)
-texture = ExtResource("16_1rys4")
-
-[node name="stardustborderanimations" type="AnimationPlayer" parent="UI/stats/CanvasLayer/StardustBorder"]
-unique_name_in_owner = true
-libraries = {
-"": SubResource("AnimationLibrary_dic0b")
-}
-autoplay = "RESET"
-
-[node name="StardustAcquired" type="Label" parent="UI/stats/CanvasLayer/StardustBorder"]
+[node name="CurrentLevel" type="Label" parent="UI/stats/statslayer"]
 unique_name_in_owner = true
 top_level = true
 z_index = 13
+y_sort_enabled = true
 texture_filter = 1
-layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.071
-anchor_top = 1.0
-anchor_right = 0.071
-anchor_bottom = 1.0
-offset_left = -90.8862
-offset_top = -190.646
-offset_right = -34.8862
-offset_bottom = -170.646
-grow_vertical = 0
-scale = Vector2(7.77654, 7.77654)
-theme_override_colors/font_shadow_color = Color(0.792157, 0.447059, 0.352941, 0.129412)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = SubResource("FontVariation_lhe1w")
-theme_override_font_sizes/font_size = 19
-text = "0"
+anchor_left = 0.46713
+anchor_top = 0.018637
+anchor_right = 0.559636
+anchor_bottom = 0.0568824
+offset_left = -11.5566
+offset_top = -5.92339
+offset_right = -323.78
+offset_bottom = -78.5334
+grow_horizontal = 2
+scale = Vector2(8.261, 8.261)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("33_u13d6")
+theme_override_font_sizes/font_size = 10
+text = "Wave: 1"
+metadata/_edit_use_anchors_ = true
 
-[node name="StatusHolder" type="Node" parent="."]
+[node name="PocketEditionButtonContainer" type="Control" parent="UI/stats/statslayer"]
+z_index = 50
+layout_mode = 3
+anchor_left = 0.486407
+anchor_top = 0.527609
+anchor_right = 1.23402
+anchor_bottom = 1.02332
+offset_right = -2500.84
+offset_bottom = -932.746
+scale = Vector2(7.75903, 7.75903)
+metadata/_edit_use_anchors_ = true
 
-[node name="Rooted" type="Node" parent="StatusHolder"]
+[node name="Joystick" parent="UI/stats/statslayer/PocketEditionButtonContainer" instance=ExtResource("57_afqhq")]
+unique_name_in_owner = true
+z_index = 50
+position = Vector2(-176.871, 63.4513)
+scale = Vector2(4.25, 4.25)
+
+[node name="BoostButton" type="TouchScreenButton" parent="UI/stats/statslayer/PocketEditionButtonContainer"]
+unique_name_in_owner = true
+process_mode = 3
+z_index = 50
+position = Vector2(133.137, 40.8707)
+scale = Vector2(4, 4)
+texture_normal = ExtResource("58_4bjgd")
+texture_pressed = ExtResource("59_ovmn8")
+metadata/_edit_use_anchors_ = true
+
+[node name="FireLButton" type="TouchScreenButton" parent="UI/stats/statslayer/PocketEditionButtonContainer"]
+unique_name_in_owner = true
+z_index = 50
+position = Vector2(97.0948, 11.1152)
+scale = Vector2(4, 4)
+texture_normal = ExtResource("60_h8adv")
+texture_pressed = ExtResource("61_x27k6")
+metadata/_edit_use_anchors_ = true
+
+[node name="FireRButton" type="TouchScreenButton" parent="UI/stats/statslayer/PocketEditionButtonContainer"]
+unique_name_in_owner = true
+z_index = 50
+position = Vector2(197.061, 11.005)
+scale = Vector2(4, 4)
+texture_normal = ExtResource("62_0gt48")
+texture_pressed = ExtResource("63_f5chk")
+metadata/_edit_use_anchors_ = true
+
+[node name="PocketEditionPause" type="TouchScreenButton" parent="UI/stats/statslayer"]
+unique_name_in_owner = true
+z_index = 50
+scale = Vector2(8.56957, 17.1391)
+texture_normal = ExtResource("64_bcnjj")
+metadata/_edit_use_anchors_ = true
+
+[node name="soulcheck" type="Timer" parent="UI/stats"]
+wait_time = 0.1
+autostart = true
+
+[node name="Paths" type="Node2D" parent="."]
+
+[node name="AlienPath2D" type="Path2D" parent="Paths"]
+unique_name_in_owner = true
+position = Vector2(-707.553, -240.589)
+scale = Vector2(1.33546, 0.602745)
+curve = SubResource("Curve2D_om8rc")
+
+[node name="AlienPathFollow2D" type="PathFollow2D" parent="Paths/AlienPath2D"]
+unique_name_in_owner = true
+position = Vector2(768.174, 245.338)
+rotation = 1.56723
+progress = 607.408
+
+[node name="LightningPath2D" type="Path2D" parent="Paths"]
+visible = false
+position = Vector2(1.11685, 31.1161)
+scale = Vector2(0.490109, 0.378049)
+curve = SubResource("Curve2D_cjyxv")
+
+[node name="LightningPathFollow2D" type="PathFollow2D" parent="Paths/LightningPath2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-81.9829, 14.1318)
+rotation = -1.62827
+
+[node name="HammerPath2D" type="Path2D" parent="Paths"]
+visible = false
+position = Vector2(-3018.12, -316.364)
+scale = Vector2(3.00931, 0.293054)
+curve = SubResource("Curve2D_u5gvf")
+
+[node name="HammerPathFollow2D" type="PathFollow2D" parent="Paths/HammerPath2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(929.203, 514.132)
+rotation = -0.000530163
+
+[node name="WeatherPath2D" type="Path2D" parent="Paths"]
+visible = false
+position = Vector2(0, -1.49533)
+scale = Vector2(1, 1.02703)
+curve = SubResource("Curve2D_ev2dw")
+
+[node name="WeatherPathFollow2D" type="PathFollow2D" parent="Paths/WeatherPath2D"]
+visible = false
+position = Vector2(-91.7076, -69.5782)
+rotation = -0.00851754
+
+[node name="WeatherPathOutsideView2D" type="Path2D" parent="Paths"]
+visible = false
+position = Vector2(-251.105, -136.027)
+scale = Vector2(1, 1.02703)
+curve = SubResource("Curve2D_waq8g")
+
+[node name="WeatherPathOutsideViewFollow2D" type="PathFollow2D" parent="Paths/WeatherPathOutsideView2D"]
+visible = false
+position = Vector2(-100.538, -73.0934)
+rotation = -0.000965584
+
+[node name="StatusHolder" type="Node2D" parent="."]
+
+[node name="Rooted" type="Node2D" parent="StatusHolder"]
 
 [node name="RootedPlayer" type="AnimationPlayer" parent="StatusHolder/Rooted"]
 unique_name_in_owner = true
@@ -789,6 +1524,7 @@ libraries = {
 [node name="Rooted" type="Label" parent="StatusHolder/Rooted/RootedPlayer"]
 unique_name_in_owner = true
 visible = false
+z_index = 8
 texture_filter = 1
 anchors_preset = -1
 anchor_left = 0.25
@@ -803,6 +1539,8 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.122173
 scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0.682353, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.345098, 0, 1)
 theme_override_fonts/font = ExtResource("33_u13d6")
 theme_override_font_sizes/font_size = 10
 text = "Rooted!"
@@ -815,25 +1553,122 @@ metadata/_edit_use_anchors_ = true
 [node name="RootedAnimation" type="AnimatedSprite2D" parent="StatusHolder/Rooted"]
 unique_name_in_owner = true
 visible = false
+z_index = 3
 position = Vector2(960.287, 552.858)
 rotation = 0.000104347
-scale = Vector2(1.29079, 1.29079)
 sprite_frames = SubResource("SpriteFrames_wepva")
 animation = &"Rooted"
 frame_progress = 0.911903
 
-[node name="Zapped" type="Node" parent="StatusHolder"]
+[node name="Zapped" type="Node2D" parent="StatusHolder"]
+
+[node name="BurntEffect" type="Node2D" parent="StatusHolder"]
+
+[node name="Crushed" type="Node2D" parent="StatusHolder"]
+
+[node name="crushedplayer" type="AnimationPlayer" parent="StatusHolder/Crushed"]
+unique_name_in_owner = true
+root_node = NodePath("../../..")
+libraries = {
+"": SubResource("AnimationLibrary_pyn7f")
+}
+
+[node name="Crushed" type="Label" parent="StatusHolder/Crushed"]
+unique_name_in_owner = true
+visible = false
+z_index = 8
+offset_left = 18.2762
+offset_top = -23.259
+offset_right = 58.2762
+offset_bottom = -0.258972
+rotation = 0.122173
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0.87186, 0.87186, 0.87186, 1)
+theme_override_colors/font_shadow_color = Color(0.197089, 0.728022, 0.854819, 0.0980392)
+theme_override_fonts/font = ExtResource("33_u13d6")
+theme_override_font_sizes/font_size = 10
+text = "CRUSHED!"
+
+[node name="appearancechecker" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[node name="HealthCapper" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.5
+autostart = true
+
+[node name="TurningLeftSpeedup" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="TurningRightSpeedup" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="BackwardsFinishTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 2.0
+one_shot = true
+
+[node name="KnockBackChecker" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.2
+one_shot = true
+
+[node name="UTurnTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+one_shot = true
+
+[node name="DyingSpin" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="MovementChecker" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+autostart = true
+
+[node name="SpawnDirection" type="Timer" parent="."]
+wait_time = 0.075
+autostart = true
 
 [connection signal="playerhealth_depleted" from="." to="." method="_on_playerhealth_depleted"]
+[connection signal="body_entered" from="LevelUpAreaKill" to="." method="_on_level_up_area_kill_body_entered"]
+[connection signal="animation_started" from="Spaceship/SquadRegroup" to="Spaceship/PrimaryFireLeft" method="_on_squad_regroup_animation_started"]
+[connection signal="animation_started" from="Spaceship/SquadRegroup" to="Spaceship/PrimaryFireRight" method="_on_squad_regroup_animation_started"]
+[connection signal="animation_finished" from="Spaceship/statuseffects/statuseffectfader" to="." method="_on_statuseffectfader_animation_finished"]
 [connection signal="area_entered" from="Spaceship/HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="body_entered" from="Spaceship/HurtBox" to="." method="_on_hurt_box_body_entered"]
 [connection signal="player_rooted" from="Spaceship/HurtBox" to="." method="_on_hurt_box_player_rooted"]
 [connection signal="healthpack" from="UI/stats" to="." method="_on_stats_healthpack"]
 [connection signal="level2" from="UI/stats" to="." method="_on_stats_level_2"]
 [connection signal="level3" from="UI/stats" to="." method="_on_stats_level_3"]
-[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/BoostRechargeSlow" to="." method="_on_boost_recharge_timeout"]
-[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/BoostRechargeSlow" to="." method="_on_boost_recharge_slow_timeout"]
-[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/BoostRechargeFast" to="." method="_on_boost_recharge_fast_timeout"]
-[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/SteadyDecrease" to="." method="_on_steady_decrease_timeout"]
-[connection signal="timeout" from="UI/stats/CanvasLayer/BoostBar/SteadyIncrease" to="." method="_on_steady_increase_timeout"]
+[connection signal="level4" from="UI/stats" to="." method="_on_stats_level_4"]
+[connection signal="level5" from="UI/stats" to="." method="_on_stats_level_5"]
+[connection signal="level6" from="UI/stats" to="." method="_on_stats_level_6"]
+[connection signal="timeout" from="UI/stats/statslayer/BoostBar/BoostRechargeSlow" to="." method="_on_boost_recharge_timeout"]
+[connection signal="timeout" from="UI/stats/statslayer/BoostBar/BoostRechargeSlow" to="." method="_on_boost_recharge_slow_timeout"]
+[connection signal="timeout" from="UI/stats/statslayer/BoostBar/BoostRechargeFast" to="." method="_on_boost_recharge_fast_timeout"]
+[connection signal="timeout" from="UI/stats/statslayer/BoostBar/SteadyDecrease" to="." method="_on_steady_decrease_timeout"]
+[connection signal="timeout" from="UI/stats/statslayer/BoostBar/SteadyIncrease" to="." method="_on_steady_increase_timeout"]
+[connection signal="pressed" from="UI/stats/statslayer/PocketEditionButtonContainer/BoostButton" to="." method="_on_boost_button_pressed"]
+[connection signal="released" from="UI/stats/statslayer/PocketEditionButtonContainer/BoostButton" to="." method="_on_boost_button_released"]
+[connection signal="pressed" from="UI/stats/statslayer/PocketEditionButtonContainer/FireLButton" to="." method="_on_fire_l_button_pressed"]
+[connection signal="released" from="UI/stats/statslayer/PocketEditionButtonContainer/FireLButton" to="." method="_on_fire_l_button_released"]
+[connection signal="pressed" from="UI/stats/statslayer/PocketEditionButtonContainer/FireRButton" to="." method="_on_fire_r_button_pressed"]
+[connection signal="released" from="UI/stats/statslayer/PocketEditionButtonContainer/FireRButton" to="." method="_on_fire_r_button_released"]
+[connection signal="pressed" from="UI/stats/statslayer/PocketEditionPause" to="." method="_on_pocket_edition_pause_pressed"]
+[connection signal="timeout" from="UI/stats/soulcheck" to="UI/stats" method="_on_soulcheck_timeout"]
 [connection signal="ready" from="StatusHolder/Rooted/RootedPlayer/Rooted" to="StatusHolder/Rooted/RootedPlayer/Rooted" method="_on_ready"]
+[connection signal="timeout" from="appearancechecker" to="." method="_on_appearancechecker_timeout"]
+[connection signal="timeout" from="HealthCapper" to="." method="_on_health_capper_timeout"]
+[connection signal="timeout" from="TurningLeftSpeedup" to="." method="_on_turning_left_speedup_timeout"]
+[connection signal="timeout" from="TurningRightSpeedup" to="." method="_on_turning_right_speedup_timeout"]
+[connection signal="timeout" from="BackwardsFinishTimer" to="." method="_on_backwards_finish_timer_timeout"]
+[connection signal="timeout" from="KnockBackChecker" to="." method="_on_knock_back_checker_timeout"]
+[connection signal="timeout" from="UTurnTimer" to="." method="_on_u_turn_timer_timeout"]
+[connection signal="timeout" from="DyingSpin" to="." method="_on_dying_spin_timeout"]
+[connection signal="timeout" from="MovementChecker" to="." method="_on_boost_checker_timeout"]
+[connection signal="timeout" from="SpawnDirection" to="." method="_on_spawn_direction_timeout"]

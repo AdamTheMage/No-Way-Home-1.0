@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://dub7cjyw6d70e"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/lightning_hammer.gd" id="1_kw6a4"]
+[ext_resource type="Texture2D" uid="uid://bp6u5omgq8rqy" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hammer_0.png" id="2_hykwv"]
+[ext_resource type="Texture2D" uid="uid://hia8r4jbvsih" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hammer_1.png" id="3_reuoa"]
+[ext_resource type="Texture2D" uid="uid://0e1jimnp74ju" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hammer_2.png" id="4_ma11m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skhch"]
+size = Vector2(17.1057, 8.17826)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ah545"]
+atlas = ExtResource("2_hykwv")
+region = Rect2(0, 0, 20, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqjs0"]
+atlas = ExtResource("3_reuoa")
+region = Rect2(0, 0, 20, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poecx"]
+atlas = ExtResource("4_ma11m")
+region = Rect2(0, 0, 20, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pnxhf"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_ah545")
+}, {
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_oqjs0")
+}, {
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_poecx")
+}],
+"loop": false,
+"name": &"hammerfall",
+"speed": 5.0
+}]
+
+[node name="lightning_hammer" type="Area2D"]
+scale = Vector2(0.743462, 0.743462)
+collision_layer = 0
+script = ExtResource("1_kw6a4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.0561543, 10.933)
+shape = SubResource("RectangleShape2D_skhch")
+
+[node name="hammeranimation" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+z_index = 9
+sprite_frames = SubResource("SpriteFrames_pnxhf")
+animation = &"hammerfall"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

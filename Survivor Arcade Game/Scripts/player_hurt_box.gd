@@ -12,3 +12,7 @@ func vine_attack() :
 	%RootedPlayer.play("Rooted")
 	%RootedAnimation.play("Rooted")
 	print("animated")
+
+func zappedcheck () :
+	# lets alien3, when in contact, check to see if its the player
+	pass

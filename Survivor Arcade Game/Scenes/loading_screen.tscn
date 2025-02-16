@@ -1,6 +1,6 @@
-[gd_scene load_steps=52 format=3 uid="uid://dgebjabcdvoxk"]
+[gd_scene load_steps=53 format=3 uid="uid://dgebjabcdvoxk"]
 
-[ext_resource type="FontFile" uid="uid://bdepemwpxaq05" path="res://Survivor Arcade Game/Fonts/Racquetball Regular.ttf" id="2_s78s3"]
+[ext_resource type="Texture2D" uid="uid://c8exlnfm7o328" path="res://Survivor Arcade Game/Background/Loading_Screen_Art (2).png" id="1_02nqy"]
 [ext_resource type="Texture2D" uid="uid://c42s5jhmufnon" path="res://Survivor Arcade Game/Spaceship/Spaceship_Still.png" id="3_3gkgt"]
 [ext_resource type="Texture2D" uid="uid://bjoad6dajfpl0" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_1.png" id="4_3cilr"]
 [ext_resource type="Texture2D" uid="uid://bphcmpfe5t3t4" path="res://Survivor Arcade Game/Spaceship/Spaceship_Moving_2.png" id="5_gatwh"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://bf77saf5lxtm3" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_3_Slow.png" id="23_ls0yh"]
 [ext_resource type="Texture2D" uid="uid://ce7mcdhqcpid6" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_4_Slow.png" id="24_bhkp7"]
 [ext_resource type="Texture2D" uid="uid://cibfllljghskp" path="res://Survivor Arcade Game/Spaceship/Spaceship_Boost_5_Slow.png" id="25_b52nm"]
+[ext_resource type="Texture2D" uid="uid://b4mihlprg5dal" path="res://Survivor Arcade Game/Background/No_Way_Home_Title_Middle.png" id="25_x3pke"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j2ney"]
 atlas = ExtResource("3_3gkgt")
@@ -205,7 +206,7 @@ animations = [{
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ygaod"]
-bg_color = Color(0, 0.482353, 0.298039, 1)
+bg_color = Color(0.839216, 0.223529, 0.0352941, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -235,23 +236,7 @@ offset_right = 1919.5
 offset_bottom = 1083.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-z_index = 4
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -758.923
-offset_right = -635.923
-offset_bottom = 21.0
-grow_horizontal = 2
-rotation = 3.14159
-scale = Vector2(-12.518, -12.518)
-theme_override_fonts/normal_font = ExtResource("2_s78s3")
-theme_override_font_sizes/normal_font_size = 20
-text = "NO WAY HOME"
+texture = ExtResource("1_02nqy")
 
 [node name="Container" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -287,4 +272,17 @@ grow_vertical = 0
 rotation = 4.71239
 theme_override_styles/background = SubResource("StyleBoxFlat_50mgo")
 theme_override_styles/fill = SubResource("StyleBoxFlat_ygaod")
+value = 54.31
 show_percentage = false
+
+[node name="TitleContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="NoWayHomeTitle" type="Sprite2D" parent="TitleContainer"]
+position = Vector2(-1075.75, 373.945)
+scale = Vector2(9.52189, 9.52189)
+texture = ExtResource("25_x3pke")

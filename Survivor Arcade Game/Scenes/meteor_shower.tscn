@@ -1,0 +1,167 @@
+[gd_scene load_steps=23 format=3 uid="uid://b1i3l31oor2gt"]
+
+[ext_resource type="Texture2D" uid="uid://d4mgeresv71fl" path="res://Survivor Arcade Game/Weather/Asteroid_1_1x1_Flying.png" id="1_7l45k"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/meteor_shower.gd" id="1_uudex"]
+[ext_resource type="Texture2D" uid="uid://nsginnyjhrw2" path="res://Survivor Arcade Game/Weather/Asteroid_1_1x1_Flying_P2.png" id="2_lb3bg"]
+[ext_resource type="Texture2D" uid="uid://dmp2e5fmjodmo" path="res://Survivor Arcade Game/Weather/Asteroid_2_1x1_Flying.png" id="3_jq43s"]
+[ext_resource type="Texture2D" uid="uid://b75wkqlah42ph" path="res://Survivor Arcade Game/Weather/Asteroid_2_1x1_Flying_P2.png" id="4_yhlim"]
+[ext_resource type="Texture2D" uid="uid://gclfp1kvayj0" path="res://Survivor Arcade Game/Weather/Asteroid_3_1x1_Flying.png" id="5_5jyog"]
+[ext_resource type="Texture2D" uid="uid://c7bgojjrl6uxj" path="res://Survivor Arcade Game/Weather/Asteroid_3_1x1_Flying_P2.png" id="6_ylqel"]
+[ext_resource type="Texture2D" uid="uid://rpc5k1bkarah" path="res://Survivor Arcade Game/Weather/Asteroid_4_1x1_Flying.png" id="7_dpgyy"]
+[ext_resource type="Texture2D" uid="uid://18qpwum5mcqw" path="res://Survivor Arcade Game/Weather/Asteroid_4_1x1_Flying_P2.png" id="8_qm436"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2r1d"]
+atlas = ExtResource("1_7l45k")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tm5ak"]
+atlas = ExtResource("2_lb3bg")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_35w3d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2r1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tm5ak")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eeuxc"]
+size = Vector2(9.25984, 9.85512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmsa0"]
+atlas = ExtResource("3_jq43s")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnf5q"]
+atlas = ExtResource("4_yhlim")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uocf0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmsa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnf5q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhn4p"]
+atlas = ExtResource("5_5jyog")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txdsb"]
+atlas = ExtResource("6_ylqel")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pjic8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhn4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txdsb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynvxm"]
+atlas = ExtResource("7_dpgyy")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pv6t6"]
+atlas = ExtResource("8_qm436")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oknhm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynvxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pv6t6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Meteor Shower" type="Node2D"]
+script = ExtResource("1_uudex")
+
+[node name="meteor1" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(23.0904, 0)
+collision_layer = 3506438144
+collision_mask = 3506438144
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="meteor1"]
+sprite_frames = SubResource("SpriteFrames_35w3d")
+autoplay = "default"
+frame_progress = 0.250502
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteor1"]
+position = Vector2(0.089859, 7.26674)
+scale = Vector2(1.45807, 1.45807)
+shape = SubResource("RectangleShape2D_eeuxc")
+
+[node name="meteor2" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-27.55, 0)
+collision_layer = 3506438144
+collision_mask = 3506438144
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="meteor2"]
+sprite_frames = SubResource("SpriteFrames_uocf0")
+autoplay = "default"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="meteor2"]
+position = Vector2(-0.110443, 8.186)
+scale = Vector2(1.55916, 1.55916)
+shape = SubResource("RectangleShape2D_eeuxc")
+
+[node name="meteor3" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(47.6674, 0)
+collision_layer = 3506438144
+collision_mask = 3506438144
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="meteor3"]
+sprite_frames = SubResource("SpriteFrames_pjic8")
+autoplay = "default"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="meteor3"]
+position = Vector2(-0.549141, 8.186)
+scale = Vector2(1.52755, 1.52755)
+shape = SubResource("RectangleShape2D_eeuxc")
+
+[node name="meteor4" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 3506438144
+collision_mask = 3506438144
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="meteor4"]
+sprite_frames = SubResource("SpriteFrames_oknhm")
+autoplay = "default"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="meteor4"]
+position = Vector2(-0.524842, 9.09444)
+scale = Vector2(1.2654, 1.2654)
+shape = SubResource("RectangleShape2D_eeuxc")
+
+[connection signal="body_entered" from="meteor1" to="." method="_on_meteor_1_body_entered"]

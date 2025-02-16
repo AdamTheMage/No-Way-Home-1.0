@@ -1,5 +1,6 @@
 extends Area2D
 
+var endanimation = false
 
 func shoot():
 	const PROJECTILE = preload("res://Survivor Arcade Game/Scenes/primary_projectile.tscn")
@@ -9,4 +10,9 @@ func shoot():
 	%PrimaryFirePoint.add_child(new_projectile)
 	
 func _on_timer_timeout() :
-	shoot()
+	if endanimation == false :
+		shoot()
+
+
+func _on_squad_regroup_animation_started(_SquadRegroup: StringName) :
+	endanimation = true

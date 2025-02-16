@@ -1,0 +1,259 @@
+[gd_scene load_steps=13 format=3 uid="uid://bjhpl6kf0lelp"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/heavy_flamethrower_pickup.gd" id="1_dhadb"]
+[ext_resource type="Texture2D" uid="uid://3r8tuf0a3spw" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_L.png" id="2_s4pfg"]
+[ext_resource type="Texture2D" uid="uid://kgye4ndnlbrk" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_R.png" id="3_s71o4"]
+
+[sub_resource type="Animation" id="Animation_4ddvw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FlamethrowerSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-0.0160974, -0.0352935)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FlamethrowerSprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.14159]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10, 0.013)]
+}
+
+[sub_resource type="Animation" id="Animation_lhchd"]
+resource_name = "flamethrower_drop"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FlamethrowerSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-10.016, -0.035), Vector2(-5, -13), Vector2(0, -0.035)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FlamethrowerSprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 3.14159, 6.28319, 9.42478, 12.5664]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(0, 0.013)]
+}
+
+[sub_resource type="Animation" id="Animation_bary0"]
+resource_name = "flamethrower_drop_left"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FlamethrowerSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(10, -0.035), Vector2(5, -13), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FlamethrowerSprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -3.14159, -6.28319, -9.42478, -12.5664]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0.013)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e4or6"]
+_data = {
+"RESET": SubResource("Animation_4ddvw"),
+"flamethrower_drop": SubResource("Animation_lhchd"),
+"flamethrower_drop_left": SubResource("Animation_bary0")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m7f6t"]
+radius = 5.38517
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdtlr"]
+atlas = ExtResource("2_s4pfg")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cphcd"]
+atlas = ExtResource("3_s71o4")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0tcpe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdtlr")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cphcd")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jl2e0"]
+
+[node name="Heavy Weapon" type="Area2D"]
+scale = Vector2(0.957874, 0.957874)
+collision_layer = 262144
+collision_mask = 262144
+script = ExtResource("1_dhadb")
+
+[node name="flamethrowerdrop" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_e4or6")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 0.013)
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CircleShape2D_m7f6t")
+
+[node name="FlamethrowerSprite" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+z_index = 1
+texture_filter = 1
+position = Vector2(-0.0160974, -0.0352935)
+rotation = 3.14159
+scale = Vector2(0.543703, 0.543703)
+sprite_frames = SubResource("SpriteFrames_0tcpe")
+animation = &"right"
+
+[node name="magnetarea" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(10, 0)
+scale = Vector2(0.250652, 0.250652)
+collision_layer = 262144
+collision_mask = 262144
+
+[node name="magnetcollision" type="CollisionShape2D" parent="magnetarea"]
+position = Vector2(0, 3.146)
+scale = Vector2(8.64223, 8.64223)
+shape = SubResource("CircleShape2D_jl2e0")
+
+[node name="directionupdater" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="DespawnTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[node name="pickupcooldown" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="animation_finished" from="flamethrowerdrop" to="." method="_on_flamethrowerdrop_animation_finished"]
+[connection signal="body_entered" from="magnetarea" to="." method="_on_magnetarea_body_entered"]
+[connection signal="body_exited" from="magnetarea" to="." method="_on_magnetarea_body_exited"]
+[connection signal="timeout" from="directionupdater" to="." method="_on_directionupdater_timeout"]
+[connection signal="timeout" from="DespawnTimer" to="." method="_on_despawn_timer_timeout"]
+[connection signal="timeout" from="pickupcooldown" to="." method="_on_pickupcooldown_timeout"]

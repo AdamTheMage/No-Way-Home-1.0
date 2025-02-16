@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c0f61ck2kt3x" path="res://Survivor Arcade Game/Background/Space_Background_64x64.png" id="2_me5a1"]
 [ext_resource type="PackedScene" uid="uid://cswdupvttg62o" path="res://Survivor Arcade Game/Scenes/player.tscn" id="3_f2psk"]
 [ext_resource type="FontFile" uid="uid://6phwuvbfmw4m" path="res://Survivor Arcade Game/Fonts/PixelatedEleganceRegular-ovyAA.ttf" id="5_mxsig"]
-[ext_resource type="PackedScene" uid="uid://cypol4rm8d4oj" path="res://Survivor Arcade Game/Scenes/asteroid_1.tscn" id="12_qleua"]
+[ext_resource type="PackedScene" uid="uid://cypol4rm8d4oj" path="res://Survivor Arcade Game/Scenes/asteroids.tscn" id="12_qleua"]
 [ext_resource type="PackedScene" uid="uid://fu2fgrk5p6de" path="res://Survivor Arcade Game/Scenes/asteroid_2.tscn" id="13_lhqjm"]
 [ext_resource type="PackedScene" uid="uid://buj34u33sflm2" path="res://Survivor Arcade Game/Scenes/asteroid_3.tscn" id="14_2dr3u"]
 [ext_resource type="PackedScene" uid="uid://qf2046drjg6x" path="res://Survivor Arcade Game/Scenes/asteroid_4.tscn" id="15_hpb3b"]

@@ -112,14 +112,16 @@ radius = 15.0
 height = 34.0
 
 [node name="Alien4" type="CharacterBody2D"]
-collision_layer = 1073743878
-collision_mask = 1073743873
+collision_layer = 1073809414
+collision_mask = 1073743875
+motion_mode = 1
 script = ExtResource("1_ni6my")
 
 [node name="alien4" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(2, -20)
 sprite_frames = SubResource("SpriteFrames_qc0wq")
+animation = &"defaultfiring"
 autoplay = "default"
 
 [node name="HighFirePoint" type="Marker2D" parent="alien4"]
@@ -149,15 +151,31 @@ shape = SubResource("CapsuleShape2D_bfg26")
 [node name="StatusHolder" type="Node" parent="."]
 
 [node name="MissileTimerLow" type="Timer" parent="."]
+unique_name_in_owner = true
 wait_time = 4.5
 autostart = true
+
+[node name="MissileTimerLowPhaseTwo" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 4.5
 
 [node name="MissileTimerAnimation" type="Timer" parent="."]
 unique_name_in_owner = true
 wait_time = 3.0
 autostart = true
 
-[connection signal="timeout" from="MissileTimerLow" to="." method="_on_missile_timer_timeout"]
+[node name="MissileTimerAnimationPhaseTwo" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 3.0
+
+[connection signal="body_entered" from="AlienBox" to="." method="_on_alien_box_body_entered"]
 [connection signal="timeout" from="MissileTimerLow" to="." method="_on_missile_timer_low_timeout"]
+[connection signal="timeout" from="MissileTimerLow" to="." method="_on_missile_timer_timeout"]
+[connection signal="timeout" from="MissileTimerLowPhaseTwo" to="." method="_on_missile_timer_low_timeout"]
+[connection signal="timeout" from="MissileTimerLowPhaseTwo" to="." method="_on_missile_timer_low_phase_two_timeout"]
+[connection signal="timeout" from="MissileTimerLowPhaseTwo" to="." method="_on_missile_timer_timeout"]
 [connection signal="timeout" from="MissileTimerAnimation" to="." method="_on_missile_timer_animation_timeout"]
 [connection signal="timeout" from="MissileTimerAnimation" to="." method="_on_missile_timer_low_animation_timeout"]
+[connection signal="timeout" from="MissileTimerAnimationPhaseTwo" to="." method="_on_missile_timer_animation_phase_two_timeout"]
+[connection signal="timeout" from="MissileTimerAnimationPhaseTwo" to="." method="_on_missile_timer_animation_timeout"]
+[connection signal="timeout" from="MissileTimerAnimationPhaseTwo" to="." method="_on_missile_timer_low_animation_timeout"]

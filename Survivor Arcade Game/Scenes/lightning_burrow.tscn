@@ -1,0 +1,270 @@
+[gd_scene load_steps=62 format=3 uid="uid://bhxytp08mb4ff"]
+
+[ext_resource type="Texture2D" uid="uid://cf45cj7qbnn05" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_17.png" id="1_20h7c"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/lightning_burrow.gd" id="1_osy7h"]
+[ext_resource type="Texture2D" uid="uid://g2vogbcfdlnn" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_16.png" id="2_nbecg"]
+[ext_resource type="Texture2D" uid="uid://s76851umwasy" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_15.png" id="3_mrjwq"]
+[ext_resource type="Texture2D" uid="uid://4tm8j57nfsfb" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_14.png" id="4_g8dm1"]
+[ext_resource type="Texture2D" uid="uid://cg80jsdpddp3e" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_13.png" id="5_l8xxk"]
+[ext_resource type="Texture2D" uid="uid://dfii8ohxkckkb" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_12.png" id="6_bo6cm"]
+[ext_resource type="Texture2D" uid="uid://c7msyaovd3rj7" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_11.png" id="7_y7a5k"]
+[ext_resource type="Texture2D" uid="uid://cnu3bqdaofg06" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_10.png" id="8_32ipu"]
+[ext_resource type="Texture2D" uid="uid://4io8s7i1t26p" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_9.png" id="9_h0kkv"]
+[ext_resource type="Texture2D" uid="uid://c5ok0oqwdah5m" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_8.png" id="10_4b51q"]
+[ext_resource type="Texture2D" uid="uid://d2ru5po3vyq6a" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_7.png" id="11_h53xg"]
+[ext_resource type="Texture2D" uid="uid://b77j1j4pvxv8e" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_6.png" id="12_10n84"]
+[ext_resource type="Texture2D" uid="uid://dyou1q0gupe8" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_5.png" id="13_kt2i1"]
+[ext_resource type="Texture2D" uid="uid://02oipnfue1xa" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_4.png" id="14_fyiva"]
+[ext_resource type="Texture2D" uid="uid://7jy5xda3k552" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_3.png" id="15_fmde5"]
+[ext_resource type="Texture2D" uid="uid://c3tsarku5qfqr" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_2.png" id="16_jm4v8"]
+[ext_resource type="Texture2D" uid="uid://s58raaw580dv" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_1.png" id="17_pu11s"]
+[ext_resource type="Texture2D" uid="uid://5yiwa2qlaaey" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_0.png" id="18_thupx"]
+[ext_resource type="Texture2D" uid="uid://dlcb20oml37t7" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_1.png" id="19_w23mr"]
+[ext_resource type="Texture2D" uid="uid://b0ln3uuma5qfl" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_2.png" id="20_6021v"]
+[ext_resource type="Texture2D" uid="uid://dvdnp6wwfk40o" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_3.png" id="21_r4u8a"]
+[ext_resource type="Texture2D" uid="uid://dogxo74rhllby" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_4.png" id="22_uncxi"]
+[ext_resource type="Texture2D" uid="uid://djc362fyw7eyk" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_5.png" id="23_vkrvw"]
+[ext_resource type="Texture2D" uid="uid://c342mse3lwee6" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_6.png" id="24_m60oq"]
+[ext_resource type="Texture2D" uid="uid://306tr2w2v4gk" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_7.png" id="25_ytsdq"]
+[ext_resource type="Texture2D" uid="uid://c7ul3hcb8fnvw" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_8.png" id="26_6nhcg"]
+[ext_resource type="Texture2D" uid="uid://c31pleqadjh4u" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_9.png" id="27_675w2"]
+[ext_resource type="Texture2D" uid="uid://bnvad8vr66rjx" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_10.png" id="28_dxgjk"]
+[ext_resource type="Texture2D" uid="uid://cj5gm3ixr4sey" path="res://Survivor Arcade Game/Aliens/Lenurcher/Lightning_Hellfire_Burrow_Leaving_11.png" id="29_cvsuu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n58pr"]
+size = Vector2(72, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jg2ck"]
+atlas = ExtResource("1_20h7c")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yob0q"]
+atlas = ExtResource("2_nbecg")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cix71"]
+atlas = ExtResource("3_mrjwq")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt00l"]
+atlas = ExtResource("4_g8dm1")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_riw67"]
+atlas = ExtResource("5_l8xxk")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcvgi"]
+atlas = ExtResource("6_bo6cm")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4iuni"]
+atlas = ExtResource("7_y7a5k")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vppj"]
+atlas = ExtResource("8_32ipu")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2iw1t"]
+atlas = ExtResource("9_h0kkv")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1a6hj"]
+atlas = ExtResource("10_4b51q")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b11ld"]
+atlas = ExtResource("11_h53xg")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6tj3e"]
+atlas = ExtResource("12_10n84")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1b23p"]
+atlas = ExtResource("13_kt2i1")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bcll"]
+atlas = ExtResource("14_fyiva")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxmu1"]
+atlas = ExtResource("15_fmde5")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ucmq"]
+atlas = ExtResource("16_jm4v8")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g81p6"]
+atlas = ExtResource("17_pu11s")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmlj0"]
+atlas = ExtResource("18_thupx")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e8mc"]
+atlas = ExtResource("19_w23mr")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqcve"]
+atlas = ExtResource("20_6021v")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cetrn"]
+atlas = ExtResource("21_r4u8a")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v7ta"]
+atlas = ExtResource("22_uncxi")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtevs"]
+atlas = ExtResource("23_vkrvw")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jj5pu"]
+atlas = ExtResource("24_m60oq")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0owj"]
+atlas = ExtResource("25_ytsdq")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83me3"]
+atlas = ExtResource("26_6nhcg")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0auaj"]
+atlas = ExtResource("27_675w2")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_722ul"]
+atlas = ExtResource("28_dxgjk")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_447mj"]
+atlas = ExtResource("29_cvsuu")
+region = Rect2(0, 0, 75, 17)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ypki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jg2ck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yob0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cix71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt00l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_riw67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcvgi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4iuni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vppj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2iw1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1a6hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b11ld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6tj3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1b23p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bcll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxmu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ucmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g81p6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmlj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e8mc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqcve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cetrn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v7ta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtevs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jj5pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0owj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83me3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0auaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_722ul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_447mj")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"burrowing",
+"speed": 24.0
+}]
+
+[node name="LightningBurrow" type="Area2D"]
+scale = Vector2(0.284113, 0.284113)
+collision_layer = 0
+script = ExtResource("1_osy7h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_n58pr")
+
+[node name="BurrowingAnimation" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+z_index = 9
+position = Vector2(0, -7.65628)
+sprite_frames = SubResource("SpriteFrames_7ypki")
+animation = &"burrowing"
+autoplay = "burrowing"
+frame = 18
+frame_progress = 0.247905
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

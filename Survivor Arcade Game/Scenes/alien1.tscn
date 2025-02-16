@@ -1,25 +1,45 @@
-[gd_scene load_steps=12 format=3 uid="uid://b00tb6a3dl5uh"]
+[gd_scene load_steps=20 format=3 uid="uid://b00tb6a3dl5uh"]
 
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien1.gd" id="1_eq1by"]
 [ext_resource type="Texture2D" uid="uid://xslim5enb576" path="res://Survivor Arcade Game/Aliens/Alien_1_Hurt_Overhaul.png" id="2_oqghq"]
 [ext_resource type="Texture2D" uid="uid://crbfm363t82ri" path="res://Survivor Arcade Game/Aliens/Alien1_Base_Overhaul.png" id="3_6urs7"]
 [ext_resource type="Texture2D" uid="uid://b8nprp7e0rajx" path="res://Survivor Arcade Game/Aliens/Alien_1_Hurt_Overhaul_Blue.png" id="3_c2w4v"]
+[ext_resource type="Texture2D" uid="uid://dr183d84txgai" path="res://Survivor Arcade Game/Aliens/Alien1/Alien_1_Hurt_Overhaul.png" id="3_xmam4"]
+[ext_resource type="Texture2D" uid="uid://bxtv2xcmix3is" path="res://Survivor Arcade Game/Aliens/Alien1/Alien_1_Hurt_Overhaul_Blue.png" id="5_jq6vx"]
 [ext_resource type="Texture2D" uid="uid://cnjsjvsmosh6e" path="res://Survivor Arcade Game/Aliens/Alien1_Base_Overhaul_Blue.png" id="5_vthhd"]
+[ext_resource type="Texture2D" uid="uid://drvt0o1whpv2v" path="res://Survivor Arcade Game/Aliens/Alien1/Alien1_Base_Overhaul.png" id="7_0i65m"]
+[ext_resource type="Texture2D" uid="uid://bvi50f5gr51oy" path="res://Survivor Arcade Game/Aliens/Alien1/Alien1_Base_Overhaul_Blue.png" id="9_bosye"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_en6gc"]
 atlas = ExtResource("2_oqghq")
+region = Rect2(0, 0, 30, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_upryo"]
+atlas = ExtResource("3_xmam4")
 region = Rect2(0, 0, 30, 29)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_73j82"]
 atlas = ExtResource("3_c2w4v")
 region = Rect2(0, 0, 30, 29)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rmeq"]
+atlas = ExtResource("5_jq6vx")
+region = Rect2(0, 0, 30, 29)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_jsmba"]
 atlas = ExtResource("3_6urs7")
 region = Rect2(0, 0, 28, 27)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jmm3"]
+atlas = ExtResource("7_0i65m")
+region = Rect2(0, 0, 28, 27)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_utqkr"]
 atlas = ExtResource("5_vthhd")
+region = Rect2(0, 0, 28, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6ks4"]
+atlas = ExtResource("9_bosye")
 region = Rect2(0, 0, 28, 27)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hr668"]
@@ -27,6 +47,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_en6gc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_upryo")
 }],
 "loop": true,
 "name": &"Attacking",
@@ -35,6 +58,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_73j82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rmeq")
 }],
 "loop": true,
 "name": &"AttackingBlue",
@@ -43,25 +69,33 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jsmba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jmm3")
 }],
 "loop": true,
 "name": &"Default",
-"speed": 5.0
+"speed": 1.25
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_utqkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6ks4")
 }],
 "loop": true,
 "name": &"DefaultBlue",
-"speed": 5.0
+"speed": 1.25
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4neyy"]
 
 [node name="Mob" type="CharacterBody2D"]
-collision_layer = 1073743878
+scale = Vector2(1.12236, 1.12236)
+collision_layer = 1073809414
 collision_mask = 1073743873
+motion_mode = 1
 script = ExtResource("1_eq1by")
 
 [node name="alien1" type="AnimatedSprite2D" parent="."]
@@ -81,7 +115,6 @@ shape = SubResource("CircleShape2D_4neyy")
 unique_name_in_owner = true
 scale = Vector2(0.806731, 1.11307)
 collision_layer = 1073741825
-collision_mask = 1073741825
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AlienBox"]
 shape = SubResource("CircleShape2D_4neyy")
@@ -92,7 +125,11 @@ shape = SubResource("CircleShape2D_4neyy")
 wait_time = 0.05
 autostart = true
 
+[node name="randommovement" type="Timer" parent="."]
+autostart = true
+
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="area_entered" from="AlienBox" to="." method="_on_alien_box_area_entered"]
 [connection signal="body_entered" from="AlienBox" to="." method="_on_alien_box_body_entered"]
 [connection signal="timeout" from="appearancechecker" to="." method="_on_appearancechecker_timeout"]
+[connection signal="timeout" from="randommovement" to="." method="_on_randommovement_timeout"]

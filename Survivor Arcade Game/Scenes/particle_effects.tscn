@@ -1,0 +1,904 @@
+[gd_scene load_steps=49 format=3 uid="uid://sl8gqqm3pbh4"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/particle_effects.gd" id="1_k822g"]
+[ext_resource type="Texture2D" uid="uid://dkrsbd1mk5fma" path="res://Survivor Arcade Game/Particle Color Ramps/regularmoveparticles.tres" id="2_3exjr"]
+
+[sub_resource type="Gradient" id="Gradient_0fqvt"]
+offsets = PackedFloat32Array(0.116279, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0.452344, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f8t7g"]
+gradient = SubResource("Gradient_0fqvt")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ow3fp"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = 720.0
+angle_max = 720.0
+velocity_pivot = Vector3(2, 0, 0)
+spread = 180.0
+initial_velocity_min = -50.2
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = 9.99998
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -38.21
+linear_accel_max = -5.69
+radial_accel_min = 28.46
+radial_accel_max = 59.35
+tangential_accel_min = -100.0
+tangential_accel_max = 85.35
+damping_max = 7.5
+scale_max = 1.5
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.6, 0.901961, 0.486275, 0.705882)
+color_ramp = SubResource("GradientTexture1D_f8t7g")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_d3qmw"]
+colors = PackedColorArray(0, 0.619608, 0, 1, 0.448067, 0.448067, 0.448067, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_a0d0c"]
+gradient = SubResource("Gradient_d3qmw")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_r7102"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = -9.99999
+angle_max = 10.0
+velocity_pivot = Vector3(2, 0, 0)
+spread = 120.0
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = 50.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -90.0
+linear_accel_max = -5.0
+radial_accel_min = -5.0
+radial_accel_max = -2.23517e-06
+tangential_accel_min = -100.0
+tangential_accel_max = 70.0
+damping_max = 7.5
+scale_max = 2.0
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.6, 0.901961, 0.486275, 0.705882)
+color_ramp = SubResource("GradientTexture1D_a0d0c")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_d3lsk"]
+colors = PackedColorArray(0.660284, 0.772916, 1, 1, 0.721569, 0.458824, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_o3ltb"]
+gradient = SubResource("Gradient_d3lsk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cbnt8"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(2, 0, 0)
+spread = 120.0
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+gravity = Vector3(65, 90, 0)
+linear_accel_min = -90.0
+linear_accel_max = -5.0
+radial_accel_min = -5.0
+radial_accel_max = -2.23517e-06
+tangential_accel_min = -100.0
+tangential_accel_max = 70.0
+damping_max = 7.5
+scale_max = 2.0
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.172549, 0.886275, 0.952941, 0.705882)
+color_ramp = SubResource("GradientTexture1D_o3ltb")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_rlim0"]
+offsets = PackedFloat32Array(0, 0.497674, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.99905, 0.63309, 0.617082, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ihl5j"]
+gradient = SubResource("Gradient_rlim0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ujjor"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(2, 0, 0)
+spread = 120.0
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+gravity = Vector3(65, 90, 0)
+linear_accel_min = -90.0
+linear_accel_max = -5.0
+radial_accel_min = -5.0
+radial_accel_max = -2.23517e-06
+tangential_accel_min = -100.0
+tangential_accel_max = 70.0
+damping_max = 7.5
+scale_max = 1.5
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.120558, 0.819866, 0.90721, 0.705882)
+color_ramp = SubResource("GradientTexture1D_ihl5j")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_ib1ht"]
+colors = PackedColorArray(1, 1, 1, 1, 0.275091, 0.275091, 0.275091, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nj5jx"]
+gradient = SubResource("Gradient_ib1ht")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2ysc8"]
+lifetime_randomness = 0.1
+particle_flag_disable_z = true
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+velocity_pivot = Vector3(1, 0, 0)
+spread = 180.0
+initial_velocity_min = 5.0
+initial_velocity_max = 15.0
+angular_velocity_min = 20.0
+angular_velocity_max = 20.0
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 5.4
+linear_accel_max = 244.9
+radial_accel_min = -20.0
+radial_accel_max = -20.0
+tangential_accel_min = -2.23517e-06
+tangential_accel_max = -2.23517e-06
+damping_min = 58.253
+damping_max = 95.958
+scale_min = 0.5
+scale_max = 2.0
+scale_over_velocity_min = 131.15
+scale_over_velocity_max = 131.15
+color = Color(0.88355, 0.915501, 0.904748, 0.705882)
+color_ramp = SubResource("GradientTexture1D_nj5jx")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8owdi"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = 720.0
+angle_max = 720.0
+velocity_pivot = Vector3(2, 0, 0)
+spread = 180.0
+initial_velocity_min = -50.2
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = 9.99998
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -38.21
+linear_accel_max = -5.69
+radial_accel_min = 28.46
+radial_accel_max = 59.35
+tangential_accel_min = -100.0
+tangential_accel_max = 85.35
+damping_max = 7.5
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.266667, 0.662745, 1, 0.705882)
+color_ramp = ExtResource("2_3exjr")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7miyv"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(2, 0, 0)
+spread = 120.0
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+gravity = Vector3(65, 90, 0)
+linear_accel_min = -90.0
+linear_accel_max = -5.0
+radial_accel_min = -5.0
+radial_accel_max = -2.23517e-06
+tangential_accel_min = -100.0
+tangential_accel_max = 70.0
+damping_max = 7.5
+scale_max = 2.0
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.772513, 0.253035, 0.971649, 0.705882)
+color_ramp = ExtResource("2_3exjr")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_608um"]
+offsets = PackedFloat32Array(0, 0.506977, 0.990698)
+colors = PackedColorArray(0, 0.916855, 0.916861, 1, 0.439216, 1, 0.835294, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_p5v3q"]
+gradient = SubResource("Gradient_608um")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6q1re"]
+lifetime_randomness = 0.33
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(2, 0, 0)
+spread = 120.0
+angular_velocity_min = 318.69
+angular_velocity_max = 720.0
+gravity = Vector3(65, 90, 0)
+linear_accel_min = -90.0
+linear_accel_max = -5.0
+radial_accel_min = 6.56
+radial_accel_max = 100.0
+tangential_accel_min = -39.34
+tangential_accel_max = 70.0
+damping_max = 7.5
+scale_max = 3.0
+scale_over_velocity_min = 334.41
+scale_over_velocity_max = 334.41
+color = Color(0.701453, 0.888213, 1, 0.788235)
+color_ramp = SubResource("GradientTexture1D_p5v3q")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_lm7nq"]
+colors = PackedColorArray(0.719077, 0.719076, 0.719076, 0.835294, 1, 1, 1, 0.835294)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qk126"]
+gradient = SubResource("Gradient_lm7nq")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4k12u"]
+lifetime_randomness = 0.1
+particle_flag_disable_z = true
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+velocity_pivot = Vector3(1, 0, 0)
+spread = 180.0
+initial_velocity_min = 5.0
+initial_velocity_max = 15.0
+angular_velocity_min = 20.0
+angular_velocity_max = 20.0
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 5.4
+linear_accel_max = 244.9
+radial_accel_min = -20.0
+radial_accel_max = -20.0
+tangential_accel_min = -2.23517e-06
+tangential_accel_max = -2.23517e-06
+damping_min = 58.253
+damping_max = 95.958
+scale_min = 0.5
+scale_max = 2.0
+scale_over_velocity_min = 131.15
+scale_over_velocity_max = 131.15
+color = Color(0.822773, 0.842835, 0.839467, 0.870588)
+color_ramp = SubResource("GradientTexture1D_qk126")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_0vseq"]
+colors = PackedColorArray(1, 1, 1, 1, 0.990725, 0.962687, 0.794197, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tnuar"]
+gradient = SubResource("Gradient_0vseq")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j52sl"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+angle_min = 720.0
+angle_max = 720.0
+velocity_pivot = Vector3(2, 0, 0)
+spread = 180.0
+initial_velocity_min = -50.2
+angular_velocity_min = 212.46
+angular_velocity_max = 427.32
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = 9.99998
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -38.21
+linear_accel_max = -5.69
+radial_accel_min = 28.46
+radial_accel_max = 59.35
+tangential_accel_min = -100.0
+tangential_accel_max = 85.35
+damping_max = 7.5
+scale_max = 1.5
+scale_over_velocity_min = 532.79
+scale_over_velocity_max = 532.79
+color = Color(0.905882, 0.894118, 0.909804, 0.705882)
+color_ramp = SubResource("GradientTexture1D_tnuar")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_if8g1"]
+colors = PackedColorArray(0.497474, 0.497474, 0.497474, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lfu7o"]
+gradient = SubResource("Gradient_if8g1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_oxfbk"]
+lifetime_randomness = 0.1
+particle_flag_disable_z = true
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+velocity_pivot = Vector3(1, 0, 0)
+spread = 180.0
+initial_velocity_min = 5.0
+initial_velocity_max = 15.0
+angular_velocity_min = 20.0
+angular_velocity_max = 20.0
+orbit_velocity_min = -0.131
+orbit_velocity_max = 0.166
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 5.4
+linear_accel_max = 244.9
+radial_accel_min = -20.0
+radial_accel_max = -20.0
+tangential_accel_min = -2.23517e-06
+tangential_accel_max = -2.23517e-06
+damping_min = 58.253
+damping_max = 95.958
+scale_min = 0.5
+scale_over_velocity_min = 131.15
+scale_over_velocity_max = 131.15
+color = Color(1, 0.833275, 0.810817, 1)
+color_ramp = SubResource("GradientTexture1D_lfu7o")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.25
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_87juu"]
+offsets = PackedFloat32Array(0, 0.0232558, 0.148837, 0.576744, 0.865116)
+colors = PackedColorArray(0.772549, 0.247059, 0.27451, 0.843137, 0.634018, 0.16097, 0.0503042, 0.854902, 0.880938, 0.499291, 0.125002, 0.854902, 0.823529, 0.533333, 0.00392157, 0.858824, 0.768627, 0.588235, 0.0588235, 0.858824)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_12ohf"]
+gradient = SubResource("Gradient_87juu")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hhujb"]
+lifetime_randomness = 0.5
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(1, 0, 0)
+spread = 90.0
+angular_velocity_min = -1.60933e-05
+angular_velocity_max = 9.99998
+radial_velocity_min = 9.99998
+radial_velocity_max = 15.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 5.0
+radial_accel_min = 10.0
+radial_accel_max = 25.0
+tangential_accel_min = -30.0
+tangential_accel_max = 30.0
+damping_max = 7.5
+scale_min = 0.5
+scale_max = 1.75
+scale_over_velocity_min = 334.41
+scale_over_velocity_max = 334.41
+color = Color(1, 1, 1, 0.788235)
+color_ramp = SubResource("GradientTexture1D_12ohf")
+turbulence_enabled = true
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+collision_use_scale = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_k5522"]
+lifetime_randomness = 0.75
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(1, 0, 0)
+spread = 90.0
+angular_velocity_min = -1.60933e-05
+angular_velocity_max = 200.0
+radial_velocity_min = 4.99998
+radial_velocity_max = 12.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 40.0
+linear_accel_max = 50.0
+radial_accel_min = 12.0
+radial_accel_max = 24.0
+tangential_accel_min = -12.0
+tangential_accel_max = 12.0
+damping_max = 7.5
+scale_min = 0.5
+scale_max = 2.0
+scale_over_velocity_min = 334.41
+scale_over_velocity_max = 334.41
+color = Color(0.925332, 0.987773, 1, 0.788235)
+color_ramp = ExtResource("2_3exjr")
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+collision_use_scale = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xq6g8"]
+lifetime_randomness = 0.33
+particle_flag_disable_z = true
+angle_min = -247.9
+angle_max = 210.7
+velocity_pivot = Vector3(2, 0, 0)
+spread = 120.0
+angular_velocity_min = 318.69
+angular_velocity_max = 720.0
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = 20.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 10.0
+radial_accel_min = -15.0
+radial_accel_max = 35.0
+tangential_accel_min = -31.14
+tangential_accel_max = 25.0
+damping_max = 7.5
+scale_max = 2.0
+scale_over_velocity_min = 334.41
+scale_over_velocity_max = 334.41
+color = Color(0.821374, 0.627395, 0.990744, 0.788235)
+color_ramp = ExtResource("2_3exjr")
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_4lh46"]
+colors = PackedColorArray(0.890196, 0.305882, 0.266667, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yo88m"]
+gradient = SubResource("Gradient_4lh46")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_81go2"]
+lifetime_randomness = 0.33
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 247.8
+velocity_pivot = Vector3(1, 0, 0)
+direction = Vector3(10, 0, 0)
+spread = 180.0
+flatness = 0.101
+initial_velocity_min = 5.0
+initial_velocity_max = 5.0
+angular_velocity_min = 720.0
+angular_velocity_max = 720.0
+radial_velocity_min = -10.0
+radial_velocity_max = 9.99998
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 10.0
+radial_accel_min = -15.0
+radial_accel_max = 35.0
+tangential_accel_min = -31.14
+tangential_accel_max = 25.0
+damping_max = 7.5
+scale_max = 2.0
+scale_over_velocity_max = 100.0
+color = Color(0.890196, 0.866667, 0.313726, 0.647059)
+color_ramp = SubResource("GradientTexture1D_yo88m")
+turbulence_noise_strength = 1.2
+turbulence_influence_min = 0.0
+turbulence_influence_max = 0.235
+turbulence_initial_displacement_min = 1.49012e-06
+turbulence_initial_displacement_max = 1.49012e-06
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+collision_use_scale = true
+
+[sub_resource type="Gradient" id="Gradient_031gm"]
+colors = PackedColorArray(0.611765, 0.137255, 0, 0.741176, 1, 1, 1, 0.737255)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0utaf"]
+gradient = SubResource("Gradient_031gm")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bsg8n"]
+particle_flag_disable_z = true
+radial_velocity_min = 0.999978
+radial_velocity_max = 1.99998
+gravity = Vector3(0, 0, 0)
+damping_max = 2.0
+scale_min = 0.5
+color = Color(1, 0.755773, 0.712448, 1)
+color_ramp = SubResource("GradientTexture1D_0utaf")
+
+[sub_resource type="Gradient" id="Gradient_tugff"]
+colors = PackedColorArray(0.834614, 0.834614, 0.834614, 1, 1, 0.757567, 0.735083, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yoc08"]
+gradient = SubResource("Gradient_tugff")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_elwiw"]
+particle_flag_disable_z = true
+radial_velocity_min = 0.999978
+radial_velocity_max = 1.99998
+gravity = Vector3(0, 0, 0)
+damping_max = 2.0
+scale_min = 0.5
+color_ramp = SubResource("GradientTexture1D_yoc08")
+
+[sub_resource type="Gradient" id="Gradient_phel0"]
+offsets = PackedFloat32Array(0.162791, 0.944186)
+colors = PackedColorArray(0.172549, 0.866667, 0.752941, 1, 0.631373, 0.215686, 0.823529, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bqynv"]
+gradient = SubResource("Gradient_phel0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_f35a2"]
+particle_flag_disable_z = true
+radial_velocity_min = 0.999978
+radial_velocity_max = 1.99998
+gravity = Vector3(0, 0, 0)
+damping_max = 2.0
+scale_min = 0.5
+color_ramp = SubResource("GradientTexture1D_bqynv")
+
+[node name="ParticleEffects" type="Node2D"]
+z_index = 2
+y_sort_enabled = true
+script = ExtResource("1_k822g")
+
+[node name="alien1bloodparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 20
+amount_ratio = 0.5087
+process_material = SubResource("ParticleProcessMaterial_ow3fp")
+lifetime = 1.2
+preprocess = 1.0
+speed_scale = 1.2
+explosiveness = 1.0
+randomness = 1.0
+
+[node name="gugglerbloodparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 16
+amount_ratio = 0.5665
+process_material = SubResource("ParticleProcessMaterial_r7102")
+lifetime = 1.2
+preprocess = 1.0
+explosiveness = 0.12
+randomness = 0.2
+
+[node name="gugglerbloodparticlesblue" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 24
+amount_ratio = 0.5665
+process_material = SubResource("ParticleProcessMaterial_cbnt8")
+lifetime = 1.2
+preprocess = 1.0
+explosiveness = 0.12
+randomness = 0.2
+
+[node name="alien1bloodparticlesblue" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 16
+amount_ratio = 0.5665
+process_material = SubResource("ParticleProcessMaterial_ujjor")
+lifetime = 1.2
+preprocess = 1.0
+explosiveness = 0.12
+randomness = 0.2
+
+[node name="alien2bloodparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 20
+amount_ratio = 0.5665
+process_material = SubResource("ParticleProcessMaterial_2ysc8")
+lifetime = 1.2
+preprocess = 1.0
+speed_scale = 0.95
+randomness = 0.2
+collision_base_size = 16.39
+
+[node name="alien3bloodparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 16
+amount_ratio = 0.5087
+process_material = SubResource("ParticleProcessMaterial_8owdi")
+lifetime = 1.2
+preprocess = 1.0
+speed_scale = 1.2
+explosiveness = 1.0
+randomness = 1.0
+
+[node name="alien4bloodparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 22
+amount_ratio = 0.5665
+process_material = SubResource("ParticleProcessMaterial_7miyv")
+lifetime = 1.2
+preprocess = 1.0
+explosiveness = 0.12
+randomness = 0.2
+
+[node name="lenurcherbloodparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 32
+amount_ratio = 0.7167
+process_material = SubResource("ParticleProcessMaterial_6q1re")
+lifetime = 1.2
+preprocess = 1.0
+explosiveness = 0.49
+randomness = 0.83
+
+[node name="asteroidcollisionparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 20
+amount_ratio = 0.22
+process_material = SubResource("ParticleProcessMaterial_4k12u")
+lifetime = 1.2
+speed_scale = 0.95
+explosiveness = 1.0
+randomness = 1.0
+collision_base_size = 16.39
+
+[node name="shipmentexplosion" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 32
+amount_ratio = 0.7
+process_material = SubResource("ParticleProcessMaterial_j52sl")
+lifetime = 1.2
+preprocess = 1.0
+speed_scale = 1.2
+explosiveness = 1.0
+randomness = 1.0
+
+[node name="spaceshipcollidewithmobparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 2
+amount_ratio = 0.2773
+process_material = SubResource("ParticleProcessMaterial_oxfbk")
+lifetime = 1.2
+speed_scale = 0.95
+explosiveness = 1.0
+randomness = 1.0
+collision_base_size = 16.39
+
+[node name="spaceshipmoveparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = -4
+rotation = -1.5708
+emitting = false
+amount = 24
+amount_ratio = 0.7167
+process_material = SubResource("ParticleProcessMaterial_hhujb")
+lifetime = 0.3
+preprocess = 1.0
+randomness = 0.25
+trail_sections = 2
+trail_section_subdivisions = 1
+
+[node name="spaceshipboostparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = -4
+rotation = -1.5708
+emitting = false
+amount = 16
+amount_ratio = 0.7167
+process_material = SubResource("ParticleProcessMaterial_k5522")
+one_shot = true
+preprocess = 1.0
+randomness = 0.6
+trail_sections = 2
+trail_section_subdivisions = 1
+
+[node name="gugglerspewparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 64
+process_material = SubResource("ParticleProcessMaterial_xq6g8")
+lifetime = 1.5
+randomness = 0.27
+
+[node name="flamethrowerparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 4
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_81go2")
+lifetime = 1.5
+explosiveness = 0.55
+randomness = 1.0
+
+[node name="flamethrowerreadyparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+emitting = false
+process_material = SubResource("ParticleProcessMaterial_bsg8n")
+
+[node name="lockonmissileparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+emitting = false
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_elwiw")
+
+[node name="alien4missileparticles" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+visible = false
+emitting = false
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_f35a2")
+
+[node name="getrid" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.6
+autostart = true
+
+[node name="despawntimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="getrid" to="." method="_on_getrid_timeout"]
+[connection signal="timeout" from="despawntimer" to="." method="_on_despawntimer_timeout"]

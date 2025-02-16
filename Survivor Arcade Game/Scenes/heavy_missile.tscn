@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw0p5xuuj2cam"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/heavy_missile.gd" id="1_36th0"]
+[ext_resource type="Texture2D" uid="uid://cfw1qfa7583e0" path="res://Survivor Arcade Game/Weapons/Heavy_Projectile.png" id="2_4qgms"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eotw4"]
+size = Vector2(3.875, 1.48437)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q8h3j"]
+
+[node name="HeavyProjectile" type="Area2D"]
+top_level = true
+texture_filter = 1
+rotation = -3.14159
+scale = Vector2(1.30306, 1.30306)
+collision_layer = 8209
+collision_mask = 8258
+script = ExtResource("1_36th0")
+
+[node name="Projectile" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2, -0.457727)
+rotation = 1.5708
+scale = Vector2(0.484425, 0.484425)
+texture = ExtResource("2_4qgms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.03125, -0.210946)
+shape = SubResource("RectangleShape2D_eotw4")
+
+[node name="missileradar" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 65536
+collision_mask = 65536
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="missileradar"]
+position = Vector2(51, -0.000129163)
+rotation = 0.0128742
+scale = Vector2(4.75171, 3.47121)
+shape = SubResource("CircleShape2D_q8h3j")
+
+[node name="MissileFollower" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="missileradar" to="." method="_on_missileradar_area_entered"]
+[connection signal="body_entered" from="missileradar" to="." method="_on_missileradar_body_entered"]
+[connection signal="timeout" from="MissileFollower" to="." method="_on_missile_follower_timeout"]

@@ -1,0 +1,158 @@
+[gd_scene load_steps=21 format=3 uid="uid://c2agkb4j26jq2"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/soul.gd" id="1_1bx2c"]
+[ext_resource type="Texture2D" uid="uid://bbjqobywaalxu" path="res://Survivor Arcade Game/Effects/Soul_Blue.png" id="1_y67yd"]
+[ext_resource type="Texture2D" uid="uid://b8lub11mjydoe" path="res://Survivor Arcade Game/Effects/Soul_Purple_To_Blue.png" id="2_5pfx5"]
+[ext_resource type="Texture2D" uid="uid://bcj4ifptjirke" path="res://Survivor Arcade Game/Effects/Soul_YellowBlue.png" id="3_c4c1i"]
+[ext_resource type="Texture2D" uid="uid://dljeryy67punw" path="res://Survivor Arcade Game/Effects/Soul_Grey.png" id="3_dqonl"]
+[ext_resource type="Texture2D" uid="uid://dyty8w215oq2x" path="res://Survivor Arcade Game/Effects/Soul_Purple.png" id="4_tetis"]
+[ext_resource type="Texture2D" uid="uid://c8qsc3thwbbhl" path="res://Survivor Arcade Game/Effects/Soul_Green.png" id="4_u7cs8"]
+[ext_resource type="Texture2D" uid="uid://b0xdmncw17cel" path="res://Survivor Arcade Game/Effects/Soul_Draugral_.png" id="5_yxmy1"]
+[ext_resource type="Texture2D" uid="uid://dy80djgc5dyxk" path="res://Survivor Arcade Game/Effects/Soul_Lenurcher.png" id="8_vqlq3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iyhd0"]
+radius = 7.09638
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbgex"]
+atlas = ExtResource("2_5pfx5")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kg6u"]
+atlas = ExtResource("3_c4c1i")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3q2v2"]
+atlas = ExtResource("1_y67yd")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7v2y"]
+atlas = ExtResource("5_yxmy1")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex6up"]
+atlas = ExtResource("4_u7cs8")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77u7q"]
+atlas = ExtResource("3_dqonl")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03qax"]
+atlas = ExtResource("8_vqlq3")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cv6ev"]
+atlas = ExtResource("4_tetis")
+region = Rect2(0, 0, 13, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s13w5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbgex")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kg6u")
+}],
+"loop": true,
+"name": &"blueyellow",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3q2v2")
+}],
+"loop": true,
+"name": &"blueypurple",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7v2y")
+}],
+"loop": true,
+"name": &"draugal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ex6up")
+}],
+"loop": true,
+"name": &"green",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77u7q")
+}],
+"loop": true,
+"name": &"grey",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03qax")
+}],
+"loop": true,
+"name": &"lenurcher",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cv6ev")
+}],
+"loop": true,
+"name": &"purple",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a5uue"]
+
+[node name="Soul" type="Area2D"]
+scale = Vector2(0.322, 0.322)
+collision_layer = 524288
+collision_mask = 524288
+script = ExtResource("1_1bx2c")
+
+[node name="directionupdater" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="soulcollision" type="CollisionShape2D" parent="."]
+position = Vector2(-0.235703, 4.12479)
+scale = Vector2(0.834162, 0.995012)
+shape = SubResource("CircleShape2D_iyhd0")
+
+[node name="soulsprite" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_s13w5")
+animation = &"blueypurple"
+
+[node name="magnetarea" type="Area2D" parent="."]
+collision_layer = 524288
+collision_mask = 524288
+
+[node name="magnetcollision" type="CollisionShape2D" parent="magnetarea"]
+position = Vector2(0, 3.146)
+scale = Vector2(8.64223, 8.64223)
+shape = SubResource("CircleShape2D_a5uue")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="DespawnTimer" type="Timer" parent="."]
+wait_time = 45.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="directionupdater" to="." method="_on_directionupdater_timeout"]
+[connection signal="body_entered" from="magnetarea" to="." method="_on_magnetarea_body_entered"]
+[connection signal="body_exited" from="magnetarea" to="." method="_on_magnetarea_body_exited"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="DespawnTimer" to="." method="_on_despawn_timer_timeout"]

@@ -1,0 +1,294 @@
+[gd_scene load_steps=40 format=3 uid="uid://bya2y7prpbo73"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/warhorn.gd" id="1_43crp"]
+[ext_resource type="Texture2D" uid="uid://cvjrtctw2kpbo" path="res://Survivor Arcade Game/Weapons/Warhorn_Spaceship.png" id="1_d2f28"]
+[ext_resource type="Texture2D" uid="uid://jx3cuhkep8ho" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_1.png" id="3_x2efv"]
+[ext_resource type="Texture2D" uid="uid://cwkmadtuq1uqa" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_2.png" id="4_ilvqk"]
+[ext_resource type="Texture2D" uid="uid://c82c2ylsb311e" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_3.png" id="5_4hknr"]
+[ext_resource type="Texture2D" uid="uid://bk5spo2f4yenl" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_4.png" id="6_dh0od"]
+[ext_resource type="Texture2D" uid="uid://d3j2siowoic3i" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_5.png" id="7_21it2"]
+[ext_resource type="Texture2D" uid="uid://bq7cbdjdbqllv" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_6.png" id="8_03bau"]
+[ext_resource type="Texture2D" uid="uid://cpxf1jfyxcysg" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_7.png" id="9_yl26y"]
+[ext_resource type="Texture2D" uid="uid://djxp7ph2oarqv" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_8.png" id="10_r7kds"]
+[ext_resource type="Texture2D" uid="uid://b8ptq2mf3pgdo" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_9.png" id="11_d6yep"]
+[ext_resource type="Texture2D" uid="uid://brldm8yl0n2sg" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_10.png" id="12_2qvw2"]
+[ext_resource type="Texture2D" uid="uid://dnik0q8qan786" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_11.png" id="13_syfc2"]
+[ext_resource type="Texture2D" uid="uid://c1qavkpwfm6ot" path="res://Survivor Arcade Game/Effects/Warhorn_Spaceship_Reloaded_12.png" id="14_vfkbh"]
+
+[sub_resource type="Animation" id="Animation_ij80b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PivotPoint:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.309]
+}
+
+[sub_resource type="Animation" id="Animation_e4blv"]
+resource_name = "oppositeswing"
+length = 1.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PivotPoint:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35, 1.05, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.309, -1.309, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_vahad"]
+resource_name = "swing"
+length = 1.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PivotPoint:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35, 1.05, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -1.309, 1.309, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7kf4k"]
+_data = {
+"RESET": SubResource("Animation_ij80b"),
+"oppositeswing": SubResource("Animation_e4blv"),
+"swing": SubResource("Animation_vahad")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17i2b"]
+atlas = ExtResource("1_d2f28")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q5afr"]
+atlas = ExtResource("3_x2efv")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4lhj"]
+atlas = ExtResource("4_ilvqk")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tk7kg"]
+atlas = ExtResource("5_4hknr")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sep07"]
+atlas = ExtResource("6_dh0od")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwg6k"]
+atlas = ExtResource("7_21it2")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntwf0"]
+atlas = ExtResource("8_03bau")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7s0vc"]
+atlas = ExtResource("9_yl26y")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7odrm"]
+atlas = ExtResource("10_r7kds")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48ur1"]
+atlas = ExtResource("11_d6yep")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5q0g"]
+atlas = ExtResource("12_2qvw2")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xiqgb"]
+atlas = ExtResource("13_syfc2")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjunt"]
+atlas = ExtResource("14_vfkbh")
+region = Rect2(0, 0, 10, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_12qn3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17i2b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q5afr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4lhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tk7kg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sep07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwg6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntwf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7s0vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7odrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48ur1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5q0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xiqgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjunt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xiqgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5q0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48ur1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7odrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7s0vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntwf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwg6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sep07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tk7kg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4lhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q5afr")
+}],
+"loop": false,
+"name": &"recharged",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifj13"]
+size = Vector2(20, 57.4292)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2y770"]
+size = Vector2(37.1785, 120.444)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2gic"]
+size = Vector2(20, 72.6599)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6aon"]
+size = Vector2(20, 57.2002)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pyqh"]
+size = Vector2(12.5978, 38.3008)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0ljb"]
+size = Vector2(20, 37.5142)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chhrw"]
+size = Vector2(20, 73.727)
+
+[node name="Warhorn" type="Node2D"]
+z_index = 1
+rotation = 1.5708
+scale = Vector2(0.156, 0.156)
+script = ExtResource("1_43crp")
+
+[node name="swinganimation" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_7kf4k")
+}
+
+[node name="PivotPoint" type="Marker2D" parent="."]
+position = Vector2(-18.3231, 119.071)
+rotation = -1.309
+
+[node name="hornsprite" type="AnimatedSprite2D" parent="PivotPoint"]
+unique_name_in_owner = true
+position = Vector2(18.3231, -119.071)
+scale = Vector2(9.1599, 9.1599)
+sprite_frames = SubResource("SpriteFrames_12qn3")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="PivotPoint"]
+unique_name_in_owner = true
+collision_layer = 8209
+collision_mask = 8275
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(55.3867, -210.297)
+shape = SubResource("RectangleShape2D_ifj13")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(9.73387, -58.9197)
+shape = SubResource("RectangleShape2D_2y770")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(27.6386, -146.392)
+shape = SubResource("RectangleShape2D_p2gic")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(46.0713, -191.979)
+shape = SubResource("RectangleShape2D_y6aon")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(14.6306, -155.751)
+shape = SubResource("RectangleShape2D_5pyqh")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(36.4141, -137.267)
+shape = SubResource("RectangleShape2D_a0ljb")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="PivotPoint/Area2D"]
+position = Vector2(-17.7014, -35.8901)
+shape = SubResource("RectangleShape2D_chhrw")
+
+[node name="heavytimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 1.75
+autostart = true
+
+[connection signal="animation_finished" from="swinganimation" to="." method="_on_swinganimation_animation_finished"]
+[connection signal="animation_finished" from="PivotPoint/hornsprite" to="." method="_on_hornsprite_animation_finished"]
+[connection signal="body_entered" from="PivotPoint/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="heavytimer" to="." method="_on_heavytimer_timeout"]

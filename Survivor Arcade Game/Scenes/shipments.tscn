@@ -1,0 +1,259 @@
+[gd_scene load_steps=33 format=3 uid="uid://fks8mebwkwh1"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/shipments.gd" id="1_5u8ku"]
+[ext_resource type="Texture2D" uid="uid://cic2hwydyfr6w" path="res://Survivor Arcade Game/Effects/Shipment_1.png" id="2_q10ra"]
+[ext_resource type="Texture2D" uid="uid://dlrdl24huok2k" path="res://Survivor Arcade Game/Effects/Shipment_2.png" id="3_afny5"]
+[ext_resource type="Texture2D" uid="uid://cn43nkaqn10sm" path="res://Survivor Arcade Game/Effects/Shipment_1_Broke_1.png" id="3_d5mlc"]
+[ext_resource type="Texture2D" uid="uid://ca7h6esiaht4c" path="res://Survivor Arcade Game/Effects/Shipment_3.png" id="4_20fw2"]
+[ext_resource type="Texture2D" uid="uid://cgo3n5mesyd5w" path="res://Survivor Arcade Game/Effects/Shipment_1_Broke_2.png" id="4_ajurt"]
+[ext_resource type="Texture2D" uid="uid://5n3xf642k7kt" path="res://Survivor Arcade Game/Effects/Shipment_1_Broke_3.png" id="5_5ci4o"]
+[ext_resource type="Texture2D" uid="uid://bs6om5f6ynv1t" path="res://Survivor Arcade Game/Effects/Shipment_2_Broke_1.png" id="7_88gyx"]
+[ext_resource type="Texture2D" uid="uid://tbkqgyp8kl3x" path="res://Survivor Arcade Game/Effects/Shipment_2_Broke_2.png" id="8_7pf21"]
+[ext_resource type="Texture2D" uid="uid://c758busb41drm" path="res://Survivor Arcade Game/Effects/Shipment_2_Broke_3.png" id="9_4s301"]
+[ext_resource type="Texture2D" uid="uid://ci2ikav1gfkdb" path="res://Survivor Arcade Game/Effects/Shipment_3_Broke_1.png" id="11_3h4l6"]
+[ext_resource type="Texture2D" uid="uid://clid18wrt1wyi" path="res://Survivor Arcade Game/Effects/Shipment_3_Broke_2.png" id="12_wbgwi"]
+[ext_resource type="Texture2D" uid="uid://b2dr1cpdk10xv" path="res://Survivor Arcade Game/Effects/Shipment_3_Broke_3.png" id="13_v68cv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5o0l3"]
+size = Vector2(24.0807, 20.35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylsjm"]
+size = Vector2(22.0589, 10.0835)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7iw0e"]
+size = Vector2(19.7985, 7.43746)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jhmd"]
+atlas = ExtResource("2_q10ra")
+region = Rect2(0, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be8k6"]
+atlas = ExtResource("3_d5mlc")
+region = Rect2(0, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n55i4"]
+atlas = ExtResource("4_ajurt")
+region = Rect2(0, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3els2"]
+atlas = ExtResource("5_5ci4o")
+region = Rect2(0, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57cvo"]
+atlas = ExtResource("3_d5mlc")
+region = Rect2(0, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ds4ih"]
+atlas = ExtResource("3_afny5")
+region = Rect2(0, 0, 22, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd0l1"]
+atlas = ExtResource("7_88gyx")
+region = Rect2(0, 0, 22, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4qgq"]
+atlas = ExtResource("8_7pf21")
+region = Rect2(0, 0, 22, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kj0lk"]
+atlas = ExtResource("9_4s301")
+region = Rect2(0, 0, 22, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sic6e"]
+atlas = ExtResource("7_88gyx")
+region = Rect2(0, 0, 22, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_408xn"]
+atlas = ExtResource("4_20fw2")
+region = Rect2(0, 0, 13, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aima6"]
+atlas = ExtResource("11_3h4l6")
+region = Rect2(0, 0, 13, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vsm54"]
+atlas = ExtResource("12_wbgwi")
+region = Rect2(0, 0, 13, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mj22b"]
+atlas = ExtResource("13_v68cv")
+region = Rect2(0, 0, 13, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwi75"]
+atlas = ExtResource("11_3h4l6")
+region = Rect2(0, 0, 13, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5uxdl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jhmd")
+}],
+"loop": true,
+"name": &"shipment1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be8k6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n55i4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3els2")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"shipment1breaking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57cvo")
+}],
+"loop": true,
+"name": &"shipment1broke",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ds4ih")
+}],
+"loop": true,
+"name": &"shipment2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd0l1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4qgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kj0lk")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"shipment2breaking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sic6e")
+}],
+"loop": true,
+"name": &"shipment2broke",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_408xn")
+}],
+"loop": true,
+"name": &"shipment3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aima6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vsm54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mj22b")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"shipment3breaking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwi75")
+}],
+"loop": true,
+"name": &"shipment3broke",
+"speed": 5.0
+}]
+
+[node name="Shipments" type="CharacterBody2D"]
+z_index = 1
+scale = Vector2(0.775131, 0.775131)
+collision_layer = 1073807361
+collision_mask = 1073807440
+motion_mode = 1
+safe_margin = 0.001
+script = ExtResource("1_5u8ku")
+
+[node name="shipment1" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.0280782, 0.191647)
+rotation = 0.0216938
+scale = Vector2(0.900292, 0.845334)
+shape = SubResource("RectangleShape2D_5o0l3")
+
+[node name="shipment2" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0.00502586, -0.0156274)
+scale = Vector2(0.900855, 0.725739)
+shape = SubResource("RectangleShape2D_ylsjm")
+
+[node name="shipment3" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0.000510752, 0.00914812)
+scale = Vector2(0.514739, 2.55205)
+shape = SubResource("RectangleShape2D_7iw0e")
+
+[node name="shipmenttype" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_5uxdl")
+animation = &"shipment1breaking"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="shipment1" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-0.0280782, 0.191647)
+rotation = 0.0216938
+scale = Vector2(1.1, 1.033)
+shape = SubResource("RectangleShape2D_5o0l3")
+
+[node name="shipment2" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.00502586, -0.0156274)
+scale = Vector2(1.1, 1.033)
+shape = SubResource("RectangleShape2D_ylsjm")
+
+[node name="shipment3" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.000510752, 0.00914812)
+scale = Vector2(1.1, 1.033)
+shape = SubResource("RectangleShape2D_7iw0e")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="slowdown" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+
+[node name="despawntimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="slowdown" to="." method="_on_slowdown_timeout"]
+[connection signal="timeout" from="despawntimer" to="." method="_on_despawntimer_timeout"]

@@ -1,0 +1,1510 @@
+[gd_scene load_steps=158 format=3 uid="uid://cypol4rm8d4oj"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/asteroid.gd" id="1_nd5yw"]
+[ext_resource type="Texture2D" uid="uid://ckpklqigr54ic" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_8_2x2_Layer2.png" id="2_cs6jo"]
+[ext_resource type="Texture2D" uid="uid://c4s0iun5pjdmb" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_11_2x2_Layer2.png" id="3_x3bgs"]
+[ext_resource type="Texture2D" uid="uid://dvrio0qbiw6q1" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_5_2x2_Layer2.png" id="4_44d1c"]
+[ext_resource type="Texture2D" uid="uid://bu67cryc3v7w2" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_4_2x2_Layer2.png" id="5_ms5u1"]
+[ext_resource type="Texture2D" uid="uid://d3ds0l8tqniak" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_9_2x2_Layer2.png" id="6_af1nd"]
+[ext_resource type="Texture2D" uid="uid://b8h1e8ddlxmye" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_1_2x2_Layer2.png" id="7_b1t6l"]
+[ext_resource type="Texture2D" uid="uid://dkmwxwysceuwd" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_9_2x2_Secondary.png" id="8_nudb1"]
+[ext_resource type="Texture2D" uid="uid://cqflsbfgbnl2f" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_19_2x2_Secondary.png" id="9_m1rnw"]
+[ext_resource type="Texture2D" uid="uid://dog7dmeahrngv" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_12_2x2_Secondary.png" id="10_r77yn"]
+[ext_resource type="Texture2D" uid="uid://c1gw8e3s2u1r8" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_16_2x2_Secondary.png" id="11_ay0x5"]
+[ext_resource type="Texture2D" uid="uid://d0x1r4sexkkxj" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_5_2x2_Secondary.png" id="12_d8dr2"]
+[ext_resource type="Texture2D" uid="uid://xd4f7f7xnrmf" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_4_2x2_Secondary.png" id="13_61unm"]
+[ext_resource type="Texture2D" uid="uid://bkm5vuoqfc37p" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_15_2x2_Secondary.png" id="14_bemtv"]
+[ext_resource type="Texture2D" uid="uid://dq3qbew0bv1w8" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_10_2x2_Secondary.png" id="15_rf5qi"]
+[ext_resource type="Texture2D" uid="uid://bg1q5c6bdddfs" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_20_2x2_Secondary_.png" id="16_ixgou"]
+[ext_resource type="Texture2D" uid="uid://cn70cwtx6f8qs" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_1_2x2_Secondary.png" id="17_5uisn"]
+[ext_resource type="Texture2D" uid="uid://byhjoomgre7q4" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_7_2x2_Secondary.png" id="18_0qij8"]
+[ext_resource type="Texture2D" uid="uid://brron374luua4" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_18_2x2_Secondary.png" id="19_djdpb"]
+[ext_resource type="Texture2D" uid="uid://csr7qdmykohp3" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_6_2x2_Secondary.png" id="20_o6wlh"]
+[ext_resource type="Texture2D" uid="uid://cwkihjdk40g8d" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_17_2x2_Secondary.png" id="21_a5s7q"]
+[ext_resource type="Texture2D" uid="uid://c6x86jopra5rp" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_11_2x2_Secondary.png" id="22_sdf6j"]
+[ext_resource type="Texture2D" uid="uid://5gtmogpiw1ks" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_14_2x2_Secondary.png" id="23_hjb07"]
+[ext_resource type="Texture2D" uid="uid://c7si1erp2lgf3" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_3_2x2_Secondary.png" id="24_5fxj1"]
+[ext_resource type="Texture2D" uid="uid://bfh0yeudasuat" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_13_2x2_Secondary.png" id="25_16tia"]
+[ext_resource type="Texture2D" uid="uid://df0q788080sm5" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid__8_2x2_Secondary.png" id="26_tn2l3"]
+[ext_resource type="Texture2D" uid="uid://ba27mfqanw3hj" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_10_2x2_Layer2.png" id="27_wicp3"]
+[ext_resource type="Texture2D" uid="uid://mwee2ugdicme" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_7_2x2_Layer2.png" id="28_wy0rj"]
+[ext_resource type="Texture2D" uid="uid://cfmxgfmtefdlq" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_6_2x2_Layer2.png" id="29_nyljv"]
+[ext_resource type="Texture2D" uid="uid://bvvdn2h6x1ay5" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_3_2x2_Layer2.png" id="30_3wyte"]
+[ext_resource type="Texture2D" uid="uid://bgs63un48u0ah" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_12_2x2_Layer2.png" id="31_4g6bx"]
+[ext_resource type="Texture2D" uid="uid://b88via37hc82b" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_2_2x2_Layer2.png" id="32_smaet"]
+[ext_resource type="Texture2D" uid="uid://weljgbqcdrvr" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_8_2x2.png" id="33_o043s"]
+[ext_resource type="Texture2D" uid="uid://blvaxeunbj825" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_11_2x2.png" id="34_cvqyp"]
+[ext_resource type="Texture2D" uid="uid://syybixboukv0" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_5_2x2.png" id="35_h67pi"]
+[ext_resource type="Texture2D" uid="uid://dk16c6e2c87ei" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_4_2x2.png" id="36_3ek85"]
+[ext_resource type="Texture2D" uid="uid://dm3vjbksgvgfs" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_9_2x2.png" id="37_vmfpw"]
+[ext_resource type="Texture2D" uid="uid://bna268n178no" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_1_2x2.png" id="38_oq7mw"]
+[ext_resource type="Texture2D" uid="uid://dfx3nut5iwmmn" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_9_2x2.png" id="39_kt02g"]
+[ext_resource type="Texture2D" uid="uid://cdvuh1313kg0p" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_19_2x2_.png" id="40_ed843"]
+[ext_resource type="Texture2D" uid="uid://bdv5cvg3ocofm" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_12_2x2.png" id="41_cw52l"]
+[ext_resource type="Texture2D" uid="uid://cwn1flr764nkl" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_16_2x2.png" id="42_riedc"]
+[ext_resource type="Texture2D" uid="uid://bnht5ikwr0hg4" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_5_2x2.png" id="43_vlr6r"]
+[ext_resource type="Texture2D" uid="uid://c1rkyiwqqsvrn" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_4_2x2.png" id="44_a5sdp"]
+[ext_resource type="Texture2D" uid="uid://hstuxvm7l6in" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_15_2x2.png" id="45_jcy0n"]
+[ext_resource type="Texture2D" uid="uid://7cknp5bddgcx" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_10_2x2.png" id="46_f8365"]
+[ext_resource type="Texture2D" uid="uid://cedbgyirdxxe5" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_20_2x2.png" id="47_ao33r"]
+[ext_resource type="Texture2D" uid="uid://ccusyvdfyqpmq" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_1_2x2.png" id="48_uy7n7"]
+[ext_resource type="Texture2D" uid="uid://ccgfcajjyaehb" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_7_2x2.png" id="49_fnial"]
+[ext_resource type="Texture2D" uid="uid://d4j6ksne6gnc0" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_18_2x2_.png" id="50_3tbk1"]
+[ext_resource type="Texture2D" uid="uid://bjya0g8snj0rs" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_6_2x2.png" id="51_x5700"]
+[ext_resource type="Texture2D" uid="uid://civadu0fef1ks" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_17_2x2_.png" id="52_jin3p"]
+[ext_resource type="Texture2D" uid="uid://hwhac2qu747w" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_11_2x2.png" id="53_lirel"]
+[ext_resource type="Texture2D" uid="uid://bul2p2ga5u47r" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_14_2x2.png" id="54_vddi8"]
+[ext_resource type="Texture2D" uid="uid://d0l2lrjgl12fk" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_3_2x2.png" id="55_3gbmy"]
+[ext_resource type="Texture2D" uid="uid://dwd14hcwskpx2" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_13_2x2.png" id="56_nqi1u"]
+[ext_resource type="Texture2D" uid="uid://86iubu3ipd4d" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid__8_2x2.png" id="57_q17ck"]
+[ext_resource type="Texture2D" uid="uid://dxatfxufsl8lj" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_Round_Asteroid_2_2x2.png" id="58_v2562"]
+[ext_resource type="Texture2D" uid="uid://cxvfxkftiyuwx" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_7_2x2.png" id="59_yx42l"]
+[ext_resource type="Texture2D" uid="uid://cnner0ai4564m" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_6_2x2.png" id="60_invfd"]
+[ext_resource type="Texture2D" uid="uid://xiiqtgpq54sg" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_10_2x2.png" id="61_fe7xw"]
+[ext_resource type="Texture2D" uid="uid://dlyjxss2bd5pb" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_3_2x2.png" id="62_11ysb"]
+[ext_resource type="Texture2D" uid="uid://cct7miihyes2q" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_12_2x2.png" id="63_0qpfi"]
+[ext_resource type="Texture2D" uid="uid://2wtl47j2xw6w" path="res://Survivor Arcade Game/Asteroids/New Asteroids/Asteroid_2_2x2.png" id="64_s3p5u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qx4hk"]
+radius = 5.00491
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0ucuh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o2ikn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a5tvh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vf65c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_70ob7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lpd2u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mkaw1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wpiql"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_axr1h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8wyp7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cxy16"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_prk6p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plqpv"]
+atlas = ExtResource("2_cs6jo")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4htrx"]
+atlas = ExtResource("3_x3bgs")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlf5s"]
+atlas = ExtResource("4_44d1c")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2a58g"]
+atlas = ExtResource("5_ms5u1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uf86"]
+atlas = ExtResource("6_af1nd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xd65f"]
+atlas = ExtResource("7_b1t6l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yv7p2"]
+atlas = ExtResource("8_nudb1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmg1p"]
+atlas = ExtResource("9_m1rnw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1ljt"]
+atlas = ExtResource("10_r77yn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f162g"]
+atlas = ExtResource("11_ay0x5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmixo"]
+atlas = ExtResource("12_d8dr2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k2y8i"]
+atlas = ExtResource("13_61unm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb1o4"]
+atlas = ExtResource("14_bemtv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vbtc"]
+atlas = ExtResource("15_rf5qi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v074g"]
+atlas = ExtResource("16_ixgou")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r1rn"]
+atlas = ExtResource("17_5uisn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk8py"]
+atlas = ExtResource("18_0qij8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7snf"]
+atlas = ExtResource("19_djdpb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubv1o"]
+atlas = ExtResource("20_o6wlh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pv3ef"]
+atlas = ExtResource("21_a5s7q")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjiqw"]
+atlas = ExtResource("22_sdf6j")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfwsr"]
+atlas = ExtResource("23_hjb07")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kglj"]
+atlas = ExtResource("24_5fxj1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayerf"]
+atlas = ExtResource("25_16tia")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6msy0"]
+atlas = ExtResource("26_tn2l3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp140"]
+atlas = ExtResource("27_wicp3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jx8r"]
+atlas = ExtResource("28_wy0rj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auhl0"]
+atlas = ExtResource("29_nyljv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xrax"]
+atlas = ExtResource("27_wicp3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp8ag"]
+atlas = ExtResource("30_3wyte")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hv5k"]
+atlas = ExtResource("31_4g6bx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbbpr"]
+atlas = ExtResource("32_smaet")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t7jf0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plqpv")
+}],
+"loop": true,
+"name": &"eight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4htrx")
+}],
+"loop": true,
+"name": &"eleven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlf5s")
+}],
+"loop": true,
+"name": &"five",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2a58g")
+}],
+"loop": true,
+"name": &"four",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uf86")
+}],
+"loop": true,
+"name": &"nine",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xd65f")
+}],
+"loop": true,
+"name": &"one",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yv7p2")
+}],
+"loop": true,
+"name": &"roundeight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmg1p")
+}],
+"loop": true,
+"name": &"roundeighteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1ljt")
+}],
+"loop": true,
+"name": &"roundeleven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f162g")
+}],
+"loop": true,
+"name": &"roundfifteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmixo")
+}],
+"loop": true,
+"name": &"roundfive",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k2y8i")
+}],
+"loop": true,
+"name": &"roundfour",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb1o4")
+}],
+"loop": true,
+"name": &"roundfourteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vbtc")
+}],
+"loop": true,
+"name": &"roundnine",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v074g")
+}],
+"loop": true,
+"name": &"roundnineteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7r1rn")
+}],
+"loop": true,
+"name": &"roundone",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xk8py")
+}],
+"loop": true,
+"name": &"roundseven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7snf")
+}],
+"loop": true,
+"name": &"roundseventeen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubv1o")
+}],
+"loop": true,
+"name": &"roundsix",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pv3ef")
+}],
+"loop": true,
+"name": &"roundsixteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjiqw")
+}],
+"loop": true,
+"name": &"roundten",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfwsr")
+}],
+"loop": true,
+"name": &"roundthirteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kglj")
+}],
+"loop": true,
+"name": &"roundthree",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayerf")
+}],
+"loop": true,
+"name": &"roundtwelve",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6msy0")
+}],
+"loop": true,
+"name": &"roundtwenty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp140")
+}],
+"loop": true,
+"name": &"roundtwo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5jx8r")
+}],
+"loop": true,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auhl0")
+}],
+"loop": true,
+"name": &"six",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xrax")
+}],
+"loop": true,
+"name": &"ten",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp8ag")
+}],
+"loop": true,
+"name": &"three",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hv5k")
+}],
+"loop": true,
+"name": &"twelve",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbbpr")
+}],
+"loop": true,
+"name": &"two",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gq3p"]
+atlas = ExtResource("33_o043s")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfgy0"]
+atlas = ExtResource("34_cvqyp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhf5v"]
+atlas = ExtResource("35_h67pi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mika2"]
+atlas = ExtResource("36_3ek85")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0jc3"]
+atlas = ExtResource("37_vmfpw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjf1y"]
+atlas = ExtResource("38_oq7mw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mja28"]
+atlas = ExtResource("39_kt02g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mue68"]
+atlas = ExtResource("40_ed843")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6besl"]
+atlas = ExtResource("41_cw52l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esje3"]
+atlas = ExtResource("42_riedc")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghaea"]
+atlas = ExtResource("43_vlr6r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gw15d"]
+atlas = ExtResource("44_a5sdp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3ec0"]
+atlas = ExtResource("45_jcy0n")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6bc0"]
+atlas = ExtResource("46_f8365")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jm3bv"]
+atlas = ExtResource("47_ao33r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_575my"]
+atlas = ExtResource("48_uy7n7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kseiu"]
+atlas = ExtResource("49_fnial")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24jx1"]
+atlas = ExtResource("50_3tbk1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kml18"]
+atlas = ExtResource("51_x5700")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5agm"]
+atlas = ExtResource("52_jin3p")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygmx2"]
+atlas = ExtResource("53_lirel")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21n2h"]
+atlas = ExtResource("54_vddi8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aq8nf"]
+atlas = ExtResource("55_3gbmy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhd27"]
+atlas = ExtResource("56_nqi1u")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qrdw"]
+atlas = ExtResource("57_q17ck")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbtin"]
+atlas = ExtResource("58_v2562")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hkhg"]
+atlas = ExtResource("59_yx42l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35ly7"]
+atlas = ExtResource("60_invfd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v77s0"]
+atlas = ExtResource("61_fe7xw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfev8"]
+atlas = ExtResource("62_11ysb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsloh"]
+atlas = ExtResource("63_0qpfi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yel2"]
+atlas = ExtResource("64_s3p5u")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bopb6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gq3p")
+}],
+"loop": true,
+"name": &"eight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfgy0")
+}],
+"loop": true,
+"name": &"eleven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nhf5v")
+}],
+"loop": true,
+"name": &"five",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mika2")
+}],
+"loop": true,
+"name": &"four",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0jc3")
+}],
+"loop": true,
+"name": &"nine",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjf1y")
+}],
+"loop": true,
+"name": &"one",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mja28")
+}],
+"loop": true,
+"name": &"roundeight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mue68")
+}],
+"loop": true,
+"name": &"roundeighteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6besl")
+}],
+"loop": true,
+"name": &"roundeleven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_esje3")
+}],
+"loop": true,
+"name": &"roundfifteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghaea")
+}],
+"loop": true,
+"name": &"roundfive",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gw15d")
+}],
+"loop": true,
+"name": &"roundfour",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3ec0")
+}],
+"loop": true,
+"name": &"roundfourteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6bc0")
+}],
+"loop": true,
+"name": &"roundnine",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jm3bv")
+}],
+"loop": true,
+"name": &"roundnineteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_575my")
+}],
+"loop": true,
+"name": &"roundone",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kseiu")
+}],
+"loop": true,
+"name": &"roundseven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24jx1")
+}],
+"loop": true,
+"name": &"roundseventeen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kml18")
+}],
+"loop": true,
+"name": &"roundsix",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5agm")
+}],
+"loop": true,
+"name": &"roundsixteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ygmx2")
+}],
+"loop": true,
+"name": &"roundten",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21n2h")
+}],
+"loop": true,
+"name": &"roundthirteen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aq8nf")
+}],
+"loop": true,
+"name": &"roundthree",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mhd27")
+}],
+"loop": true,
+"name": &"roundtwelve",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qrdw")
+}],
+"loop": true,
+"name": &"roundtwenty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbtin")
+}],
+"loop": true,
+"name": &"roundtwo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hkhg")
+}],
+"loop": true,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35ly7")
+}],
+"loop": true,
+"name": &"six",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v77s0")
+}],
+"loop": true,
+"name": &"ten",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pfev8")
+}],
+"loop": true,
+"name": &"three",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsloh")
+}],
+"loop": true,
+"name": &"twelve",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yel2")
+}],
+"loop": true,
+"name": &"two",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_gueao"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.972549, 0.972549, 0.972549, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Asteroid:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_f85hv"]
+resource_name = "fadein"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_psho8"]
+resource_name = "fadetolevel2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.305882, 0.898039, 0.192157, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Asteroid:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6oedu"]
+resource_name = "fadetolevel3"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.305882, 0.898039, 0.192157, 1), Color(0, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Asteroid:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_tjksu"]
+resource_name = "fadetolevel4"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 1, 1, 1), Color(0.52549, 0.168627, 0.980392, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Asteroid:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5gtrr"]
+resource_name = "fadetolevel5"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.52549, 0.168627, 0.980392, 1), Color(0.45098, 0.780392, 0.956863, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Asteroid:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dhlgt"]
+resource_name = "level2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Asteroid:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.305882, 0.898039, 0.192157, 1), Color(0.305882, 0.898039, 0.192157, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bsna0"]
+resource_name = "level3"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Asteroid:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 1, 1, 1), Color(0, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_mkajx"]
+resource_name = "level4"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Asteroid:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.52549, 0.168627, 0.980392, 1), Color(0.52549, 0.168627, 0.980392, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_akgb0"]
+resource_name = "level5"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Asteroid:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColourChangeOverlay:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 1, 1, 1), Color(0, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bdess"]
+_data = {
+"RESET": SubResource("Animation_gueao"),
+"fadein": SubResource("Animation_f85hv"),
+"fadetolevel2": SubResource("Animation_psho8"),
+"fadetolevel3": SubResource("Animation_6oedu"),
+"fadetolevel4": SubResource("Animation_tjksu"),
+"fadetolevel5": SubResource("Animation_5gtrr"),
+"level2": SubResource("Animation_dhlgt"),
+"level3": SubResource("Animation_bsna0"),
+"level4": SubResource("Animation_mkajx"),
+"level5": SubResource("Animation_akgb0")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6vx5v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q3olc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pj83k"]
+
+[node name="Asteroid" type="CharacterBody2D"]
+self_modulate = Color(0.972549, 0.972549, 0.972549, 1)
+y_sort_enabled = true
+collision_layer = 65
+collision_mask = 65624
+motion_mode = 1
+safe_margin = 0.001
+script = ExtResource("1_nd5yw")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="areaone" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+position = Vector2(3.2007, 1.32727)
+rotation = -0.31763
+scale = Vector2(1.9, 1.917)
+shape = SubResource("CircleShape2D_qx4hk")
+disabled = true
+debug_color = Color(0.711777, 0.485033, 0, 0.42)
+
+[node name="areathree" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(1.4158, -0.0786656)
+rotation = -0.495279
+scale = Vector2(1.9, 1.917)
+skew = 0.0221949
+shape = SubResource("CircleShape2D_0ucuh")
+disabled = true
+
+[node name="areatwo" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.707894, 2.43834)
+rotation = -0.31763
+scale = Vector2(1.9, 1.917)
+shape = SubResource("CircleShape2D_o2ikn")
+disabled = true
+
+[node name="areafour" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.325882, 0.856417)
+rotation = 0.672902
+scale = Vector2(1.9, 1.917)
+skew = -0.0638859
+shape = SubResource("CircleShape2D_a5tvh")
+disabled = true
+
+[node name="areafive" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(2.32363, 0.419409)
+rotation = -0.132006
+scale = Vector2(1.9, 1.917)
+skew = -0.0231543
+shape = SubResource("CircleShape2D_vf65c")
+disabled = true
+
+[node name="areasix" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-2.10886, 2.35473)
+rotation = 2.82397
+scale = Vector2(1.9, 1.917)
+shape = SubResource("CircleShape2D_70ob7")
+disabled = true
+
+[node name="areaseven" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.700466, 1.23099)
+rotation = -0.31763
+scale = Vector2(1.9, 1.917)
+shape = SubResource("CircleShape2D_lpd2u")
+disabled = true
+
+[node name="areaeight" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-1.67186, -1.26618)
+rotation = 0.682338
+scale = Vector2(1.9, 1.917)
+skew = -0.0634277
+shape = SubResource("CircleShape2D_mkaw1")
+disabled = true
+
+[node name="areanine" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-0.235977, 1.73043)
+rotation = -0.31763
+scale = Vector2(1.9, 1.917)
+shape = SubResource("CircleShape2D_wpiql")
+disabled = true
+
+[node name="areaten" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(1.19991, 1.668)
+rotation = -0.624539
+scale = Vector2(1.9, 1.917)
+skew = 0.0370227
+shape = SubResource("CircleShape2D_axr1h")
+disabled = true
+
+[node name="areaeleven" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-1.547, 1.85529)
+rotation = -2.86066
+scale = Vector2(1.9, 1.917)
+skew = -0.0615846
+shape = SubResource("CircleShape2D_8wyp7")
+disabled = true
+
+[node name="areatwelve" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+top_level = true
+rotation = -0.45529
+scale = Vector2(1.99953, 1.93512)
+shape = SubResource("CircleShape2D_cxy16")
+disabled = true
+
+[node name="roundarea" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-0.285537, 0.343017)
+rotation = -0.31763
+scale = Vector2(1.59748, 1.70985)
+shape = SubResource("CircleShape2D_prk6p")
+disabled = true
+
+[node name="ColourChangeOverlay" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-0.352371, -0.14045)
+sprite_frames = SubResource("SpriteFrames_t7jf0")
+animation = &"eight"
+
+[node name="Asteroid" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+z_index = -1
+texture_filter = 1
+position = Vector2(-0.352371, -0.14045)
+sprite_frames = SubResource("SpriteFrames_bopb6")
+animation = &"eight"
+
+[node name="asteroidcolourchanger" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_bdess")
+}
+autoplay = "fadein"
+
+[node name="areaoneb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(3.2007, 1.32728)
+rotation = -0.317629
+scale = Vector2(0.606338, 0.606338)
+shape = SubResource("CircleShape2D_6vx5v")
+disabled = true
+debug_color = Color(0.711777, 0.485033, 0, 0.42)
+
+[node name="areatwob" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.707893, 2.43834)
+rotation = -0.31763
+shape = SubResource("CircleShape2D_q3olc")
+disabled = true
+
+[node name="areathreeb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(1.4158, -0.0786626)
+rotation = -0.495278
+skew = 0.0221946
+shape = SubResource("CircleShape2D_0ucuh")
+disabled = true
+
+[node name="areafourb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.325882, 0.856422)
+rotation = 0.672902
+skew = -0.0638852
+shape = SubResource("CircleShape2D_a5tvh")
+disabled = true
+
+[node name="areafiveb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.696236, 0.104431)
+rotation = -0.132006
+scale = Vector2(0.75, 0.75)
+skew = -0.0231539
+shape = SubResource("CircleShape2D_vf65c")
+disabled = true
+
+[node name="areasixb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-2.10886, 2.35473)
+rotation = 2.82396
+shape = SubResource("CircleShape2D_70ob7")
+disabled = true
+
+[node name="areasevenb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0.70047, 1.23099)
+rotation = -0.317629
+shape = SubResource("CircleShape2D_lpd2u")
+disabled = true
+
+[node name="areaeightb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-1.67186, -1.26618)
+rotation = 0.682338
+skew = -0.0634269
+shape = SubResource("CircleShape2D_mkaw1")
+disabled = true
+
+[node name="areanineb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-0.235977, 1.73043)
+rotation = -0.317629
+shape = SubResource("CircleShape2D_wpiql")
+disabled = true
+
+[node name="areatenb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-0.269997, 1.98299)
+rotation = -0.624538
+skew = 0.0370221
+shape = SubResource("CircleShape2D_axr1h")
+disabled = true
+
+[node name="areaelevenb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-1.547, 1.85529)
+rotation = -2.86066
+skew = -0.0615835
+shape = SubResource("CircleShape2D_8wyp7")
+disabled = true
+
+[node name="areatwelveb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-1.65339, 1.73043)
+rotation = -0.80032
+skew = 0.0536822
+shape = SubResource("CircleShape2D_cxy16")
+disabled = true
+
+[node name="arearoundb" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+visible = false
+top_level = true
+position = Vector2(-1.18921, 3.31987)
+shape = SubResource("CircleShape2D_pj83k")
+disabled = true
+
+[node name="slowdown" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+
+[node name="backgroundtimer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="slowdown" to="." method="_on_slowdown_timeout"]
+[connection signal="timeout" from="backgroundtimer" to="." method="_on_backgroundtimer_timeout"]

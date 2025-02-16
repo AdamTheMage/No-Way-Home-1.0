@@ -1,0 +1,141 @@
+[gd_scene load_steps=14 format=3 uid="uid://d35hj7ov6rddt"]
+
+[ext_resource type="Texture2D" uid="uid://ca5y1gds7reci" path="res://Survivor Arcade Game/Weather/Space_Fog_Blue.png" id="1_13b6g"]
+[ext_resource type="Texture2D" uid="uid://bii0vkyo26swk" path="res://Survivor Arcade Game/Weather/Space_Fog_Green.png" id="2_kljsy"]
+[ext_resource type="Texture2D" uid="uid://x85wlbp0ebn2" path="res://Survivor Arcade Game/Weather/Space_Fog.png" id="3_hxbw3"]
+[ext_resource type="Texture2D" uid="uid://ntawnkfn20iv" path="res://Survivor Arcade Game/Weather/Space_Fog_Purple.png" id="4_42we3"]
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/space_fog.gd" id="5_8iahq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73nus"]
+atlas = ExtResource("1_13b6g")
+region = Rect2(0, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_en003"]
+atlas = ExtResource("2_kljsy")
+region = Rect2(0, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8u77"]
+atlas = ExtResource("3_hxbw3")
+region = Rect2(0, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqibi"]
+atlas = ExtResource("4_42we3")
+region = Rect2(0, 0, 160, 144)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ftmer"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73nus")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_en003")
+}],
+"loop": true,
+"name": &"green",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8u77")
+}],
+"loop": true,
+"name": &"grey",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqibi")
+}],
+"loop": true,
+"name": &"purple",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_mn1m8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xsego"]
+resource_name = "spiralaway"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.23333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.26667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7tqmo"]
+_data = {
+"RESET": SubResource("Animation_mn1m8"),
+"spiralaway": SubResource("Animation_xsego")
+}
+
+[node name="Space Fog" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ftmer")
+animation = &"purple"
+script = ExtResource("5_8iahq")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+scale = Vector2(8.41944, 8.41944)
+
+[node name="foganimations" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_7tqmo")
+}
+
+[node name="despawnstatus" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="despawnstatus" to="." method="_on_despawnstatus_timeout"]

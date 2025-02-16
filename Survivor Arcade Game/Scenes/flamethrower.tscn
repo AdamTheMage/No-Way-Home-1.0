@@ -1,0 +1,431 @@
+[gd_scene load_steps=68 format=3 uid="uid://cavt30d0ed6i6"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/heavy_flamethrower.gd" id="1_yxh4b"]
+[ext_resource type="Texture2D" uid="uid://3r8tuf0a3spw" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_L.png" id="2_c52pj"]
+[ext_resource type="Texture2D" uid="uid://dlo1xnse3v2kk" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_1.png" id="3_g0lfa"]
+[ext_resource type="Texture2D" uid="uid://dsaq86gy86t72" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_L2.png" id="3_hct10"]
+[ext_resource type="Texture2D" uid="uid://kgye4ndnlbrk" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_R.png" id="3_xmccb"]
+[ext_resource type="Texture2D" uid="uid://c5dj1n3hannt0" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_2.png" id="4_qem3c"]
+[ext_resource type="Texture2D" uid="uid://deibaxjl3aemm" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_L4.png" id="4_tdfrw"]
+[ext_resource type="Texture2D" uid="uid://c773ypdg10dnr" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_3.png" id="5_5nvr5"]
+[ext_resource type="Texture2D" uid="uid://daqo1ltv7lg4h" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_4.png" id="6_i567t"]
+[ext_resource type="Texture2D" uid="uid://dw76rhg3f8yn4" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_5.png" id="7_2ojwk"]
+[ext_resource type="Texture2D" uid="uid://pkvkkdxvdp5x" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_6.png" id="8_gdn1h"]
+[ext_resource type="Texture2D" uid="uid://bp1tfj20a1o4d" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_7.png" id="9_b37ms"]
+[ext_resource type="Texture2D" uid="uid://3tubfcoeeii3" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_8.png" id="10_6vhsy"]
+[ext_resource type="Texture2D" uid="uid://cpwqmo1jj0c4u" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_9.png" id="11_pd1nx"]
+[ext_resource type="Texture2D" uid="uid://yv4rr2ktchlj" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_10.png" id="12_gm7p3"]
+[ext_resource type="Texture2D" uid="uid://dc1ulnaxqpqdo" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_11.png" id="13_sjopf"]
+[ext_resource type="Texture2D" uid="uid://0tjx0fy1fo48" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_L_Reloaded_12.png" id="14_xiyd8"]
+[ext_resource type="Texture2D" uid="uid://b50rpljh8e0q2" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_1.png" id="16_1k1g4"]
+[ext_resource type="Texture2D" uid="uid://c67i5mc6c2m60" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_L3.png" id="17_7g63k"]
+[ext_resource type="Texture2D" uid="uid://cphbbk2k7eqln" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_2.png" id="17_gkdlj"]
+[ext_resource type="Texture2D" uid="uid://b6grcoyqxq7lk" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_3.png" id="18_ep365"]
+[ext_resource type="Texture2D" uid="uid://bb8eqpvosyuuk" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_R3.png" id="19_ft0pn"]
+[ext_resource type="Texture2D" uid="uid://hhra5oyq3jx" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_4.png" id="19_qo0w2"]
+[ext_resource type="Texture2D" uid="uid://4opj0t3mfcws" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_R4.png" id="20_aceee"]
+[ext_resource type="Texture2D" uid="uid://chm0bjvtn1m57" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_5.png" id="20_rxpi0"]
+[ext_resource type="Texture2D" uid="uid://dutgngde1ox7e" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_6.png" id="21_rbhwv"]
+[ext_resource type="Texture2D" uid="uid://bv7kos73vjvsw" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_7.png" id="22_7qbw6"]
+[ext_resource type="Texture2D" uid="uid://b77cfhogi51th" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_8.png" id="23_wi2jv"]
+[ext_resource type="Texture2D" uid="uid://dn4bojyjticp8" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_9.png" id="24_dvh2y"]
+[ext_resource type="Texture2D" uid="uid://8nfdwkmno4qe" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_10.png" id="25_x8b8a"]
+[ext_resource type="Texture2D" uid="uid://csvlaxn1hejhb" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_11.png" id="26_e2dsd"]
+[ext_resource type="Texture2D" uid="uid://p7d8ehl3qeb8" path="res://Survivor Arcade Game/Effects/Flamethrower_Attachment_R_Reloaded_12.png" id="27_n8wrl"]
+[ext_resource type="Texture2D" uid="uid://c7su7f4tv0o4q" path="res://Survivor Arcade Game/Weapons/Flamethrower_Attachment_R2.png" id="33_j2w4y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m7f6t"]
+radius = 68.0074
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmbqi"]
+atlas = ExtResource("2_c52pj")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4qug"]
+atlas = ExtResource("17_7g63k")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gfw4"]
+atlas = ExtResource("4_tdfrw")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkoj8"]
+atlas = ExtResource("3_g0lfa")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y7ivr"]
+atlas = ExtResource("4_qem3c")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01ag1"]
+atlas = ExtResource("5_5nvr5")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1orwo"]
+atlas = ExtResource("6_i567t")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65wij"]
+atlas = ExtResource("7_2ojwk")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ouwi"]
+atlas = ExtResource("8_gdn1h")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vjvx"]
+atlas = ExtResource("9_b37ms")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_egf7m"]
+atlas = ExtResource("10_6vhsy")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wqxi"]
+atlas = ExtResource("11_pd1nx")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72irc"]
+atlas = ExtResource("12_gm7p3")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wud8q"]
+atlas = ExtResource("13_sjopf")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4hfj"]
+atlas = ExtResource("14_xiyd8")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln542"]
+atlas = ExtResource("3_hct10")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djoqb"]
+atlas = ExtResource("3_xmccb")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35xmx"]
+atlas = ExtResource("19_ft0pn")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31nta"]
+atlas = ExtResource("20_aceee")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgi1b"]
+atlas = ExtResource("16_1k1g4")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnta3"]
+atlas = ExtResource("17_gkdlj")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbr6j"]
+atlas = ExtResource("18_ep365")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xse1"]
+atlas = ExtResource("19_qo0w2")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33fh6"]
+atlas = ExtResource("20_rxpi0")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uc31o"]
+atlas = ExtResource("21_rbhwv")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uidnb"]
+atlas = ExtResource("22_7qbw6")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtqn8"]
+atlas = ExtResource("23_wi2jv")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkoat"]
+atlas = ExtResource("24_dvh2y")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahyla"]
+atlas = ExtResource("25_x8b8a")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6chi"]
+atlas = ExtResource("26_e2dsd")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppkdf"]
+atlas = ExtResource("27_n8wrl")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ukev"]
+atlas = ExtResource("33_j2w4y")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vdhco"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmbqi")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4qug")
+}],
+"loop": true,
+"name": &"leftone",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gfw4")
+}],
+"loop": true,
+"name": &"leftout",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkoj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y7ivr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01ag1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1orwo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65wij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ouwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vjvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egf7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wqxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72irc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wud8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4hfj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wud8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72irc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wqxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egf7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vjvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ouwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65wij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1orwo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01ag1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y7ivr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkoj8")
+}],
+"loop": false,
+"name": &"leftreloaded",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln542")
+}],
+"loop": true,
+"name": &"lefttwo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djoqb")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35xmx")
+}],
+"loop": true,
+"name": &"rightone",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31nta")
+}],
+"loop": true,
+"name": &"rightout",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgi1b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnta3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbr6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xse1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33fh6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uc31o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uidnb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtqn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkoat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahyla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6chi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppkdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6chi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahyla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkoat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtqn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uidnb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uc31o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33fh6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xse1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbr6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnta3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgi1b")
+}],
+"loop": false,
+"name": &"rightreloaded",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ukev")
+}],
+"loop": true,
+"name": &"righttwo",
+"speed": 5.0
+}]
+
+[node name="FlameThrower" type="Area2D"]
+visibility_layer = 3
+position = Vector2(-6, -0.316)
+rotation = 3.14159
+scale = Vector2(1.25, -1.25)
+collision_layer = 8208
+collision_mask = 8274
+script = ExtResource("1_yxh4b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.88624, -66.424)
+scale = Vector2(0.630733, 0.936868)
+shape = SubResource("CircleShape2D_m7f6t")
+
+[node name="WeaponPivot" type="Marker2D" parent="."]
+position = Vector2(-0.0481262, -0.0834694)
+
+[node name="Flamethrowerattachment" type="AnimatedSprite2D" parent="WeaponPivot"]
+unique_name_in_owner = true
+z_index = 1
+texture_filter = 1
+position = Vector2(0.0320288, 0.0481759)
+scale = Vector2(0.543703, 0.543703)
+sprite_frames = SubResource("SpriteFrames_vdhco")
+animation = &"lefttwo"
+
+[node name="RightShootingPoint" type="Marker2D" parent="WeaponPivot"]
+unique_name_in_owner = true
+position = Vector2(0.807402, -6.59177)
+rotation = 4.71239
+
+[node name="LeftShootingPoint" type="Marker2D" parent="WeaponPivot"]
+unique_name_in_owner = true
+position = Vector2(-0.793722, -6.60115)
+rotation = 4.71239
+
+[node name="heavytimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 5.75
+autostart = true
+
+[node name="particlechecker" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="WeaponPivot/Flamethrowerattachment" to="." method="_on_flamethrowerattachment_animation_finished"]
+[connection signal="timeout" from="heavytimer" to="." method="_on_heavytimer_timeout"]
+[connection signal="timeout" from="particlechecker" to="." method="_on_particlechecker_timeout"]

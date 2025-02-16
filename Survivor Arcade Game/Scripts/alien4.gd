@@ -5,16 +5,29 @@ var secondphase = false
 
 static var heavy_pickups = 0
 
+@onready var particleplayer = get_node("/root/Game/particleplayer")
 @onready var player = get_node("/root/Game/PlayerCharacter")
 @onready var alienloot = get_node("/root/Game")
 @onready var gamelevel = get_node("/root/Game")
 
+func _ready() :
+	gamelevel.alien4_count += 1
+
 # Movement
 func _physics_process(_delta):
 	var direction = global_position.direction_to(player.global_position)
-	velocity = direction * 10
+	velocity = direction * 18
 	move_and_slide()
 
+func _on_alien_box_body_entered(body) :
+	if body.has_method("asteroidsknockeachother") :
+		if body.speed > 15 :
+			take_asteroid_collision_damage()
+
+func alien4_knockback () :
+	# used as an indicator
+	pass
+	
 # Animation change when attack
 func on_ready():
 	%alien4.play("default")
@@ -28,7 +41,9 @@ func on_ready():
 # Mob Taking Damage and Death
 
 # Special Effects
-func zapped() :
+	# Weather
+func meteored () :
+	hurtparticles()
 	enemyhealth -= 2
 	%alien4.play("weak")
 	second_phase()
@@ -37,28 +52,42 @@ func zapped() :
 		
 	
 	if enemyhealth <= 0 : 
-		queue_free()
-		$/root/Game/PlayerCharacter/UI/stats.add_alien4kill()
-			
-		#Smoke Effect
-		const SMOKE_EFFECT = preload("res://Survivor Arcade Game/Scenes/zap_explosion.tscn")
-		var smoke = SMOKE_EFFECT.instantiate()
-		get_parent().add_child(smoke)
-		smoke.global_position = global_position
-			
-			#Heavy Weapon Loot
-		randomize()
-		var loot_chance = int(round(randi_range(8, 12)))
-		if loot_chance == 10 :
-			#alienloot.heavy_pickup() 
-			if heavy_pickups < 2 :
-				heavy_pickups += 1
-				var new_heavyweaponpickup = preload("res://Survivor Arcade Game/Scenes/heavy_weapon_pickup.tscn").instantiate()
-				new_heavyweaponpickup.global_position = %alien4.global_position
-				get_node("/root/Game/Pickups").call_deferred("add_child",new_heavyweaponpickup)
+		aliendeath()
+	
+func take_asteroid_collision_damage() :
+	hurtparticles()
+	enemyhealth -= 1
+	
+	if enemyhealth <= 2 :
+		%alien4.play("weak")
+		second_phase()
+
+	# Abilities
+func zapped() :
+	hurtparticles()
+	enemyhealth -= 2
+	%alien4.play("weak")
+	second_phase()
+#	if gamelevel.levelx == true :
+#		%alien4.play("Attackingx")
+		
+	
+	if enemyhealth <= 0 : 
+		aliendeath()
 
 func take_primarydamage() :
+	hurtparticles()
 	enemyhealth -= 1
+	if enemyhealth <= 2 :
+		%alien4.play("weak")
+		second_phase()
+	
+	if enemyhealth <= 0 : 
+		aliendeath()
+
+func take_heavydamage() :
+	hurtparticles()
+	enemyhealth -= 4
 	if enemyhealth <= 2 :
 		%alien4.play("weak")
 		second_phase()
@@ -66,56 +95,34 @@ func take_primarydamage() :
 #		%alien4.play("Attackingx")
 	
 	if enemyhealth <= 0 : 
-		queue_free()
-		$/root/Game/PlayerCharacter/UI/stats.add_alien1kill()
-			
-		#Smoke Effect
-		const SMOKE_EFFECT = preload("res://Survivor Arcade Game/Scenes/explosion.tscn")
-		var smoke = SMOKE_EFFECT.instantiate()
-		get_parent().add_child(smoke)
-		smoke.global_position = global_position
-			
-			#Heavy Weapon Loot
-		randomize()
-		var loot_chance = int(round(randi_range(8, 12)))
-		if loot_chance == 10 :
-			#alienloot.heavy_pickup() 
-			if heavy_pickups < 2 :
-				heavy_pickups += 1
-				var new_heavyweaponpickup = preload("res://Survivor Arcade Game/Scenes/heavy_weapon_pickup.tscn").instantiate()
-				new_heavyweaponpickup.global_position = %alien4.global_position
-				get_node("/root/Game/Pickups").call_deferred("add_child",new_heavyweaponpickup)
+		#Death & Tally
+		aliendeath()
 
-func take_heavydamage() :
-	enemyhealth -= 3
+func flamethrowered() :
+	hurtparticles()
+	enemyhealth -= 2
 	if enemyhealth <= 2 :
-		%alien1.play("Attacking")
+		%alien4.play("weak")
 		second_phase()
 #	if gamelevel.levelx == true :
 #		%alien4.play("Attackingx")
 	
 	if enemyhealth <= 0 : 
 		#Death & Tally
-		queue_free()
-		$/root/Game/PlayerCharacter/UI/stats.add_alien1kill() 
-		
-		#Smoke Effect
-		const SMOKE_EFFECT = preload("res://Survivor Arcade Game/Scenes/explosion.tscn")
-		var smoke = SMOKE_EFFECT.instantiate()
-		get_parent().add_child(smoke)
-		smoke.global_position = global_position
-		
-		#Heavy Weapon Loot
-		randomize()
-		var loot_chance = int(round(randi_range(8, 12)))
-		if loot_chance == 10 :
-			#alienloot.heavy_pickup()
-			if heavy_pickups < 2 :
-				heavy_pickups += 1
-				var new_heavyweaponpickup = preload("res://Survivor Arcade Game/Scenes/heavy_weapon_pickup.tscn").instantiate()
-				new_heavyweaponpickup.global_position = %alien4.global_position
-				get_node("/root/Game/Pickups").call_deferred("add_child",new_heavyweaponpickup)
+		aliendeath()
 
+func hornsliced () :
+	hurtparticles()
+	enemyhealth -= 4
+	if enemyhealth <= 2 :
+		%alien4.play("weak")
+		second_phase()
+#	if gamelevel.levelx == true :
+#		%alien4.play("Attackingx")
+	
+	if enemyhealth <= 0 : 
+		#Death & Tally
+		aliendeath()
 ################################################################################################
 # Combat
 # Missile
@@ -134,28 +141,91 @@ func magic_shot_low() :
 	get_node("/root/Game").add_child(new_missile)
 	
 func _on_missile_timer_low_timeout() :
-	magic_shot_low()
-	if secondphase == true :
-		magic_shot_high()
+		magic_shot_low()
 
 func _on_missile_timer_animation_timeout() :
 	if secondphase == false :
-		print("first")
 		%MissileTimerAnimation.stop()
 		%alien4.play("defaultfiring")
 		await get_tree().create_timer(1.5).timeout
 		%MissileTimerAnimation.start()
 		%alien4.play("default")
-	if secondphase == true :
-		print("second")
+	else :
 		%MissileTimerAnimation.stop()
-		%alien4.play("weakfiring")
-		await get_tree().create_timer(1.5).timeout
-		%MissileTimerAnimation.start()
-		%alien4.play("weak")
 
 # Second Phase
 func second_phase() :
+	%MissileTimerLow.stop()
+	%MissileTimerAnimation.stop()
+	%MissileTimerLowPhaseTwo.start()
+	%MissileTimerAnimationPhaseTwo.start()
 	secondphase = true
 
 ################################################################################################
+
+
+func _on_missile_timer_low_phase_two_timeout() :
+		magic_shot_high()
+
+func _on_missile_timer_animation_phase_two_timeout() :
+		%MissileTimerAnimationPhaseTwo.stop()
+		%alien4.play("weakfiring")
+		await get_tree().create_timer(1.5).timeout
+		%MissileTimerAnimationPhaseTwo.start()
+		%alien4.play("weak")
+
+# Particles
+
+func hurtparticles() :
+	if get_node("/root/Game").pocketedition == false :
+		const BLOOD_EFFECT = preload("res://Survivor Arcade Game/Scenes/particle_effects.tscn")
+		var blood = BLOOD_EFFECT.instantiate()
+		blood.alien4blood()
+		particleplayer.call_deferred("add_child", blood)
+		blood.global_position = global_position 
+
+func aliendeath() :
+		gamelevel.alien4_count -= 1
+		queue_free()
+		$/root/Game/PlayerCharacter/UI/stats.add_alien4kill() 
+		
+		#Smoke Effect
+		const SMOKE_EFFECT = preload("res://Survivor Arcade Game/Scenes/explosion.tscn")
+		var smoke = SMOKE_EFFECT.instantiate()
+		get_parent().add_child(smoke)
+		smoke.global_position = global_position
+		
+	# Soul Pickup
+		var new_soul5 = preload("res://Survivor Arcade Game/Scenes/soul.tscn").instantiate()
+		new_soul5.scale.x = 0.64
+		new_soul5.scale.y = 0.64
+		new_soul5.soultype = 7
+		new_soul5.global_position = %alien4.global_position
+		get_node("/root/Game/Pickups").call_deferred("add_child",new_soul5)
+		
+		#Heavy Weapon Loot
+				
+func lenurcherimplosion() :
+		gamelevel.alien4_count -= 1
+		queue_free()
+		$/root/Game/PlayerCharacter/UI/stats.add_alien4kill() 
+		
+		#Smoke Effect
+		const SMOKE_EFFECT = preload("res://Survivor Arcade Game/Scenes/explosion.tscn")
+		var smoke = SMOKE_EFFECT.instantiate()
+		get_parent().add_child(smoke)
+		smoke.global_position = global_position
+		
+	# Soul Pickup
+		var new_soul5 = preload("res://Survivor Arcade Game/Scenes/soul.tscn").instantiate()
+		new_soul5.scale.x = 0.64
+		new_soul5.scale.y = 0.64
+		new_soul5.soultype = 7
+		new_soul5.global_position = %alien4.global_position
+		get_node("/root/Game/Pickups").call_deferred("add_child",new_soul5)
+		
+		#Heavy Weapon Loot
+
+func aliendeathnosoul () :
+	gamelevel.alien4_count -= 1
+	queue_free()

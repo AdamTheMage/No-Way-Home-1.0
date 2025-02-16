@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://03wulaectrrg"]
+[gd_scene load_steps=63 format=3 uid="uid://03wulaectrrg"]
 
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien2.gd" id="1_y8ddf"]
 [ext_resource type="Texture2D" uid="uid://diypp2fwi2iyc" path="res://Survivor Arcade Game/Aliens/Alien3_P2.png" id="2_hm4k6"]
@@ -6,6 +6,31 @@
 [ext_resource type="Texture2D" uid="uid://dqqijkiugmxtc" path="res://Survivor Arcade Game/Aliens/Alien3_P1.png" id="3_wrt3t"]
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien_box_2.gd" id="4_8acpi"]
 [ext_resource type="Texture2D" uid="uid://dshri411i7qno" path="res://Survivor Arcade Game/Aliens/Alien3_P1_Blue.png" id="5_grvwm"]
+[ext_resource type="Texture2D" uid="uid://ddfmwlka8hx7y" path="res://Survivor Arcade Game/Aliens/Alien3_P1_2.png" id="5_nv5a5"]
+[ext_resource type="Texture2D" uid="uid://doj5rmi1yxong" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_.png" id="6_gc10i"]
+[ext_resource type="Texture2D" uid="uid://di1pffxtgobqm" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P1.png" id="7_bnwf4"]
+[ext_resource type="Texture2D" uid="uid://b0snkl7b0pnjy" path="res://Survivor Arcade Game/Aliens/Alien3_P1_Blue_2.png" id="7_bpuv7"]
+[ext_resource type="Texture2D" uid="uid://oycwdy44swva" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P2.png" id="8_08qrx"]
+[ext_resource type="Texture2D" uid="uid://c5sxtbcogtxwq" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P3.png" id="9_o5niw"]
+[ext_resource type="Texture2D" uid="uid://ih68w1asm2wj" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P4.png" id="10_jcklf"]
+[ext_resource type="Texture2D" uid="uid://cgivjk6gyeahb" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P5.png" id="11_qvyju"]
+[ext_resource type="Texture2D" uid="uid://cdry5r67vtm52" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P6.png" id="12_imtom"]
+[ext_resource type="Texture2D" uid="uid://cdnp6cyk2w4uw" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P7.png" id="13_u00ay"]
+[ext_resource type="Texture2D" uid="uid://bwvujemxdl8vo" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P8.png" id="14_tuahg"]
+[ext_resource type="Texture2D" uid="uid://cjfdvm2pldj75" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P9.png" id="15_5v2ww"]
+[ext_resource type="Texture2D" uid="uid://db1eketn425lg" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P10.png" id="16_frqlp"]
+[ext_resource type="Texture2D" uid="uid://ftsfmcpyj47i" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P11.png" id="17_rt14w"]
+[ext_resource type="Texture2D" uid="uid://c71w5siek0ybw" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P12.png" id="18_bahls"]
+[ext_resource type="Texture2D" uid="uid://b7rb5ynnidq1c" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P13.png" id="19_r5rdv"]
+[ext_resource type="Texture2D" uid="uid://dqobumr5ws5p6" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P14.png" id="20_dd533"]
+[ext_resource type="Texture2D" uid="uid://b07niuuddw1wh" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P15.png" id="21_v1lcx"]
+[ext_resource type="Texture2D" uid="uid://dab1s811u0oln" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P16.png" id="22_4g1ju"]
+[ext_resource type="Texture2D" uid="uid://co5hjnm45pu75" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P17.png" id="23_y1y4t"]
+[ext_resource type="Texture2D" uid="uid://csitgtguw3kqe" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P18.png" id="24_ru3wn"]
+[ext_resource type="Texture2D" uid="uid://ckkbj4ithgs8q" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P19.png" id="25_3sdk3"]
+[ext_resource type="Texture2D" uid="uid://b3qhwo8h86y88" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P20.png" id="26_6hn5w"]
+[ext_resource type="Texture2D" uid="uid://ca11ipso5qobi" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P21.png" id="27_hf0p6"]
+[ext_resource type="Texture2D" uid="uid://ceqgg5svsr6q5" path="res://Survivor Arcade Game/Aliens/Alien3_Teleport_P22.png" id="28_eqail"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_251f5"]
 atlas = ExtResource("2_hm4k6")
@@ -19,8 +44,108 @@ region = Rect2(0, 0, 64, 64)
 atlas = ExtResource("3_wrt3t")
 region = Rect2(0, 0, 64, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5lbn"]
+atlas = ExtResource("5_nv5a5")
+region = Rect2(0, 0, 64, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_yc01r"]
 atlas = ExtResource("5_grvwm")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0jo2"]
+atlas = ExtResource("7_bpuv7")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2etg8"]
+atlas = ExtResource("6_gc10i")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isusm"]
+atlas = ExtResource("7_bnwf4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7eflx"]
+atlas = ExtResource("8_08qrx")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p367e"]
+atlas = ExtResource("9_o5niw")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha2s3"]
+atlas = ExtResource("10_jcklf")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnw5x"]
+atlas = ExtResource("11_qvyju")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dw2m6"]
+atlas = ExtResource("12_imtom")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qbri"]
+atlas = ExtResource("13_u00ay")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61ec5"]
+atlas = ExtResource("14_tuahg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tm4fp"]
+atlas = ExtResource("15_5v2ww")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p81v1"]
+atlas = ExtResource("16_frqlp")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvvhq"]
+atlas = ExtResource("17_rt14w")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4j6d"]
+atlas = ExtResource("18_bahls")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5n5x"]
+atlas = ExtResource("19_r5rdv")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtlvt"]
+atlas = ExtResource("20_dd533")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gah51"]
+atlas = ExtResource("21_v1lcx")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctgx6"]
+atlas = ExtResource("22_4g1ju")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovkdg"]
+atlas = ExtResource("23_y1y4t")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpbfk"]
+atlas = ExtResource("24_ru3wn")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tiu3r"]
+atlas = ExtResource("25_3sdk3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfy4f"]
+atlas = ExtResource("26_6hn5w")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s48tf"]
+atlas = ExtResource("27_hf0p6")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mq87q"]
+atlas = ExtResource("28_eqail")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hr668"]
@@ -44,26 +169,170 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nvww6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5lbn")
 }],
 "loop": true,
 "name": &"Default",
-"speed": 5.0
+"speed": 1.25
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yc01r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0jo2")
 }],
 "loop": true,
 "name": &"DefaultBlue",
-"speed": 5.0
+"speed": 1.25
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2etg8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isusm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7eflx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p367e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha2s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnw5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dw2m6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qbri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61ec5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tm4fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p81v1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvvhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4j6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5n5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtlvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gah51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctgx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovkdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpbfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tiu3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfy4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s48tf")
+}, {
+"duration": 16.0,
+"texture": SubResource("AtlasTexture_mq87q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s48tf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfy4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tiu3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpbfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovkdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctgx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gah51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtlvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5n5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4j6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvvhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p81v1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tm4fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61ec5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qbri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dw2m6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnw5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha2s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p367e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7eflx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isusm")
+}],
+"loop": false,
+"name": &"Teleporting",
+"speed": 24.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4neyy"]
 radius = 7.19913
 
 [node name="Alien2" type="CharacterBody2D"]
-collision_layer = 1073743878
-collision_mask = 1073743873
+collision_layer = 1073809414
+collision_mask = 1073743875
+motion_mode = 1
 script = ExtResource("1_y8ddf")
 
 [node name="alien2" type="AnimatedSprite2D" parent="."]
@@ -93,11 +362,12 @@ shape = SubResource("CircleShape2D_4neyy")
 
 [node name="StatusHolder" type="Node" parent="."]
 
-[node name="appearancechecker" type="Timer" parent="."]
-wait_time = 0.05
+[node name="randommovement" type="Timer" parent="."]
+wait_time = 5.0
 autostart = true
 
 [connection signal="area_entered" from="AlienBox2" to="." method="_on_alien_box_2_area_entered"]
 [connection signal="area_entered" from="AlienBox2" to="AlienBox2" method="_on_area_entered"]
 [connection signal="body_entered" from="AlienBox2" to="." method="_on_alien_box_body_entered"]
-[connection signal="timeout" from="appearancechecker" to="." method="_on_appearancechecker_timeout"]
+[connection signal="body_entered" from="AlienBox2" to="." method="_on_alien_box_2_body_entered"]
+[connection signal="timeout" from="randommovement" to="." method="_on_randommovement_timeout"]

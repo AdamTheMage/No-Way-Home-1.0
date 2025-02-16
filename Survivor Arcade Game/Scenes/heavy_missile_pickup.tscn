@@ -1,0 +1,223 @@
+[gd_scene load_steps=9 format=3 uid="uid://cyd8336olw7e3"]
+
+[ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/heavy_lockonmissile_pickup.gd" id="1_n7b6w"]
+[ext_resource type="Texture2D" uid="uid://chnabh8xx6m1" path="res://Survivor Arcade Game/Weapons/Missiles_Attachment.png" id="2_skaj5"]
+
+[sub_resource type="Animation" id="Animation_th5c8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LaserCannonAttachment:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5, -13)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LaserCannonAttachment:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10, 0.013)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("magnetarea:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nwvlj"]
+resource_name = "missile_drop"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LaserCannonAttachment:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(-5, -13), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LaserCannonAttachment:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 3.14159, 6.28319, 9.42478, 12.5664]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(0, 0.013)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("magnetarea:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_t8guu"]
+resource_name = "missile_drop_left"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LaserCannonAttachment:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(5, -13), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LaserCannonAttachment:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -3.14159, -6.28319, -9.42478, -12.5664]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("magnetarea:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qlkl6"]
+_data = {
+"RESET": SubResource("Animation_th5c8"),
+"missile_drop": SubResource("Animation_nwvlj"),
+"missile_drop_left": SubResource("Animation_t8guu")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m7f6t"]
+radius = 5.38517
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jl2e0"]
+
+[node name="Heavy Weapon" type="Area2D"]
+position = Vector2(10, 0)
+scale = Vector2(1.27438, 1.27438)
+collision_layer = 262144
+collision_mask = 262144
+script = ExtResource("1_n7b6w")
+
+[node name="missiledropanimation" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_qlkl6")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 0.013)
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CircleShape2D_m7f6t")
+
+[node name="LaserCannonAttachment" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+z_index = 1
+texture_filter = 1
+position = Vector2(5, -13)
+scale = Vector2(0.543703, 0.543703)
+texture = ExtResource("2_skaj5")
+
+[node name="magnetarea" type="Area2D" parent="."]
+unique_name_in_owner = true
+scale = Vector2(0.250652, 0.250652)
+collision_layer = 262144
+collision_mask = 262144
+
+[node name="magnetcollision" type="CollisionShape2D" parent="magnetarea"]
+scale = Vector2(8.64223, 8.64223)
+shape = SubResource("CircleShape2D_jl2e0")
+
+[node name="directionupdater" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.05
+
+[node name="DespawnTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="animation_finished" from="missiledropanimation" to="." method="_on_missiledropanimation_animation_finished"]
+[connection signal="body_entered" from="magnetarea" to="." method="_on_magnetarea_body_entered"]
+[connection signal="body_exited" from="magnetarea" to="." method="_on_magnetarea_body_exited"]
+[connection signal="timeout" from="directionupdater" to="." method="_on_directionupdater_timeout"]
+[connection signal="timeout" from="DespawnTimer" to="." method="_on_despawn_timer_timeout"]

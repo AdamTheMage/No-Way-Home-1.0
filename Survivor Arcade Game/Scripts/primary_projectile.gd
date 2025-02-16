@@ -18,3 +18,8 @@ func _on_body_entered(body):
 	queue_free()
 	if body.has_method("take_primarydamage"):
 		body.take_primarydamage()
+
+
+func _on_area_entered(body) :
+	if body.has_method("neutralise_draugal_missile") :
+		body.neutralise_draugal_missile()

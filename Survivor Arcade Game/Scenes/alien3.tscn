@@ -2,15 +2,15 @@
 
 [ext_resource type="Script" path="res://Survivor Arcade Game/Scripts/alien3.gd" id="1_ycym5"]
 [ext_resource type="Texture2D" uid="uid://6j5eivso1ieq" path="res://Survivor Arcade Game/Aliens/Alien_2_P2.png" id="2_1ukpv"]
-[ext_resource type="Texture2D" uid="uid://cwfm50pibvm2r" path="res://Survivor Arcade Game/Aliens/Alien_2_P1.png" id="3_t8fvi"]
+[ext_resource type="Texture2D" uid="uid://dadpd32a4m1yw" path="res://Survivor Arcade Game/Aliens/Alien_2_P1_32x32.png" id="3_oejug"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7on7u"]
 atlas = ExtResource("2_1ukpv")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8jeu4"]
-atlas = ExtResource("3_t8fvi")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_056wv"]
+atlas = ExtResource("3_oejug")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hr668"]
 animations = [{
@@ -24,7 +24,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8jeu4")
+"texture": SubResource("AtlasTexture_056wv")
 }],
 "loop": true,
 "name": &"Default",
@@ -35,13 +35,16 @@ animations = [{
 radius = 6.4
 
 [node name="Mob" type="CharacterBody2D"]
-collision_layer = 1073742854
-collision_mask = 1073742849
+scale = Vector2(0.75, 0.75)
+collision_layer = 1073808390
+collision_mask = 1073742851
+motion_mode = 1
 script = ExtResource("1_ycym5")
 
 [node name="alien3" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 texture_filter = 1
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_hr668")
 animation = &"Default"
 
@@ -58,4 +61,10 @@ shape = SubResource("CircleShape2D_4neyy")
 
 [node name="StatusHolder" type="Node" parent="."]
 
+[node name="randommovement" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[connection signal="area_entered" from="AlienBox" to="." method="_on_alien_box_area_entered"]
 [connection signal="body_entered" from="AlienBox" to="." method="_on_alien_box_body_entered"]
+[connection signal="timeout" from="randommovement" to="." method="_on_randommovement_timeout"]
